@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 public class WebController {
 
@@ -16,8 +18,9 @@ public class WebController {
 	}
 
 	@PostMapping("/add")
-    public String addEntry(Map<String, Object> model) {
-
+    public String getCallNumber(HttpServletRequest request, Map<String, Object> model) {
+	    String ipAddress = AsteriskManager.getActiveCall(request.getRemoteAddr());
+	    model.put("ipAddress", ipAddress);
 	    return "added";
     }
 

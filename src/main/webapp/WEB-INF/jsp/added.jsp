@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col-lg-12 text-center v-center">
             <h1 class="">Запись успешно добавлена</h1>
-
+            <p class="lead">Звонок был совершен на номер ${ipAddress}</p>
         </div>
     </div>
     <div class="row text-center v-center">
