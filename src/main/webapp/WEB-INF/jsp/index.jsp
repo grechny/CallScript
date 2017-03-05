@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -27,17 +28,40 @@
 
         <div class="col-lg-12 text-center v-center">
 
-            <h1>${message}</h1>
-            <p class="lead">Тестовая страница для получения номера абонента</p>
+            <h1>Опрос радио</h1>
 
             <br>
 
-            <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
-                <input id="numberInput" type="text" class="center-block form-control input-lg"
-                       title="Введите номер телефона"
-                       placeholder="Введите номер телефона">
-                <span class="input-group-btn"><button id="getNumber" class="btn btn-lg btn-primary">Получить номер</button></span>
-            </div>
+            <p class="muted" align="left">Добрый вечер. Мы проводим опрос для изучения популярности
+                радиостанций в Минске. Пригласите, пожалуйста, к телефону того члена семьи в
+                возрасте от 12 до 65 лет, у которого ближайший день рождения.</p>
+
+            <p class="muted" align="left">Для мобильных: Добрый вечер! Мы проводим опрос для
+                изучения популярности
+                радиостанций в Минске. Ответьте, пожалуйста, на несколько вопросов, это займет всего
+                пару минут. Подскажите, пожалуйста, город, в котором вы находитесь.</p>
+
+            <br>
+
+            <form:form action="/add" method="post" modelAttribute="formEntity">
+                <form:label path="phoneNumber">Телефон</form:label>
+
+                <div class="input-group input-group-medium col-sm-offset-3 col-sm-6">
+                    <form:input path="phoneNumber" id="numberInput" type="text" class="center-block form-control input-medium"
+                           title="Введите номер телефона" placeholder="Введите номер телефона"/>
+                    <span class="input-group-btn"><button id="getNumber" class="btn btn-medium btn-primary" type="button">Получить номер</button></span>
+                </div>
+
+                <br>
+
+                <form:label path="city">Город</form:label>
+                <form:input path="city" type="text" class="center-block form-control" style="width: 50%"
+                       title="Введите город" placeholder="Введите город"/>
+
+                <br><br><br><br>
+
+                <button type="submit" class="btn btn-success btn-lg ">Отправить</button>
+            </form:form>
         </div>
 
     </div> <!-- /row -->

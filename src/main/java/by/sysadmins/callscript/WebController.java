@@ -14,6 +14,7 @@ public class WebController {
 
     @GetMapping("/")
     public String index(Map<String, Object> model) {
+        model. put("formEntity", new FormEntity());
         model.put("message", "Sysadmins.by");
         return "index";
     }
@@ -25,7 +26,7 @@ public class WebController {
     }
 
     @PostMapping("/add")
-    public String addEntry() {
+    public String addEntry(FormEntity formEntity) {
         return "added";
     }
 
