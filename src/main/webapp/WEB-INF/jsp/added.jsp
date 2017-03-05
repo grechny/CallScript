@@ -4,9 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <c:url value="/css/bootply.css" var="jstlCss" />
-    <link href="${jstlCss}" rel="stylesheet" />
+    <link href="<c:url value="/css/bootply.css"/>" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 
@@ -18,7 +16,6 @@
     <div class="row">
         <div class="col-lg-12 text-center v-center">
             <h1 class="">Запись успешно добавлена</h1>
-            <p class="lead">Звонок был совершен на номер ${ipAddress}</p>
         </div>
     </div>
     <div class="row text-center v-center">
