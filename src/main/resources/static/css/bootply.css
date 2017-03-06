@@ -6,6 +6,10 @@ h1 {
     font-family: verdana, serif;
 }
 
+label {
+    font-weight: normal !important;
+}
+
 /* Custom container */
 .container-full {
     margin: 0 auto;
