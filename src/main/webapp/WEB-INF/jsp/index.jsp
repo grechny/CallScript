@@ -45,7 +45,7 @@
 
             <form:form action="/add" method="post" modelAttribute="formEntity">
 
-                <b>Телефон</b><br>
+                <b>Телефон</b><b style="color: red"> *</b><br>
                 <div class="input-group input-group-medium col-sm-offset-0 col-sm-6">
                     <form:input path="phoneNumber" id="numberInput" type="text" class="form-control input-medium"
                            title="Введите номер телефона" placeholder="Введите номер телефона" required="true"/>
@@ -54,275 +54,278 @@
 
                 <br>
 
-                <b>Город</b><br>
+                <b>Город</b><b style="color: red"> *</b><br>
                 <form:input path="city" type="text" class="form-control" style="width: 50%"
                        title="Введите город" placeholder="Введите город" required="true"/>
 
                 <br>
 
                 <b>Причина отказа</b><br>
-                <form:radiobutton path="causeRefused" value="Отказ от заполнения" label=" Отказ от заполнения"/><br>
-                <form:radiobutton path="causeRefused" value="Не подходит по возрасту" label=" Не подходит по возрасту"/><br>
-                <form:radiobutton path="causeRefused" value="Нет человека с ближайшим ДР" label=" Нет человека с ближайшим ДР"/><br>
-                <form:radiobutton path="causeRefused" value="Не тот город" label=" Не тот город"/><br>
-                <form:radiobutton path="causeRefused" value="Не помнит радиостанции за месяц, время прослушивания и т д" label=" Не помнит радиостанции за месяц, время прослушивания и т д"/><br>
-                <form:radiobutton path="causeRefused" value="Другое" label=" Другое:" /> <form:input path="causeRefused" type="text" class="input-small" style="width: 50%"/><br>
+                <form:radiobutton path="causeRefused" value="Отказ от заполнения" label="Отказ от заполнения"/><br>
+                <form:radiobutton path="causeRefused" value="Не подходит по возрасту" label="Не подходит по возрасту"/><br>
+                <form:radiobutton path="causeRefused" value="Нет человека с ближайшим ДР" label="Нет человека с ближайшим ДР"/><br>
+                <form:radiobutton path="causeRefused" value="Не тот город" label="Не тот город"/><br>
+                <form:radiobutton path="causeRefused" value="Не помнит радиостанции за месяц, время прослушивания и т д" label="Не помнит радиостанции за месяц, время прослушивания и т д"/><br>
+                <form:radiobutton path="causeRefused" value="Другое" label="Другое:" /> <form:input path="causeRefused" type="text" class="input-small" style="width: 50%"/><br>
 
                 <br>
 
-                <form:label path="gender">Пол</form:label><br>
-                <form:radiobutton path="gender" value="Мужской"/> Мужской<br>
-                <form:radiobutton path="gender" value="Женский"/> Женский<br>
+                <b>Пол</b><br>
+                <form:radiobutton path="gender" value="Мужской" label="Мужской"/><br>
+                <form:radiobutton path="gender" value="Женский" label="Женский"/><br>
 
                 <br>
 
-                <form:label path="age">Возраст</form:label>
+                <b>Возраст</b><br>
                 <form:input path="age" type="text" class="form-control" style="width: 50%"
                             title="Введите возраст" placeholder="Введите возраст"/>
 
                 <br>
 
-                <form:label path="lastMonthListen">Слушали ли Вы радио или, может быть, присутствовали при работающем радио за последний месяц</form:label><br>
-                <form:radiobutton path="lastMonthListen" value="Да"/> Да<br>
-                <form:radiobutton path="lastMonthListen" value="Нет"/> Нет<br>
+                <b>Слушали ли Вы радио или, может быть, присутствовали при работающем радио за последний месяц</b><br>
+                <form:radiobutton path="lastMonthListen" value="Да" label="Да"/><br>
+                <form:radiobutton path="lastMonthListen" value="Нет" label="Нет"/><br>
 
                 <br>
 
-                <form:label path="whatRadioListenLastMonth">Я сейчас назову радиостанции, а Вы укажите, пожалуйста, какие из них Вы слушали за последний месяц</form:label>
+                <b>Я сейчас назову радиостанции, а Вы укажите, пожалуйста, какие из них Вы слушали за последний месяц</b><br>
                 <form:input path="whatRadioListenLastMonth" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whatRadioListenLastWeek">Какие радиостанции вы слушали за прошедшую неделю</form:label>
+                <b>Какие радиостанции вы слушали за прошедшую неделю</b><br>
                 <form:input path="whatRadioListenLastWeek" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="yesterdayListen">Слушали ли Вы радио вчера?</form:label><br>
+                <b>Слушали ли Вы радио вчера?</b><br>
                 <p class="muted">Нам важно узнать, какие радиостанции Вы слушали вчера,и, чтобы это было точнее, давайте вспомним Ваш вчерашний день</p>
-                <form:radiobutton path="yesterdayListen" value="Да"/> Да<br>
-                <form:radiobutton path="yesterdayListen" value="Нет"/> Нет<br>
+                <form:radiobutton path="yesterdayListen" value="Да" label="Да"/><br>
+                <form:radiobutton path="yesterdayListen" value="Нет" label="Нет"/><br>
 
                 <br>
 
-                <form:label path="whereListen1">1 Где слушали радио?</form:label><br>
-                <form:radiobutton path="whereListen1" value="На работе/учебе"/> На работе/учебе<br>
-                <form:radiobutton path="whereListen1" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen1" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen1" value="В машине"/> В машине<br>
-                <form:radiobutton path="whereListen1" value="В общ. транспорте"/> В общ. транспорте<br>
-                <form:radiobutton path="whereListen1" value="Вне помещения (по дороге,на велосипеде)"/> Вне помещения (по дороге,на велосипеде)<br>
-                <form:radiobutton path="whereListen1" value="Другое"/> Другое<br>
+                <b>1 Где слушали радио?</b><br>
+                <form:radiobutton path="whereListen1" value="На работе/учебе" label="На работе/учебе"/><br>
+                <form:radiobutton path="whereListen1" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen1" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen1" value="В машине" label="В машине"/><br>
+                <form:radiobutton path="whereListen1" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                <form:radiobutton path="whereListen1" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                <form:radiobutton path="whereListen1" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="timeInterval1">1 Промежуток Времени</form:label>
+                <b>1 Промежуток Времени</b><br>
                 <form:input path="timeInterval1" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whatRadioListen1">1 Какие радиостанции слушали</form:label>
+                <b>1 Какие радиостанции слушали</b><br>
                 <form:input path="whatRadioListen1" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whichDevice1">1 С помощью чего слушали радио</form:label><br>
-                <form:radiobutton path="whichDevice1" value="Радиоприемник (FM. AM)"/> Радиоприемник (FM. AM)<br>
-                <form:radiobutton path="whichDevice1" value="Автомагнитола"/> Автомагнитола<br>
-                <form:radiobutton path="whichDevice1" value="Мобильный телефон, смартфон-через встроенный FM-тюнер"/> Мобильный телефон, смартфон-через встроенный FM-тюнер<br>
-                <form:radiobutton path="whichDevice1" value="Мобильный телефон, смартфон-через Интернет"/> Мобильный телефон, смартфон-через Интернет<br>
-                <form:radiobutton path="whichDevice1" value="Компьютер, ноутбук, планшет-через Интернет"/> Компьютер, ноутбук, планшет-через Интернет<br>
-                <form:radiobutton path="whichDevice1" value="Другое"/> Другое<br>
+                <b>1 С помощью чего слушали радио</b><br>
+                <form:radiobutton path="whichDevice1" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                <form:radiobutton path="whichDevice1" value="Автомагнитола" label="Автомагнитола"/><br>
+                <form:radiobutton path="whichDevice1" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                <form:radiobutton path="whichDevice1" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                <form:radiobutton path="whichDevice1" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                <form:radiobutton path="whichDevice1" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="whereListen2">2 Где слушали радио?</form:label><br>
-                <form:radiobutton path="whereListen2" value="На работе/учебе"/> На работе/учебе<br>
-                <form:radiobutton path="whereListen2" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen2" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen2" value="В машине"/> В машине<br>
-                <form:radiobutton path="whereListen2" value="В общ. транспорте"/> В общ. транспорте<br>
-                <form:radiobutton path="whereListen2" value="Вне помещения (по дороге,на велосипеде)"/> Вне помещения (по дороге,на велосипеде)<br>
-                <form:radiobutton path="whereListen2" value="Другое"/> Другое<br>
+                <b>2 Где слушали радио?</b><br>
+                <form:radiobutton path="whereListen2" value="На работе/учебе" label="На работе/учебе"/><br>
+                <form:radiobutton path="whereListen2" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen2" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen2" value="В машине" label="В машине"/><br>
+                <form:radiobutton path="whereListen2" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                <form:radiobutton path="whereListen2" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                <form:radiobutton path="whereListen2" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="timeInterval2">2 Промежуток Времени</form:label>
+                <b>2 Промежуток Времени</b><br>
                 <form:input path="timeInterval2" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whatRadioListen2">2 Какие радиостанции слушали</form:label>
+                <b>2 Какие радиостанции слушали</b><br>
                 <form:input path="whatRadioListen2" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whichDevice2">2 С помощью чего слушали радио</form:label><br>
-                <form:radiobutton path="whichDevice2" value="Радиоприемник (FM. AM)"/> Радиоприемник (FM. AM)<br>
-                <form:radiobutton path="whichDevice2" value="Автомагнитола"/> Автомагнитола<br>
-                <form:radiobutton path="whichDevice2" value="Мобильный телефон, смартфон-через встроенный FM-тюнер"/> Мобильный телефон, смартфон-через встроенный FM-тюнер<br>
-                <form:radiobutton path="whichDevice2" value="Мобильный телефон, смартфон-через Интернет"/> Мобильный телефон, смартфон-через Интернет<br>
-                <form:radiobutton path="whichDevice2" value="Компьютер, ноутбук, планшет-через Интернет"/> Компьютер, ноутбук, планшет-через Интернет<br>
-                <form:radiobutton path="whichDevice2" value="Другое"/> Другое<br>
+                <b>2 С помощью чего слушали радио</b><br>
+                <form:radiobutton path="whichDevice2" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                <form:radiobutton path="whichDevice2" value="Автомагнитола" label="Автомагнитола"/><br>
+                <form:radiobutton path="whichDevice2" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                <form:radiobutton path="whichDevice2" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                <form:radiobutton path="whichDevice2" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                <form:radiobutton path="whichDevice2" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="whereListen3">3 Где слушали радио?</form:label><br>
-                <form:radiobutton path="whereListen3" value="На работе/учебе"/> На работе/учебе<br>
-                <form:radiobutton path="whereListen3" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen3" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen3" value="В машине"/> В машине<br>
-                <form:radiobutton path="whereListen3" value="В общ. транспорте"/> В общ. транспорте<br>
-                <form:radiobutton path="whereListen3" value="Вне помещения (по дороге,на велосипеде)"/> Вне помещения (по дороге,на велосипеде)<br>
-                <form:radiobutton path="whereListen3" value="Другое"/> Другое<br>
+                <b>3 Где слушали радио?</b><br>
+                <form:radiobutton path="whereListen3" value="На работе/учебе" label="На работе/учебе"/><br>
+                <form:radiobutton path="whereListen3" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen3" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen3" value="В машине" label="В машине"/><br>
+                <form:radiobutton path="whereListen3" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                <form:radiobutton path="whereListen3" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                <form:radiobutton path="whereListen3" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="timeInterval3">3 Промежуток Времени</form:label>
+                <b>3 Промежуток Времени</b><br>
                 <form:input path="timeInterval3" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whatRadioListen3">3 Какие радиостанции слушали</form:label>
+                <b>3 Какие радиостанции слушали</b><br>
                 <form:input path="whatRadioListen3" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whichDevice3">3 С помощью чего слушали радио</form:label><br>
-                <form:radiobutton path="whichDevice3" value="Радиоприемник (FM. AM)"/> Радиоприемник (FM. AM)<br>
-                <form:radiobutton path="whichDevice3" value="Автомагнитола"/> Автомагнитола<br>
-                <form:radiobutton path="whichDevice3" value="Мобильный телефон, смартфон-через встроенный FM-тюнер"/> Мобильный телефон, смартфон-через встроенный FM-тюнер<br>
-                <form:radiobutton path="whichDevice3" value="Мобильный телефон, смартфон-через Интернет"/> Мобильный телефон, смартфон-через Интернет<br>
-                <form:radiobutton path="whichDevice3" value="Компьютер, ноутбук, планшет-через Интернет"/> Компьютер, ноутбук, планшет-через Интернет<br>
-                <form:radiobutton path="whichDevice3" value="Другое"/> Другое<br>
+                <b>3 С помощью чего слушали радио</b><br>
+                <form:radiobutton path="whichDevice3" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                <form:radiobutton path="whichDevice3" value="Автомагнитола" label="Автомагнитола"/><br>
+                <form:radiobutton path="whichDevice3" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                <form:radiobutton path="whichDevice3" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                <form:radiobutton path="whichDevice3" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                <form:radiobutton path="whichDevice3" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="whereListen4">4 Где слушали радио?</form:label><br>
-                <form:radiobutton path="whereListen4" value="На работе/учебе"/> На работе/учебе<br>
-                <form:radiobutton path="whereListen4" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen4" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen4" value="В машине"/> В машине<br>
-                <form:radiobutton path="whereListen4" value="В общ. транспорте"/> В общ. транспорте<br>
-                <form:radiobutton path="whereListen4" value="Вне помещения (по дороге,на велосипеде)"/> Вне помещения (по дороге,на велосипеде)<br>
-                <form:radiobutton path="whereListen4" value="Другое"/> Другое<br>
+                <b>4 Где слушали радио?</b><br>
+                <form:radiobutton path="whereListen4" value="На работе/учебе" label="На работе/учебе"/><br>
+                <form:radiobutton path="whereListen4" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen4" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen4" value="В машине" label="В машине"/><br>
+                <form:radiobutton path="whereListen4" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                <form:radiobutton path="whereListen4" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                <form:radiobutton path="whereListen4" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="timeInterval4">4 Промежуток Времени</form:label>
+                <b>4 Промежуток Времени</b><br>
                 <form:input path="timeInterval4" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whatRadioListen4">4 Какие радиостанции слушали</form:label>
+                <b>4 Какие радиостанции слушали</b><br>
                 <form:input path="whatRadioListen4" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whichDevice4">4 С помощью чего слушали радио</form:label><br>
-                <form:radiobutton path="whichDevice4" value="Радиоприемник (FM. AM)"/> Радиоприемник (FM. AM)<br>
-                <form:radiobutton path="whichDevice4" value="Автомагнитола"/> Автомагнитола<br>
-                <form:radiobutton path="whichDevice4" value="Мобильный телефон, смартфон-через встроенный FM-тюнер"/> Мобильный телефон, смартфон-через встроенный FM-тюнер<br>
-                <form:radiobutton path="whichDevice4" value="Мобильный телефон, смартфон-через Интернет"/> Мобильный телефон, смартфон-через Интернет<br>
-                <form:radiobutton path="whichDevice4" value="Компьютер, ноутбук, планшет-через Интернет"/> Компьютер, ноутбук, планшет-через Интернет<br>
-                <form:radiobutton path="whichDevice4" value="Другое"/> Другое<br>
+                <b>4 С помощью чего слушали радио</b><br>
+                <form:radiobutton path="whichDevice4" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                <form:radiobutton path="whichDevice4" value="Автомагнитола" label="Автомагнитола"/><br>
+                <form:radiobutton path="whichDevice4" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                <form:radiobutton path="whichDevice4" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                <form:radiobutton path="whichDevice4" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                <form:radiobutton path="whichDevice4" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="whereListen5">5 Где слушали радио?</form:label><br>
-                <form:radiobutton path="whereListen5" value="На работе/учебе"/> На работе/учебе<br>
-                <form:radiobutton path="whereListen5" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen5" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen5" value="В машине"/> В машине<br>
-                <form:radiobutton path="whereListen5" value="В общ. транспорте"/> В общ. транспорте<br>
-                <form:radiobutton path="whereListen5" value="Вне помещения (по дороге,на велосипеде)"/> Вне помещения (по дороге,на велосипеде)<br>
-                <form:radiobutton path="whereListen5" value="Другое"/> Другое<br>
+                <b>5 Где слушали радио?</b><br>
+                <form:radiobutton path="whereListen5" value="На работе/учебе" label="На работе/учебе"/><br>
+                <form:radiobutton path="whereListen5" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen5" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen5" value="В машине" label="В машине"/><br>
+                <form:radiobutton path="whereListen5" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                <form:radiobutton path="whereListen5" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                <form:radiobutton path="whereListen5" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="timeInterval5">5 Промежуток Времени</form:label>
+                <b>5 Промежуток Времени</b><br>
                 <form:input path="timeInterval5" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whatRadioListen5">5 Какие радиостанции слушали</form:label>
+                <b>5 Какие радиостанции слушали</b><br>
                 <form:input path="whatRadioListen5" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whichDevice5">5 С помощью чего слушали радио</form:label><br>
-                <form:radiobutton path="whichDevice5" value="Радиоприемник (FM. AM)"/> Радиоприемник (FM. AM)<br>
-                <form:radiobutton path="whichDevice5" value="Автомагнитола"/> Автомагнитола<br>
-                <form:radiobutton path="whichDevice5" value="Мобильный телефон, смартфон-через встроенный FM-тюнер"/> Мобильный телефон, смартфон-через встроенный FM-тюнер<br>
-                <form:radiobutton path="whichDevice5" value="Мобильный телефон, смартфон-через Интернет"/> Мобильный телефон, смартфон-через Интернет<br>
-                <form:radiobutton path="whichDevice5" value="Компьютер, ноутбук, планшет-через Интернет"/> Компьютер, ноутбук, планшет-через Интернет<br>
-                <form:radiobutton path="whichDevice5" value="Другое"/> Другое<br>
+                <b>5 С помощью чего слушали радио</b><br>
+                <form:radiobutton path="whichDevice5" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                <form:radiobutton path="whichDevice5" value="Автомагнитола" label="Автомагнитола"/><br>
+                <form:radiobutton path="whichDevice5" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                <form:radiobutton path="whichDevice5" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                <form:radiobutton path="whichDevice5" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                <form:radiobutton path="whichDevice5" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="whereListen6">6 Где слушали радио?</form:label><br>
-                <form:radiobutton path="whereListen6" value="На работе/учебе"/> На работе/учебе<br>
-                <form:radiobutton path="whereListen6" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen6" value="Дома"/> Дома<br>
-                <form:radiobutton path="whereListen6" value="В машине"/> В машине<br>
-                <form:radiobutton path="whereListen6" value="В общ. транспорте"/> В общ. транспорте<br>
-                <form:radiobutton path="whereListen6" value="Вне помещения (по дороге,на велосипеде)"/> Вне помещения (по дороге,на велосипеде)<br>
-                <form:radiobutton path="whereListen6" value="Другое"/> Другое<br>
+                <b>6 Где слушали радио?</b><br>
+                <form:radiobutton path="whereListen6" value="На работе/учебе" label="На работе/учебе"/><br>
+                <form:radiobutton path="whereListen6" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen6" value="Дома" label="Дома"/><br>
+                <form:radiobutton path="whereListen6" value="В машине" label="В машине"/><br>
+                <form:radiobutton path="whereListen6" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                <form:radiobutton path="whereListen6" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                <form:radiobutton path="whereListen6" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="timeInterval6">6 Промежуток Времени</form:label>
+                <b>6 Промежуток Времени</b><br>
                 <form:input path="timeInterval6" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whatRadioListen6">6 Какие радиостанции слушали</form:label>
+                <b>6 Какие радиостанции слушали</b><br>
                 <form:input path="whatRadioListen6" type="text" class="form-control" style="width: 50%"/>
 
                 <br>
 
-                <form:label path="whichDevice6">6 С помощью чего слушали радио</form:label><br>
-                <form:radiobutton path="whichDevice6" value="Радиоприемник (FM. AM)"/> Радиоприемник (FM. AM)<br>
-                <form:radiobutton path="whichDevice6" value="Автомагнитола"/> Автомагнитола<br>
-                <form:radiobutton path="whichDevice6" value="Мобильный телефон, смартфон-через встроенный FM-тюнер"/> Мобильный телефон, смартфон-через встроенный FM-тюнер<br>
-                <form:radiobutton path="whichDevice6" value="Мобильный телефон, смартфон-через Интернет"/> Мобильный телефон, смартфон-через Интернет<br>
-                <form:radiobutton path="whichDevice6" value="Компьютер, ноутбук, планшет-через Интернет"/> Компьютер, ноутбук, планшет-через Интернет<br>
-                <form:radiobutton path="whichDevice6" value="Другое"/> Другое<br>
+                <b>6 С помощью чего слушали радио</b><br>
+                <form:radiobutton path="whichDevice6" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                <form:radiobutton path="whichDevice6" value="Автомагнитола" label="Автомагнитола"/><br>
+                <form:radiobutton path="whichDevice6" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                <form:radiobutton path="whichDevice6" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                <form:radiobutton path="whichDevice6" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                <form:radiobutton path="whichDevice6" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="education">Какое у вас образование</form:label><br>
-                <form:radiobutton path="education" value="Ниже среднего (менее 11 класов)"/> Ниже среднего (менее 11 класов)<br>
-                <form:radiobutton path="education" value="Среднее общее"/> Среднее общее<br>
-                <form:radiobutton path="education" value="Среднее специальное (ПТУ, коледж, техникум)"/> Среднее специальное (ПТУ, коледж, техникум)<br>
-                <form:radiobutton path="education" value="Высшее (незакон не менее 3х курсов)"/> Высшее (незакон не менее 3х курсов)<br>
+                <b>Какое у вас образование</b><br>
+                <form:radiobutton path="education" value="Ниже среднего (менее 11 класов)" label="Ниже среднего (менее 11 класов)"/><br>
+                <form:radiobutton path="education" value="Среднее общее" label="Среднее общее"/><br>
+                <form:radiobutton path="education" value="Среднее специальное (ПТУ, коледж, техникум)" label="Среднее специальное (ПТУ, коледж, техникум)"/><br>
+                <form:radiobutton path="education" value="Высшее (незакон не менее 3х курсов)" label="Высшее (незакон не менее 3х курсов)"/><br>
 
                 <br>
 
-                <form:label path="profession">Ваш основной род занятий</form:label><br>
-                <form:radiobutton path="profession" value="Руководитель"/> Руководитель<br>
-                <form:radiobutton path="profession" value="Предприниматель"/> Предприниматель<br>
-                <form:radiobutton path="profession" value="Служащий, специалист производственной сферы (инжинер, технолог, программист)"/> Служащий, специалист производственной сферы (инжинер, технолог, программист)<br>
-                <form:radiobutton path="profession" value="Служащий не производственной сферы (учитель,врач, бухгалтер.маркетолог)"/> Служащий не производственной сферы (учитель,врач, бухгалтер.маркетолог)<br>
-                <form:radiobutton path="profession" value="Служащий без специального образования (секретарь,регистратор, лаборант)"/> Служащий без специального образования (секретарь,регистратор, лаборант)<br>
-                <form:radiobutton path="profession" value="Военнослужащий, милиционер"/> Военнослужащий, милиционер<br>
-                <form:radiobutton path="profession" value="Рабочий (промышленности, строительства, транспорта)"/> Рабочий (промышленности, строительства, транспорта)<br>
-                <form:radiobutton path="profession" value="Безработный"/> Безработный<br>
-                <form:radiobutton path="profession" value="Домохозяйка"/> Домохозяйка<br>
-                <form:radiobutton path="profession" value="Студент, учащийся"/> Студент, учащийся<br>
-                <form:radiobutton path="profession" value="Работающий пенсионер"/> Работающий пенсионер<br>
-                <form:radiobutton path="profession" value="Неработающий пенсионер"/> Неработающий пенсионер<br>
-                <form:radiobutton path="profession" value="Другое"/> Другое<br>
+                <b>Ваш основной род занятий</b><br>
+                <form:radiobutton path="profession" value="Руководитель" label="Руководитель"/><br>
+                <form:radiobutton path="profession" value="Предприниматель" label="Предприниматель"/><br>
+                <form:radiobutton path="profession" value="Служащий, специалист производственной сферы (инжинер, технолог, программист)" label="Служащий, специалист производственной сферы (инжинер, технолог, программист)"/><br>
+                <form:radiobutton path="profession" value="Служащий не производственной сферы (учитель,врач, бухгалтер.маркетолог)" label="Служащий не производственной сферы (учитель,врач, бухгалтер.маркетолог)"/><br>
+                <form:radiobutton path="profession" value="Служащий без специального образования (секретарь,регистратор, лаборант)" label="Служащий без специального образования (секретарь,регистратор, лаборант)"/><br>
+                <form:radiobutton path="profession" value="Военнослужащий, милиционер" label="Военнослужащий, милиционер"/><br>
+                <form:radiobutton path="profession" value="Рабочий (промышленности, строительства, транспорта)" label="Рабочий (промышленности, строительства, транспорта)"/><br>
+                <form:radiobutton path="profession" value="Безработный" label="Безработный"/><br>
+                <form:radiobutton path="profession" value="Домохозяйка" label="Домохозяйка"/><br>
+                <form:radiobutton path="profession" value="Студент, учащийся" label="Студент, учащийся"/><br>
+                <form:radiobutton path="profession" value="Работающий пенсионер" label="Работающий пенсионер"/><br>
+                <form:radiobutton path="profession" value="Неработающий пенсионер" label="Неработающий пенсионер"/><br>
+                <form:radiobutton path="profession" value="Другое" label="Другое"/><br>
 
                 <br>
 
-                <form:label path="operator">Оператор</form:label>
+                <b>Оператор</b><b style="color: red"> *</b><br>
                 <form:input path="operator" type="text" class="form-control" style="width: 50%"
                             title="Ваше имя" placeholder="Введите свое имя" required="true"/>
 
                 <br><br><br><br>
 
                 <button type="submit" class="btn btn-success btn-lg ">Отправить</button>
+
+                <br><br><br><br>
+
             </form:form>
         </div>
 
