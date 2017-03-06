@@ -1,6 +1,6 @@
 package by.sysadmins.callscript;
 
-@SuppressWarnings("unused")
+@SuppressWarnings("ALL")
 public class FormEntity {
     private String phoneNumber;
     private String city;

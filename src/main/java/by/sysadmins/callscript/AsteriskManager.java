@@ -36,7 +36,7 @@ class AsteriskManager {
                 }
             }
         } catch (Exception e) {
-            LOGGER.log(Level.SEVERE, e.toString(), e);
+            LOGGER.log(Level.SEVERE, e.getMessage(), e);
         } finally {
             asteriskConnection.logoff();
         }

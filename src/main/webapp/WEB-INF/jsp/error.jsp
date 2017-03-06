@@ -15,7 +15,8 @@
 <div class="container-full">
     <div class="row">
         <div class="col-lg-12 text-center v-center">
-            <h1 style="color: green">Запись успешно добавлена</h1>
+            <h1 style="color: red">Запись не была добавлена!</h1>
+            <h2>Нажмите кнопку "Назад" для сохранения введенных значений</h2>
         </div>
     </div>
     <br><br>

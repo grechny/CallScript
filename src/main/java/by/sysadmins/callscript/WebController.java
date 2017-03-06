@@ -27,7 +27,7 @@ public class WebController {
 
     @PostMapping("/add")
     public String addEntry(FormEntity formEntity) {
-        return "added";
+        boolean result = GoogleSpreadsheetManager.insert(formEntity);
+        return result ? "added" : "error";
     }
-
 }
