@@ -4,12 +4,11 @@ import org.asteriskjava.manager.DefaultManagerConnection;
 import org.asteriskjava.manager.action.CommandAction;
 import org.asteriskjava.manager.action.ManagerAction;
 import org.asteriskjava.manager.response.CommandResponse;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 class AsteriskManager {
-    private static final Logger LOGGER = Logger.getLogger(AsteriskManager.class.getName());
+    private static final Logger LOG = LoggerFactory.getLogger(AsteriskManager.class);
 
     static String getActiveCall(String ipAddress) {
         DefaultManagerConnection asteriskConnection = new DefaultManagerConnection("localhost", "admin", "fghj789");
@@ -36,7 +35,7 @@ class AsteriskManager {
                 }
             }
         } catch (Exception e) {
-            LOGGER.log(Level.SEVERE, e.getMessage(), e);
+            LOG.error(e.getMessage(), e);
         } finally {
             asteriskConnection.logoff();
         }

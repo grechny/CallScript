@@ -1,5 +1,7 @@
 package by.sysadmins.callscript;
 
+import com.google.common.base.MoreObjects;
+
 @SuppressWarnings("ALL")
 public class FormEntity {
     private String phoneNumber;
@@ -325,5 +327,47 @@ public class FormEntity {
 
     public void setOperator(String operator) {
         this.operator = operator;
+    }
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("phoneNumber", phoneNumber)
+                .add("city", city)
+                .add("causeRefused", causeRefused)
+                .add("gender", gender)
+                .add("age", age)
+                .add("lastMonthListen", lastMonthListen)
+                .add("whatRadioListenLastMonth", whatRadioListenLastMonth)
+                .add("whatRadioListenLastWeek", whatRadioListenLastWeek)
+                .add("yesterdayListen", yesterdayListen)
+                .add("whereListen1", whereListen1)
+                .add("timeInterval1", timeInterval1)
+                .add("whatRadioListen1", whatRadioListen1)
+                .add("whichDevice1", whichDevice1)
+                .add("whereListen2", whereListen2)
+                .add("timeInterval2", timeInterval2)
+                .add("whatRadioListen2", whatRadioListen2)
+                .add("whichDevice2", whichDevice2)
+                .add("whereListen3", whereListen3)
+                .add("timeInterval3", timeInterval3)
+                .add("whatRadioListen3", whatRadioListen3)
+                .add("whichDevice3", whichDevice3)
+                .add("whereListen4", whereListen4)
+                .add("timeInterval4", timeInterval4)
+                .add("whatRadioListen4", whatRadioListen4)
+                .add("whichDevice4", whichDevice4)
+                .add("whereListen5", whereListen5)
+                .add("timeInterval5", timeInterval5)
+                .add("whatRadioListen5", whatRadioListen5)
+                .add("whichDevice5", whichDevice5)
+                .add("whereListen6", whereListen6)
+                .add("timeInterval6", timeInterval6)
+                .add("whatRadioListen6", whatRadioListen6)
+                .add("whichDevice6", whichDevice6)
+                .add("education", education)
+                .add("profession", profession)
+                .add("operator", operator)
+                .toString();
     }
 }

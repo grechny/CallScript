@@ -12,7 +12,11 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
+import com.google.api.services.sheets.v4.model.AppendValuesResponse;
 import com.google.api.services.sheets.v4.model.ValueRange;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.CollectionUtils;
 
 import java.io.File;
@@ -25,16 +29,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-class GoogleSpreadsheetManager
-{
-    private static final Logger LOGGER = Logger.getLogger(GoogleSpreadsheetManager.class.getName());
-
-    private static HttpTransport HTTP_TRANSPORT;
-    private static FileDataStoreFactory DATA_STORE_FACTORY;
-
+class GoogleSpreadsheetManager {
+    private static final Logger LOG = LoggerFactory.getLogger(GoogleSpreadsheetManager.class);
     private static final DateFormat DATE_FORMAT = new SimpleDateFormat("dd.MM.yy HH:mm:ss");
     private static final String APPLICATION_NAME = "CallScript by sysadmins.by";
     private static final String SPREADSHEET_ID = "1xgdRAAc5W25TCWMkPJ9RQkBhs0Ox7laAC9ZcH2pd1Hs";
@@ -42,26 +39,22 @@ class GoogleSpreadsheetManager
     private static final File DATA_STORE_DIR = new File(System.getProperty("user.home"), ".credentials/sheets.googleapis.com-java-quickstart");
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS);
+    private static HttpTransport HTTP_TRANSPORT;
+    private static FileDataStoreFactory DATA_STORE_FACTORY;
 
-    static
-    {
-        try
-        {
+    static {
+        try {
             HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
             DATA_STORE_FACTORY = new FileDataStoreFactory(DATA_STORE_DIR);
-        }
-        catch (Throwable t)
-        {
+        } catch (Throwable t) {
             t.printStackTrace();
             System.exit(1);
         }
     }
 
     @SuppressWarnings("unused")
-    static boolean printAll()
-    {
-        try
-        {
+    static boolean printAll() {
+        try {
             // Build a new authorized API client service.
             Sheets service = getSheetsService();
 
@@ -69,48 +62,39 @@ class GoogleSpreadsheetManager
                     .get(SPREADSHEET_ID, SPREADSHEET_RANGE)
                     .execute();
             List<List<Object>> values = response.getValues();
-            if (CollectionUtils.isEmpty(values))
-            {
+            if (CollectionUtils.isEmpty(values)) {
                 System.out.println("No data found.");
-            }
-            else
-            {
+            } else {
                 System.out.println("Time, Phone Number, City, Operator");
-                for (List row : values)
-                {
+                for (List row : values) {
                     System.out.printf("%s, %s, %s, %s\n", row.get(0), row.get(1), row.get(35), row.get(34));
                 }
             }
-        }
-        catch (Exception e)
-        {
-            LOGGER.log(Level.SEVERE, e.getMessage(), e);
+        } catch (Exception e) {
+            LOG.error(e.getMessage(), e);
             return false;
         }
 
         return true;
     }
 
-    static boolean insert(FormEntity formEntity){
-        try
-        {
+    static boolean insert(FormEntity formEntity) {
+        try {
             Sheets service = getSheetsService();
-            service.spreadsheets().values()
+            AppendValuesResponse response = service.spreadsheets().values()
                     .append(SPREADSHEET_ID, SPREADSHEET_RANGE, convertToRows(formEntity))
                     .setValueInputOption("raw")
                     .execute();
-        }
-        catch (Exception e)
-        {
-            LOGGER.log(Level.SEVERE, e.getMessage(), e);
+            LOG.debug("Row was added to {}", response.getTableRange());
+        } catch (Exception e) {
+            LOG.error(e.getMessage(), e);
             return false;
         }
 
         return true;
     }
 
-    private static ValueRange convertToRows(FormEntity formEntity)
-    {
+    private static ValueRange convertToRows(FormEntity formEntity) {
         String currentDate = DATE_FORMAT.format(new Date());
 
         List<Object> row = new ArrayList<>();
@@ -164,15 +148,13 @@ class GoogleSpreadsheetManager
         return valueRange;
     }
 
-    private static Sheets getSheetsService() throws IOException
-    {
+    private static Sheets getSheetsService() throws IOException {
         Credential credential = authorize();
         return new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, credential)
                 .setApplicationName(APPLICATION_NAME).build();
     }
 
-    private static Credential authorize() throws IOException
-    {
+    private static Credential authorize() throws IOException {
         // Load client secrets.
         InputStream in = GoogleSpreadsheetManager.class.getResourceAsStream("/client_secret.json");
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
@@ -188,7 +170,7 @@ class GoogleSpreadsheetManager
         return credential;
     }
 
-    private static String setValue(String string){
+    private static String setValue(String string) {
         return string != null ? string : "";
     }
 }
