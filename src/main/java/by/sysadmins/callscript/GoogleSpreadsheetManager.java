@@ -17,7 +17,6 @@ import com.google.api.services.sheets.v4.model.ValueRange;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.CollectionUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,7 +34,7 @@ class GoogleSpreadsheetManager {
     private static final DateFormat DATE_FORMAT = new SimpleDateFormat("dd.MM.yy HH:mm:ss");
     private static final String APPLICATION_NAME = "CallScript by sysadmins.by";
     private static final String SPREADSHEET_ID = "1xgdRAAc5W25TCWMkPJ9RQkBhs0Ox7laAC9ZcH2pd1Hs";
-    private static final String SPREADSHEET_RANGE = "A2:AK";
+    private static final String SPREADSHEET_RANGE = "A%d:AK";
     private static final File DATA_STORE_DIR = new File(System.getProperty("user.home"), ".credentials/sheets.googleapis.com-java-quickstart");
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS);
@@ -52,24 +51,21 @@ class GoogleSpreadsheetManager {
         }
     }
 
-    @SuppressWarnings("unused")
-    static boolean printAll() {
+    static boolean insert(FormEntity formEntity) {
         try {
-            // Build a new authorized API client service.
             Sheets service = getSheetsService();
 
-            ValueRange response = service.spreadsheets().values()
-                    .get(SPREADSHEET_ID, SPREADSHEET_RANGE)
+            // hack for correct adding rows if filter is enabled
+            int numRows = findAll(service).getValues().size();
+            String range = String.format(SPREADSHEET_RANGE, numRows + 1);
+            LOG.debug("I want to add new row to {}", range);
+
+            AppendValuesResponse response = service.spreadsheets().values()
+                    .append(SPREADSHEET_ID, range, convertToRows(formEntity))
+                    .setValueInputOption("RAW")
+                    .setInsertDataOption("INSERT_ROWS")
                     .execute();
-            List<List<Object>> values = response.getValues();
-            if (CollectionUtils.isEmpty(values)) {
-                System.out.println("No data found.");
-            } else {
-                System.out.println("Time, Phone Number, City, Operator");
-                for (List row : values) {
-                    System.out.printf("%s, %s, %s, %s\n", row.get(0), row.get(1), row.get(35), row.get(34));
-                }
-            }
+            LOG.debug("Row was added to {}", response.getUpdates().getUpdatedRange());
         } catch (Exception e) {
             LOG.error(e.getMessage(), e);
             return false;
@@ -78,20 +74,11 @@ class GoogleSpreadsheetManager {
         return true;
     }
 
-    static boolean insert(FormEntity formEntity) {
-        try {
-            Sheets service = getSheetsService();
-            AppendValuesResponse response = service.spreadsheets().values()
-                    .append(SPREADSHEET_ID, SPREADSHEET_RANGE, convertToRows(formEntity))
-                    .setValueInputOption("raw")
-                    .execute();
-            LOG.debug("Row was added to {}", response.getTableRange());
-        } catch (Exception e) {
-            LOG.error(e.getMessage(), e);
-            return false;
-        }
-
-        return true;
+    private static ValueRange findAll(Sheets service) throws IOException {
+        String range = String.format(SPREADSHEET_RANGE, 1);
+        return service.spreadsheets().values()
+                .get(SPREADSHEET_ID, range)
+                .execute();
     }
 
     private static ValueRange convertToRows(FormEntity formEntity) {
@@ -143,7 +130,6 @@ class GoogleSpreadsheetManager {
         row.add(setValue(formEntity.getCauseRefused()));
 
         ValueRange valueRange = new ValueRange();
-        valueRange.setRange(SPREADSHEET_RANGE);
         valueRange.setValues(Collections.singletonList(row));
         return valueRange;
     }
