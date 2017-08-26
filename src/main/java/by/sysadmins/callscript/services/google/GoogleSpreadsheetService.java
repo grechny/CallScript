@@ -1,6 +1,6 @@
 package by.sysadmins.callscript.services.google;
 
-import by.sysadmins.callscript.dto.FormDTO;
+import by.sysadmins.callscript.dto.FormWrapper;
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -45,7 +45,7 @@ public class GoogleSpreadsheetService {
   private static HttpTransport HTTP_TRANSPORT;
   private static FileDataStoreFactory DATA_STORE_FACTORY;
 
-  public static boolean insert(FormDTO formEntity) {
+  public static boolean insert(FormWrapper formEntity) {
     try {
       Sheets service = getSheetsService();
 
@@ -75,53 +75,53 @@ public class GoogleSpreadsheetService {
         .execute();
   }
 
-  private static ValueRange convertToRows(FormDTO formDTO) {
+  private static ValueRange convertToRows(FormWrapper formDTO) {
     String currentDate = DATE_FORMAT.format(new Date());
 
     List<Object> row = new ArrayList<>();
     row.add(currentDate);
-    row.add(setValue(formDTO.getPhoneNumber()));
-    row.add(setValue(formDTO.getGender()));
-    row.add(setValue(formDTO.getAge()));
-    row.add(setValue(formDTO.getLastMonthListen()));
-    row.add(setValue(formDTO.getWhatRadioListenLastMonth()));
-    row.add(setValue(formDTO.getWhatRadioListenLastWeek()));
-    row.add(setValue(formDTO.getYesterdayListen()));
-    row.add(setValue(formDTO.getWhereListen1()));
-    row.add(setValue(formDTO.getTimeInterval1()));
-    row.add(setValue(formDTO.getWhatRadioListen1()));
-    row.add(setValue(formDTO.getWhichDevice1()));
-
-    row.add(setValue(formDTO.getWhereListen2()));
-    row.add(setValue(formDTO.getTimeInterval2()));
-    row.add(setValue(formDTO.getWhatRadioListen2()));
-    row.add(setValue(formDTO.getWhichDevice2()));
-
-    row.add(setValue(formDTO.getWhereListen3()));
-    row.add(setValue(formDTO.getTimeInterval3()));
-    row.add(setValue(formDTO.getWhatRadioListen3()));
-    row.add(setValue(formDTO.getWhichDevice3()));
-
-    row.add(setValue(formDTO.getWhereListen4()));
-    row.add(setValue(formDTO.getTimeInterval4()));
-    row.add(setValue(formDTO.getWhatRadioListen4()));
-    row.add(setValue(formDTO.getWhichDevice4()));
-
-    row.add(setValue(formDTO.getWhereListen5()));
-    row.add(setValue(formDTO.getTimeInterval5()));
-    row.add(setValue(formDTO.getWhatRadioListen5()));
-    row.add(setValue(formDTO.getWhichDevice5()));
-
-    row.add(setValue(formDTO.getWhereListen6()));
-    row.add(setValue(formDTO.getTimeInterval6()));
-    row.add(setValue(formDTO.getWhatRadioListen6()));
-    row.add(setValue(formDTO.getWhichDevice6()));
-
-    row.add(setValue(formDTO.getEducation()));
-    row.add(setValue(formDTO.getProfession()));
-    row.add(setValue(formDTO.getOperator()));
-    row.add(setValue(formDTO.getCity()));
-    row.add(setValue(formDTO.getCauseRefused()));
+    row.add(setValue(formDTO.getForm().get("phoneNumber")));
+//    row.add(setValue(formDTO.getGender()));
+//    row.add(setValue(formDTO.getAge()));
+//    row.add(setValue(formDTO.getLastMonthListen()));
+//    row.add(setValue(formDTO.getWhatRadioListenLastMonth()));
+//    row.add(setValue(formDTO.getWhatRadioListenLastWeek()));
+//    row.add(setValue(formDTO.getYesterdayListen()));
+//    row.add(setValue(formDTO.getWhereListen1()));
+//    row.add(setValue(formDTO.getTimeInterval1()));
+//    row.add(setValue(formDTO.getWhatRadioListen1()));
+//    row.add(setValue(formDTO.getWhichDevice1()));
+//
+//    row.add(setValue(formDTO.getWhereListen2()));
+//    row.add(setValue(formDTO.getTimeInterval2()));
+//    row.add(setValue(formDTO.getWhatRadioListen2()));
+//    row.add(setValue(formDTO.getWhichDevice2()));
+//
+//    row.add(setValue(formDTO.getWhereListen3()));
+//    row.add(setValue(formDTO.getTimeInterval3()));
+//    row.add(setValue(formDTO.getWhatRadioListen3()));
+//    row.add(setValue(formDTO.getWhichDevice3()));
+//
+//    row.add(setValue(formDTO.getWhereListen4()));
+//    row.add(setValue(formDTO.getTimeInterval4()));
+//    row.add(setValue(formDTO.getWhatRadioListen4()));
+//    row.add(setValue(formDTO.getWhichDevice4()));
+//
+//    row.add(setValue(formDTO.getWhereListen5()));
+//    row.add(setValue(formDTO.getTimeInterval5()));
+//    row.add(setValue(formDTO.getWhatRadioListen5()));
+//    row.add(setValue(formDTO.getWhichDevice5()));
+//
+//    row.add(setValue(formDTO.getWhereListen6()));
+//    row.add(setValue(formDTO.getTimeInterval6()));
+//    row.add(setValue(formDTO.getWhatRadioListen6()));
+//    row.add(setValue(formDTO.getWhichDevice6()));
+//
+//    row.add(setValue(formDTO.getEducation()));
+//    row.add(setValue(formDTO.getProfession()));
+//    row.add(setValue(formDTO.getOperator()));
+//    row.add(setValue(formDTO.getCity()));
+//    row.add(setValue(formDTO.getCauseRefused()));
 
     ValueRange valueRange = new ValueRange();
     valueRange.setValues(Collections.singletonList(row));
