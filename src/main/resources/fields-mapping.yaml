@@ -1,0 +1,47 @@
+### service constants
+# count of columns
+array_size: 37
+
+# index of id constant
+id_index:
+
+# index of date constant
+date_index: 1
+
+### indexes of user column names
+phoneNumber: 2
+city: 3
+causeRefused: 4
+gender: 5
+age: 6
+lastMonthListen: 7
+whatRadioListenLastMonth: 8
+whatRadioListenLastWeek: 9
+yesterdayListen: 10
+whereListen1: 11
+timeInterval1: 12
+whatRadioListen1: 13
+whichDevice1: 14
+whereListen2: 15
+timeInterval2: 16
+whatRadioListen2: 17
+whichDevice2: 18
+whereListen3: 19
+timeInterval3: 20
+whatRadioListen3: 21
+whichDevice3: 22
+whereListen4: 23
+timeInterval4: 24
+whatRadioListen4: 25
+whichDevice4: 26
+whereListen5: 27
+timeInterval5: 28
+whatRadioListen5: 29
+whichDevice5: 30
+whereListen6: 31
+timeInterval6: 32
+whatRadioListen6: 33
+whichDevice6: 34
+education: 35
+profession: 36
+operator: 37

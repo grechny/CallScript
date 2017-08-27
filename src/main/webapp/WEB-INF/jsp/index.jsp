@@ -43,7 +43,7 @@
 
             <br>
 
-            <form:form action="/add" method="post" modelAttribute="formWrapper">
+            <form:form action="/add" method="post" modelAttribute="formDTO">
 
                 <b>Телефон</b><b style="color: red"> *</b><br>
                 <div class="input-group input-group-medium col-sm-offset-0 col-sm-6">

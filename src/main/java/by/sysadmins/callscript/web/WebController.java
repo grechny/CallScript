@@ -1,6 +1,6 @@
 package by.sysadmins.callscript.web;
 
-import by.sysadmins.callscript.dto.FormWrapper;
+import by.sysadmins.callscript.dto.FormDTO;
 import by.sysadmins.callscript.entities.FormEntity;
 import by.sysadmins.callscript.services.FormManager;
 import by.sysadmins.callscript.services.asterisk.AsteriskService;
@@ -25,7 +25,7 @@ public class WebController {
 
   @GetMapping("/")
   public String index(Map<String, Object> model) {
-    model.put("formWrapper", new FormWrapper());
+    model.put("formDTO", new FormDTO());
     return "index";
   }
 
@@ -36,9 +36,9 @@ public class WebController {
   }
 
   @PostMapping("/add")
-  public String addEntry(FormWrapper formWrapper) {
-    log.debug("Got new filled form: {}", formWrapper.getForm());
-    FormEntity result = formManager.saveForm(formWrapper.getForm());
+  public String addEntry(FormDTO formDTO) {
+    log.debug("Got new filled form: {}", formDTO.getForm());
+    FormEntity result = formManager.saveForm(formDTO);
     return result != null ? "added" : "error";
   }
 
@@ -52,7 +52,7 @@ public class WebController {
       @RequestParam(required = false) String startDate,
       @RequestParam(required = false) String endDate) {
 
-    return formManager.uploadToExternalSystem(startDate, endDate)
+    return formManager.uploadFormToExternalSystem(startDate, endDate)
         ? ResponseEntity.ok().build()
         : ResponseEntity.status(HttpStatus.UNAVAILABLE_FOR_LEGAL_REASONS).build();
   }
