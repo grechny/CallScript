@@ -20,8 +20,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.PostConstruct;
@@ -44,6 +46,9 @@ public class GoogleSpreadsheetService {
 
   @Value("${google.sheets.data_store_dir}")
   private String DATA_STORE_DIR;
+
+  @Value("${google.sheets.date_format}")
+  private String DATE_FORMAT_PATTERN;
 
   private List<String> SCOPES;
   private JsonFactory JSON_FACTORY;
@@ -102,7 +107,15 @@ public class GoogleSpreadsheetService {
     List<Object> row = Arrays.asList(array);
 
     // set date
-    row.set(FieldMapper.getDateFieldIndex() - 1, formDTO.getCreatedDate());
+    if (FieldMapper.getDateFieldIndex() != null) {
+      Date date;
+      if (formDTO.getCreatedDate() == null) {
+        date = new Date();
+      } else {
+        date = formDTO.getCreatedDate();
+      }
+      row.set(FieldMapper.getDateFieldIndex() - 1, new SimpleDateFormat(DATE_FORMAT_PATTERN).format(date));
+    }
 
     Map<String, String> form = formDTO.getForm();
     for (String key : form.keySet()) {
