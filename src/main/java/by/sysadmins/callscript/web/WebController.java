@@ -2,6 +2,7 @@ package by.sysadmins.callscript.web;
 
 import by.sysadmins.callscript.dto.FormDTO;
 import by.sysadmins.callscript.entities.FormEntity;
+import by.sysadmins.callscript.mappers.RadioStationsMapper;
 import by.sysadmins.callscript.services.FormManager;
 import by.sysadmins.callscript.services.asterisk.AsteriskService;
 import java.util.Map;
@@ -26,6 +27,7 @@ public class WebController {
   @GetMapping("/")
   public String index(Map<String, Object> model) {
     model.put("formDTO", new FormDTO());
+    model.put("radioStations", RadioStationsMapper.getRadioStations().getRadioStations());
     return "index";
   }
 

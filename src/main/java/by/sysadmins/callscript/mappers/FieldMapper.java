@@ -1,4 +1,4 @@
-package by.sysadmins.callscript.services;
+package by.sysadmins.callscript.mappers;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class FieldMapper {
 
-  private static final String FIELD_MAPPING_FILE_PATH = "fields-mapping.yaml";
+  private static final String FIELD_MAPPING_FILE_PATH = "configs/fields-mapping.yaml";
   private static final String ARRAY_SIZE_KEY = "array_size";
   private static final String DATE_FIELD_KEY = "date_index";
   private static final String ID_FIELD_KEY = "id_index";

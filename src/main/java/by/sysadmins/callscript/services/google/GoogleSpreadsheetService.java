@@ -1,7 +1,7 @@
 package by.sysadmins.callscript.services.google;
 
 import by.sysadmins.callscript.dto.FormDTO;
-import by.sysadmins.callscript.services.FieldMapper;
+import by.sysadmins.callscript.mappers.FieldMapper;
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;

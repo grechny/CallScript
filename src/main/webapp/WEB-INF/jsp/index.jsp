@@ -10,14 +10,36 @@
 </head>
 
 <body>
-<script type="text/javascript" src="webjars/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="webjars/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
+<script type="text/javascript">
     $(document).ready(function () {
         $("#getNumber").click(function () {
             $.get("getNumber", function (data) {
                 $("#numberInput").val(data);
             });
+        });
+        $("#formCity").change(function(){
+          console.log("try to add options " + $(this));
+          var city = $("#formCity").val();
+          console.log("city is " + city);
+
+          <c:forEach var="radioStation" items="${radioStations}">
+          console.log("city = " + city);
+          console.log("radioStation.key = " + ${radioStation.key});
+          <c:if test = "${radioStation.key == city}">
+            var stations = "${radioStation.value}";
+            console.log("city = " + city + ", stations = " + stations);
+          </c:if>
+
+
+          </c:forEach>
+
+//          var stations = radioStations['city'];
+//          console.log(stations);
+//          for (var i = 0, len = stations.length; i < len; i++) {
+//            console.log(stations[i]);
+//          };
         });
     });
 </script>
@@ -55,10 +77,14 @@
                 <br>
 
                 <b>Город</b><b style="color: red"> *</b><br>
-                <form:input path="form[city]" type="text" class="form-control" style="width: 50%"
-                       title="Введите город" placeholder="Введите город" required="true"/>
+                <form:select id="formCity" path="form[city]" required="true">
+                    <form:option value="">Выберите город</form:option>
+                    <c:forEach var="radioStation" items="${radioStations}">
+                        <form:option value="${radioStation.key}" label="${radioStation.key}"/>
+                    </c:forEach>
+                </form:select>
 
-                <br>
+                <br><br>
 
                 <b>Причина отказа</b><br>
                 <form:radiobutton path="form[causeRefused]" value="Отказ от заполнения" label="Отказ от заполнения"/><br>
@@ -89,7 +115,12 @@
                 <br>
 
                 <b>Я сейчас назову радиостанции, а Вы укажите, пожалуйста, какие из них Вы слушали за последний месяц</b><br>
-                <form:input path="form[whatRadioListenLastMonth]" type="text" class="form-control" style="width: 50%"/>
+                <form:select id="radioStationsLastMonth" path="form[whatRadioListenLastMonth]" disabled="true">
+                    <form:option value="">Выберите радиостанции</form:option>
+                </form:select>
+
+                <%--multiple--%>
+                <%--<form:input path="form[whatRadioListenLastMonth]" type="text" class="form-control" style="width: 50%"/>--%>
 
                 <br>
 
@@ -331,7 +362,4 @@
 
     </div> <!-- /row -->
 
-</div> <!-- /container full -->
-
-</body>
-</html>
+</div> <!-- /container fu
