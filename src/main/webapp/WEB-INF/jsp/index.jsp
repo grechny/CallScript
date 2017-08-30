@@ -13,35 +13,27 @@
 <script type="text/javascript" src="webjars/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $("#getNumber").click(function () {
-            $.get("getNumber", function (data) {
-                $("#numberInput").val(data);
-            });
-        });
-        $("#formCity").change(function(){
-          console.log("try to add options " + $(this));
-          var city = $("#formCity").val();
-          console.log("city is " + city);
+  $(document).ready(function () {
 
-          <c:forEach var="radioStation" items="${radioStations}">
-          console.log("city = " + city);
-          console.log("radioStation.key = " + ${radioStation.key});
-          <c:if test = "${radioStation.key == city}">
-            var stations = "${radioStation.value}";
-            console.log("city = " + city + ", stations = " + stations);
-          </c:if>
+    <c:forEach var="radioStation" items="${radioStations}">
+        console.log("<c:out value="${radioStation.key}"/>");
+        console.log("<c:out value="${radioStation.value}"/>");
+    </c:forEach>
+
+    <c:set var="map" value="${radioStations}"/>
+    console.log("${map}");
 
 
-          </c:forEach>
-
-//          var stations = radioStations['city'];
-//          console.log(stations);
-//          for (var i = 0, len = stations.length; i < len; i++) {
-//            console.log(stations[i]);
-//          };
-        });
+    $("#getNumber").click(function () {
+      $.get("getNumber", function (data) {
+        $("#numberInput").val(data);
+      });
     });
+    $("#formCity").change(function () {
+      var city = $("#formCity").val();
+      console.log("stations for " + city);
+    });
+  });
 </script>
 
 <div class="container-full">
