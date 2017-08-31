@@ -248,8 +248,8 @@
                 </div>
 
                 <div id="cityDiv">
-                    <b>Город</b><b style="color: red"> *</b><br>
-                    <form:select id="formCity" path="form[city]" required="true">
+                    <b>Город</b><br>
+                    <form:select id="formCity" path="form[city]">
                         <form:option value="">Выберите город</form:option>
                         <c:forEach var="radioStation" items="${radioStations}">
                             <form:option value="${radioStation.key}" label="${radioStation.key}"/>
