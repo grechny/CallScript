@@ -27,116 +27,130 @@
       var city = $("#formCity").val();
       var $whatRadioListenLastWeek = $("#whatRadioListenLastWeek");
       $whatRadioListenLastWeek.html("");
-      $whatRadioListenLastWeek.append("<option value>Выберите радиостанции</option>");
 
       if (city === "Минск") {
-        $whatRadioListenLastWeek.append("<option value=\"Радио Минск\">Радио Минск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Юмор FM\">Юмор FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Мелодии Века\">Мелодии Века</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Минская Волна\">Минская Волна</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Новое Радио\">Новое Радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Русское Радио Минск\">Русское Радио Минск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио UNISTAR\">Радио UNISTAR</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Хит-Радио\">Хит-Радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Пилот FM\">Пилот FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио ОНТ\">Радио ОНТ</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио РОКС\">Радио РОКС</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Народное радио\">Народное радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Культура\">Культура</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радиус FM\">Радиус FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Би-Эй\">Радио Би-Эй</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Столица\">Столица</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Душевное радио\">Душевное радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"1-й Национальный канал белорусского радио\">1-й Национальный канал белорусского радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Легенды FM\">Легенды FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Мир\">Радио Мир</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Альфа радио\">Альфа радио</option>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Минск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">Радио Минск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek2\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Юмор FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek2\">Юмор FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek3\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Мелодии Века\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek3\">Мелодии Века</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek4\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Минская Волна\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek4\">Минская Волна</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek5\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Новое Радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek5\">Новое Радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek6\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Русское Радио Минск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek6\">Русское Радио Минск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek7\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио UNISTAR\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek7\">Радио UNISTAR</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek8\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Хит-Радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek8\">Хит-Радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek9\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Пилот FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek9\">Пилот FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek10\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио ОНТ\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek10\">Радио ОНТ</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek11\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио РОКС\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek11\">Радио РОКС</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek12\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Народное радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek12\">Народное радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek13\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Культура\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek13\">Культура</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek14\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радиус FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek14\">Радиус FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek15\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Би-Эй\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek15\">Радио Би-Эй</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek16\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Столица\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek16\">Столица</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek17\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Душевное радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek17\">Душевное радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1-й Национальный канал белорусского радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">1-й Национальный канал белорусского радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek19\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Легенды FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek19\">Легенды FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Мир\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">Радио Мир</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Альфа радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">Альфа радио</label><br>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Брест") {
-        $whatRadioListenLastWeek.append("<option value=\"Радио Минск\">Радио Минск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Юмор FM\">Юмор FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Новое Радио\">Новое Радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио UNISTAR\">Радио UNISTAR</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Пилот FM\">Пилот FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио РОКС\">Радио РОКС</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Культура\">Культура</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радиус FM\">Радиус FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Би-Эй\">Радио Би-Эй</option>");
-        $whatRadioListenLastWeek.append("<option value=\"1-й Национальный канал белорусского радио\">1-й Национальный канал белорусского радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Мир\">Радио Мир</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Альфа радио\">Альфа радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Город FM (Брест)\">Город FM (Брест)</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Брест\">Радио Брест</option>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Минск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">Радио Минск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek2\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Юмор FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek2\">Юмор FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek5\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Новое Радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek5\">Новое Радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek7\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио UNISTAR\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek7\">Радио UNISTAR</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek9\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Пилот FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek9\">Пилот FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek11\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио РОКС\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek11\">Радио РОКС</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek13\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Культура\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek13\">Культура</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek14\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радиус FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek14\">Радиус FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek15\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Би-Эй\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek15\">Радио Би-Эй</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1-й Национальный канал белорусского радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">1-й Национальный канал белорусского радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Мир\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">Радио Мир</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Альфа радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">Альфа радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek22\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Город FM (Брест)\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek22\">Город FM (Брест)</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek23\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Брест\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek23\">Радио Брест</label><br>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Витебск") {
-        $whatRadioListenLastWeek.append("<option value=\"Радио Минск\">Радио Минск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Юмор FM\">Юмор FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Новое Радио\">Новое Радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Пилот FM\">Пилот FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио РОКС\">Радио РОКС</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Культура\">Культура</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радиус FM\">Радиус FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Би-Эй\">Радио Би-Эй</option>");
-        $whatRadioListenLastWeek.append("<option value=\"1-й Национальный канал белорусского радио\">1-й Национальный канал белорусского радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Мир\">Радио Мир</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Альфа радио\">Альфа радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Русское Радио Витебск\">Русское Радио Витебск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Витебск\">Радио Витебск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Европа Плюс (Витебск)\">Европа Плюс (Витебск)</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Ретро Люкс FM (Витебск)\">Ретро Люкс FM (Витебск)</option>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Минск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">Радио Минск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek2\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Юмор FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek2\">Юмор FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek5\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Новое Радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek5\">Новое Радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek9\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Пилот FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek9\">Пилот FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek11\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио РОКС\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek11\">Радио РОКС</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek13\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Культура\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek13\">Культура</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek14\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радиус FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek14\">Радиус FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek15\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Би-Эй\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek15\">Радио Би-Эй</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1-й Национальный канал белорусского радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">1-й Национальный канал белорусского радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Мир\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">Радио Мир</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Альфа радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">Альфа радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek24\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Русское Радио Витебск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek24\">Русское Радио Витебск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek25\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Витебск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek25\">Радио Витебск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek26\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Европа Плюс (Витебск)\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek26\">Европа Плюс (Витебск)</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek27\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Ретро Люкс FM (Витебск)\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek27\">Ретро Люкс FM (Витебск)</label><br>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Гомель") {
-        $whatRadioListenLastWeek.append("<option value=\"Радио Минск\">Радио Минск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Юмор FM\">Юмор FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Новое Радио\">Новое Радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио UNISTAR\">Радио UNISTAR</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Пилот FM\">Пилот FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио РОКС\">Радио РОКС</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Культура\">Культура</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радиус FM\">Радиус FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Би-Эй\">Радио Би-Эй</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Душевное радио\">Душевное радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"1-й Национальный канал белорусского радио\">1-й Национальный канал белорусского радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Мир\">Радио Мир</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Гомель FM\">Гомель FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Гомель Плюс\">Гомель Плюс</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Гомельское городское радио\">Гомельское городское радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Правда (Гомель)\">Радио Правда (Гомель)</option>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Минск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">Радио Минск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek2\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Юмор FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek2\">Юмор FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek5\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Новое Радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek5\">Новое Радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek7\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио UNISTAR\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek7\">Радио UNISTAR</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek9\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Пилот FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek9\">Пилот FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek11\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио РОКС\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek11\">Радио РОКС</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek13\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Культура\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek13\">Культура</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek14\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радиус FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek14\">Радиус FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek15\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Би-Эй\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek15\">Радио Би-Эй</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek17\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Душевное радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek17\">Душевное радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1-й Национальный канал белорусского радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">1-й Национальный канал белорусского радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Мир\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">Радио Мир</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek28\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Гомель FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek28\">Гомель FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek29\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Гомель Плюс\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek29\">Гомель Плюс</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek30\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Гомельское городское радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek30\">Гомельское городское радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek31\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Правда (Гомель)\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek31\">Радио Правда (Гомель)</label><br>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Гродно") {
-        $whatRadioListenLastWeek.append("<option value=\"Юмор FM\">Юмор FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Новое Радио\">Новое Радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Пилот FM\">Пилот FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио РОКС\">Радио РОКС</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Народное радио\">Народное радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Культура\">Культура</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радиус FM\">Радиус FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Би-Эй\">Радио Би-Эй</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Душевное радио\">Душевное радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"1-й Национальный канал белорусского радио\">1-й Национальный канал белорусского радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Мир\">Радио Мир</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Альфа радио\">Альфа радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Гродно\">Радио Гродно</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио MFM (Гродно)\">Радио MFM (Гродно)</option>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek2\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Юмор FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek2\">Юмор FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek5\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Новое Радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek5\">Новое Радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek9\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Пилот FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek9\">Пилот FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek11\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио РОКС\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek11\">Радио РОКС</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek12\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Народное радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek12\">Народное радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek13\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Культура\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek13\">Культура</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek14\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радиус FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek14\">Радиус FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek15\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Би-Эй\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek15\">Радио Би-Эй</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek17\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Душевное радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek17\">Душевное радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1-й Национальный канал белорусского радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">1-й Национальный канал белорусского радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Мир\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">Радио Мир</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Альфа радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">Альфа радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek32\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Гродно\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek32\">Радио Гродно</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek33\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио MFM (Гродно)\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek33\">Радио MFM (Гродно)</label><br>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Могилев") {
-        $whatRadioListenLastWeek.append("<option value=\"Радио Минск\">Радио Минск</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Юмор FM\">Юмор FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Новое Радио\">Новое Радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио UNISTAR\">Радио UNISTAR</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Пилот FM\">Пилот FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио РОКС\">Радио РОКС</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Культура\">Культура</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радиус FM\">Радиус FM</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Би-Эй\">Радио Би-Эй</option>");
-        $whatRadioListenLastWeek.append("<option value=\"1-й Национальный канал белорусского радио\">1-й Национальный канал белорусского радио</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Мир\">Радио Мир</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Радио Могилев\">Радио Могилев</option>");
-        $whatRadioListenLastWeek.append("<option value=\"Русское Радио Могилев\">Русское Радио Могилев</option>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Минск\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">Радио Минск</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek2\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Юмор FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek2\">Юмор FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek5\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Новое Радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek5\">Новое Радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek7\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио UNISTAR\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek7\">Радио UNISTAR</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek9\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Пилот FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek9\">Пилот FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek11\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио РОКС\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek11\">Радио РОКС</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek13\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Культура\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek13\">Культура</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek14\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радиус FM\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek14\">Радиус FM</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek15\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Би-Эй\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek15\">Радио Би-Эй</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1-й Национальный канал белорусского радио\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">1-й Национальный канал белорусского радио</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Мир\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">Радио Мир</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek34\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Радио Могилев\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek34\">Радио Могилев</label><br>");
+        $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek35\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Русское Радио Могилев\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek35\">Русское Радио Могилев</label><br>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Другой") {
         $("#causeRefusedDiv").removeAttr("hidden");
-      }});
+      };
+
+      $whatRadioListenLastWeek.append("<input id=\"formwhatRadioListenLastWeek0\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"Ни одна из перечисленных\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek0\">Ни одна из перечисленных</label><br>");
+
+      $("[name='form[whatRadioListenLastWeek]']").change(function () {
+        $("#formwhatRadioListenLastWeek0").prop('checked', false);
+        $("#causeRefusedDiv").attr("hidden", "hidden");
+        $("#yesterdayListenDiv").removeAttr("hidden");
+      });
+      $("#formwhatRadioListenLastWeek0").change(function () {
+        $("[name='form[whatRadioListenLastWeek]']").prop('checked', false);
+        $("#formwhatRadioListenLastWeek0").prop('checked', true);
+        $("#yesterdayListenDiv").attr("hidden", "hidden");
+        $("#causeRefusedDiv").removeAttr("hidden");
+      });
+    });
     $("[name='form[gender]']").change(function () {
       $("#ageDiv").removeAttr("hidden");
     });
@@ -158,6 +172,39 @@
     $("#formlastWeekListen2").change(function () {
       $("#whatRadioListenLastWeekDiv").attr("hidden", "hidden");
       $("#educationDiv").removeAttr("hidden");
+    });
+    $("#formyesterdayListen1").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
+      $("#yesterdayListen1Div").removeAttr("hidden");
+    });
+    $("#formyesterdayListen2").change(function () {
+      $("#yesterdayListen1Div").attr("hidden", "hidden");
+      $("#educationDiv").removeAttr("hidden");
+    });
+    $("[name='form[whichDevice1]']").change(function () {
+      $("#educationDiv").removeAttr("hidden");
+      $("#yesterdayListen2Div").removeAttr("hidden");
+    });
+    $("[name='form[whichDevice2]']").change(function () {
+      $("#yesterdayListen3Div").removeAttr("hidden");
+    });
+    $("[name='form[whichDevice3]']").change(function () {
+      $("#yesterdayListen4Div").removeAttr("hidden");
+    });
+    $("[name='form[whichDevice4]']").change(function () {
+      $("#yesterdayListen5Div").removeAttr("hidden");
+    });
+    $("[name='form[whichDevice5]']").change(function () {
+      $("#yesterdayListen6Div").removeAttr("hidden");
+    });
+    $("#educationDiv").change(function () {
+      $("#professionDiv").removeAttr("hidden");
+    });
+    $("#professionDiv").change(function () {
+      $("#submitButton").removeAttr("disabled");
+    });
+    $("#causeRefusedDiv").change(function () {
+      $("#submitButton").removeAttr("disabled");
     });
   });
 </script>
@@ -233,8 +280,9 @@
 
                 <div id="whatRadioListenLastWeekDiv" hidden>
                     <b>5. Я сейчас назову радиостанции, а Вы укажите, пожалуйста, какие из них Вы слушали за последнюю неделю?</b><br>
-                    <form:select id="whatRadioListenLastWeek" path="form[whatRadioListenLastWeek]" type="text" class="form-control" style="width: 50%" multiple="true"/>
-                    <br><br>
+                    <div id="whatRadioListenLastWeek">
+                    </div>
+                    <br>
                 </div>
 
                 <div id="yesterdayListenDiv" hidden>
@@ -440,7 +488,7 @@
                     <br>
                 </div>
 
-                <button class="btn btn-success btn-lg" disabled>Отправить</button>
+                <button id="submitButton" class="btn btn-success btn-lg" disabled>Отправить</button>
 
                 <br><br><br><br>
 
