@@ -140,16 +140,10 @@
       }
 
       $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek99\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"99\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek99\">99. Радиостанция через интернет</label><br></div>");
-      $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek0\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek0\">Ни одна из перечисленных</label><br></div>");
 
       $("[name='form[whatRadioListenLastWeek]']").change(function () {
         $("#formwhatRadioListenLastWeek0").prop('checked', false);
         $("#yesterdayListenDiv").removeAttr("hidden");
-      });
-      $("#formwhatRadioListenLastWeek0").change(function () {
-        $("[name='form[whatRadioListenLastWeek]']").prop('checked', false);
-        $("#formwhatRadioListenLastWeek0").prop('checked', true);
-        $("#yesterdayListenDiv").attr("hidden", "hidden");
       });
       $("#formwhatRadioListenLastWeek1").change(function () {
         if ($("#formwhatRadioListenLastWeek1").is(':checked')) {
