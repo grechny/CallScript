@@ -767,8 +767,19 @@
     $("[name='form[gender]']").change(function () {
       $("#ageDiv").removeAttr("hidden");
     });
-    $("#ageDiv").keypress(function () {
+    $("#ageDiv")
+        .keypress(function () {
       $("#lastMonthListenDiv").removeAttr("hidden");
+    })
+        .focusout(function () {
+      var age = Number($("#formage").val());
+      if (age > 11 && age < 66) {
+        $("#ageDiv").removeClass("has-error").addClass("has-success");
+        $("#formageDivError").attr("hidden", "hidden");
+      } else {
+        $("#ageDiv").removeClass("has-success").addClass("has-error");
+        $("#formageDivError").removeAttr("hidden");
+      }
     });
     $("#formlastMonthListen1").change(function () {
       $("#educationDiv").attr("hidden", "hidden");
@@ -790,18 +801,101 @@
       $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen1Div").removeAttr("hidden");
     });
-    $("#formyesterdayListen2").change(function () {
-      $("#yesterdayListen1Div").attr("hidden", "hidden");
-      $("#educationDiv").removeAttr("hidden");
-    });
     $("#formtimeInterval1").focusout(function () {
       var timeInterval = $("#formtimeInterval1").val();
-      console.log("timeInterval " + timeInterval);
-      $.post("validateTimeRange", { "timeRange": timeInterval }, function (data) {
+      var anotherTimeRanges = [];
+      console.log(anotherTimeRanges);
+      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
         if (data.valid === true) {
-          console.log("time range valid");
+          $("#formtimeInterval1Div").removeClass("has-error").addClass("has-success");
+          $("#formtimeInterval1DivError").attr("hidden", "hidden");
         } else {
-          console.log("time range is invalid");
+          $("#formtimeInterval1Div").removeClass("has-success").addClass("has-error");
+          $("#formtimeInterval1DivError").removeAttr("hidden");
+        }
+      })
+    });
+    $("#formtimeInterval2").focusout(function () {
+      var timeInterval = $("#formtimeInterval2").val();
+      var timeRange1 = $("#formtimeInterval1").val();
+      var anotherTimeRanges = [timeRange1];
+      console.log(anotherTimeRanges);
+      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
+        if (data.valid === true) {
+          $("#formtimeInterval2Div").removeClass("has-error").addClass("has-success");
+          $("#formtimeInterval2DivError").attr("hidden", "hidden");
+        } else {
+          $("#formtimeInterval2Div").removeClass("has-success").addClass("has-error");
+          $("#formtimeInterval2DivError").removeAttr("hidden");
+        }
+      })
+    });
+    $("#formtimeInterval3").focusout(function () {
+      var timeInterval = $("#formtimeInterval3").val();
+      var timeRange1 = $("#formtimeInterval1").val();
+      var timeRange2 = $("#formtimeInterval2").val();
+      var anotherTimeRanges = [timeRange1, timeRange2];
+      console.log(anotherTimeRanges);
+      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
+        if (data.valid === true) {
+          $("#formtimeInterval3Div").removeClass("has-error").addClass("has-success");
+          $("#formtimeInterval3DivError").attr("hidden", "hidden");
+        } else {
+          $("#formtimeInterval3Div").removeClass("has-success").addClass("has-error");
+          $("#formtimeInterval3DivError").removeAttr("hidden");
+        }
+      })
+    });
+    $("#formtimeInterval4").focusout(function () {
+      var timeInterval = $("#formtimeInterval4").val();
+      var timeRange1 = $("#formtimeInterval1").val();
+      var timeRange2 = $("#formtimeInterval2").val();
+      var timeRange3 = $("#formtimeInterval3").val();
+      var anotherTimeRanges = [timeRange1, timeRange2, timeRange3];
+      console.log(anotherTimeRanges);
+      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
+        if (data.valid === true) {
+          $("#formtimeInterval4Div").removeClass("has-error").addClass("has-success");
+          $("#formtimeInterval4DivError").attr("hidden", "hidden");
+        } else {
+          $("#formtimeInterval4Div").removeClass("has-success").addClass("has-error");
+          $("#formtimeInterval4DivError").removeAttr("hidden");
+        }
+      })
+    });
+    $("#formtimeInterval5").focusout(function () {
+      var timeInterval = $("#formtimeInterval5").val();
+      var timeRange1 = $("#formtimeInterval1").val();
+      var timeRange2 = $("#formtimeInterval2").val();
+      var timeRange3 = $("#formtimeInterval3").val();
+      var timeRange4 = $("#formtimeInterval4").val();
+      console.log(anotherTimeRanges);
+      var anotherTimeRanges = [timeRange1, timeRange2, timeRange3, timeRange4];
+      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
+        if (data.valid === true) {
+          $("#formtimeInterval5Div").removeClass("has-error").addClass("has-success");
+          $("#formtimeInterval5DivError").attr("hidden", "hidden");
+        } else {
+          $("#formtimeInterval5Div").removeClass("has-success").addClass("has-error");
+          $("#formtimeInterval5DivError").removeAttr("hidden");
+        }
+      })
+    });
+    $("#formtimeInterval6").focusout(function () {
+      var timeInterval = $("#formtimeInterval6").val();
+      var timeRange1 = $("#formtimeInterval1").val();
+      var timeRange2 = $("#formtimeInterval2").val();
+      var timeRange3 = $("#formtimeInterval3").val();
+      var timeRange4 = $("#formtimeInterval4").val();
+      var timeRange5 = $("#formtimeInterval5").val();
+      var anotherTimeRanges = [timeRange1, timeRange2, timeRange3, timeRange4, timeRange5];
+      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
+        if (data.valid === true) {
+          $("#formtimeInterval6Div").removeClass("has-error").addClass("has-success");
+          $("#formtimeInterval6DivError").attr("hidden", "hidden");
+        } else {
+          $("#formtimeInterval6Div").removeClass("has-success").addClass("has-error");
+          $("#formtimeInterval6DivError").removeAttr("hidden");
         }
       })
     });
@@ -829,6 +923,14 @@
     });
     $("#causeRefusedDiv").change(function () {
       $("#submitButton").removeAttr("disabled");
+    });
+    $("#submitButton").click(function(event) {
+      if ($(".has-error:first").length) {
+        $('html, body').animate({
+          scrollTop: $(".has-error:first").offset().top
+        });
+        event.preventDefault();
+      }
     });
   });
 </script>
@@ -893,10 +995,14 @@
                     <br>
                 </div>
 
-                <div id="ageDiv" hidden>
+                <div id="ageDiv" class="form-group" hidden>
                     <b>2. Возраст (должен быть в диапазоне 12-65 лет)</b><br>
                     <form:input path="form[age]" type="text" class="form-control" style="width: 50%" title="Введите возраст" placeholder="Введите возраст"/>
-                    <br>
+                    <div id="formageDivError" hidden>
+                        <b style="color: red" class="h6">
+                            Возраст должен быть в диапазоне от 12 до 65 лет
+                        </b>
+                    </div><br>
                 </div>
 
                 <div id="lastMonthListenDiv" hidden>
@@ -939,8 +1045,17 @@
                     <form:radiobutton path="form[whereListen1]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
                     <form:radiobutton path="form[whereListen1]" value="Другое" label="Другое"/><br>
 
-                    <b>6.1 Промежуток Времени</b><br>
-                    <form:input path="form[timeInterval1]" type="text" class="form-control" style="width: 50%"/><br>
+                    <div id="formtimeInterval1Div" class="form-group">
+                        <b>6.1 Промежуток Времени</b><br>
+                        <form:input path="form[timeInterval1]" type="text" class="form-control" style="width: 50%"/>
+                        <div id="formtimeInterval1DivError" hidden>
+                            <b style="color: red" class="h6">
+                                Введен неверный промежуток времени или данный промежуток уже указан выше<br>
+                                Пожалуйста, введите в формате "10:00 - 11:30" (начало суток 05:00) и убедитесь,<br>
+                                что данный промежуток времени нигде не пересекается с уже указанными выше
+                            </b>
+                        </div><br>
+                    </div>
 
                     <b>6.1 Какие радиостанции слушали</b><br>
                     <div id="whatRadioListen1">
@@ -1002,8 +1117,17 @@
                     <form:radiobutton path="form[whereListen2]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
                     <form:radiobutton path="form[whereListen2]" value="Другое" label="Другое"/><br>
 
-                    <b>6.2 Промежуток Времени</b><br>
-                    <form:input path="form[timeInterval2]" type="text" class="form-control" style="width: 50%"/><br>
+                    <div id="formtimeInterval2Div" class="form-group">
+                        <b>6.2 Промежуток Времени</b><br>
+                        <form:input path="form[timeInterval2]" type="text" class="form-control" style="width: 50%"/>
+                        <div id="formtimeInterval2DivError" hidden>
+                            <b style="color: red" class="h6">
+                                Введен неверный промежуток времени или данный промежуток уже указан выше<br>
+                                Пожалуйста, введите в формате "10:00 - 11:30" (начало суток 05:00) и убедитесь,<br>
+                                что данный промежуток времени нигде не пересекается с уже указанными выше
+                            </b>
+                        </div><br>
+                    </div>
 
                     <b>6.2 Какие радиостанции слушали</b><br>
                     <div id="whatRadioListen2">
@@ -1065,8 +1189,17 @@
                     <form:radiobutton path="form[whereListen3]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
                     <form:radiobutton path="form[whereListen3]" value="Другое" label="Другое"/><br>
 
-                    <b>6.3 Промежуток Времени</b><br>
-                    <form:input path="form[timeInterval3]" type="text" class="form-control" style="width: 50%"/><br>
+                    <div id="formtimeInterval3Div" class="form-group">
+                        <b>6.3 Промежуток Времени</b><br>
+                        <form:input path="form[timeInterval3]" type="text" class="form-control" style="width: 50%"/><br>
+                        <div id="formtimeInterval3DivError" hidden>
+                            <b style="color: red" class="h6">
+                                Введен неверный промежуток времени или данный промежуток уже указан выше<br>
+                                Пожалуйста, введите в формате "10:00 - 11:30" (начало суток 05:00) и убедитесь,<br>
+                                что данный промежуток времени нигде не пересекается с уже указанными выше
+                            </b>
+                        </div><br>
+                    </div>
 
                     <b>6.3 Какие радиостанции слушали</b><br>
                     <div id="whatRadioListen3">
@@ -1128,8 +1261,17 @@
                     <form:radiobutton path="form[whereListen4]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
                     <form:radiobutton path="form[whereListen4]" value="Другое" label="Другое"/><br>
 
-                    <b>6.4 Промежуток Времени</b><br>
-                    <form:input path="form[timeInterval4]" type="text" class="form-control" style="width: 50%"/><br>
+                    <div id="formtimeInterval4Div" class="form-group">
+                        <b>6.4 Промежуток Времени</b><br>
+                        <form:input path="form[timeInterval4]" type="text" class="form-control" style="width: 50%"/><br>
+                        <div id="formtimeInterval4DivError" hidden>
+                            <b style="color: red" class="h6">
+                                Введен неверный промежуток времени или данный промежуток уже указан выше<br>
+                                Пожалуйста, введите в формате "10:00 - 11:30" (начало суток 05:00) и убедитесь,<br>
+                                что данный промежуток времени нигде не пересекается с уже указанными выше
+                            </b>
+                        </div><br>
+                    </div>
 
                     <b>6.4 Какие радиостанции слушали</b><br>
                     <div id="whatRadioListen4">
@@ -1191,8 +1333,17 @@
                     <form:radiobutton path="form[whereListen5]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
                     <form:radiobutton path="form[whereListen5]" value="Другое" label="Другое"/><br>
 
-                    <b>6.5 Промежуток Времени</b><br>
-                    <form:input path="form[timeInterval5]" type="text" class="form-control" style="width: 50%"/><br>
+                    <div id="formtimeInterval5Div" class="form-group">
+                        <b>6.5 Промежуток Времени</b><br>
+                        <form:input path="form[timeInterval5]" type="text" class="form-control" style="width: 50%"/><br>
+                        <div id="formtimeInterval5DivError" hidden>
+                            <b style="color: red" class="h6">
+                                Введен неверный промежуток времени или данный промежуток уже указан выше<br>
+                                Пожалуйста, введите в формате "10:00 - 11:30" (начало суток 05:00) и убедитесь,<br>
+                                что данный промежуток времени нигде не пересекается с уже указанными выше
+                            </b>
+                        </div><br>
+                    </div>
 
                     <b>6.5 Какие радиостанции слушали</b><br>
                     <div id="whatRadioListen5">
@@ -1254,8 +1405,17 @@
                     <form:radiobutton path="form[whereListen6]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
                     <form:radiobutton path="form[whereListen6]" value="Другое" label="Другое"/><br>
 
-                    <b>6.6 Промежуток Времени</b><br>
-                    <form:input path="form[timeInterval6]" type="text" class="form-control" style="width: 50%"/><br>
+                    <div id="formtimeInterval6Div" class="form-group">
+                        <b>6.6 Промежуток Времени</b><br>
+                        <form:input path="form[timeInterval6]" type="text" class="form-control" style="width: 50%"/><br>
+                        <div id="formtimeInterval6DivError" hidden>
+                            <b style="color: red" class="h6">
+                                Введен неверный промежуток времени или данный промежуток уже указан выше<br>
+                                Пожалуйста, введите в формате "10:00 - 11:30" (начало суток 05:00) и убедитесь,<br>
+                                что данный промежуток времени нигде не пересекается с уже указанными выше
+                            </b>
+                        </div><br>
+                    </div>
 
                     <b>6.6 Какие радиостанции слушали</b><br>
                     <div id="whatRadioListen6">
