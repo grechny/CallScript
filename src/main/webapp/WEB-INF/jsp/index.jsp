@@ -794,6 +794,17 @@
       $("#yesterdayListen1Div").attr("hidden", "hidden");
       $("#educationDiv").removeAttr("hidden");
     });
+    $("#formtimeInterval1").focusout(function () {
+      var timeInterval = $("#formtimeInterval1").val();
+      console.log("timeInterval " + timeInterval);
+      $.post("validateTimeRange", { "timeRange": timeInterval }, function (data) {
+        if (data.valid === true) {
+          console.log("time range valid");
+        } else {
+          console.log("time range is invalid");
+        }
+      })
+    });
     $("[name='form[whichDevice1]']").change(function () {
       $("#educationDiv").removeAttr("hidden");
       $("#yesterdayListen2Div").removeAttr("hidden");

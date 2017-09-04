@@ -1,10 +1,12 @@
 package by.sysadmins.callscript.web;
 
 import by.sysadmins.callscript.dto.FormDTO;
+import by.sysadmins.callscript.dto.ValidationResultDTO;
 import by.sysadmins.callscript.entities.FormEntity;
 import by.sysadmins.callscript.mappers.RadioStationsMapper;
 import by.sysadmins.callscript.services.FormManager;
 import by.sysadmins.callscript.services.asterisk.AsteriskService;
+import by.sysadmins.callscript.validators.DateValidator;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
@@ -57,5 +59,11 @@ public class WebController {
     return formManager.uploadFormToExternalSystem(startDate, endDate)
         ? ResponseEntity.ok().build()
         : ResponseEntity.status(HttpStatus.UNAVAILABLE_FOR_LEGAL_REASONS).build();
+  }
+
+  @PostMapping("/validateTimeRange")
+  public ResponseEntity validateTimeRange (String timeRange) {
+    ValidationResultDTO validationResultDTO = DateValidator.validateTimeRange(timeRange, null, "05:00");
+    return ResponseEntity.ok(validationResultDTO);
   }
 }
