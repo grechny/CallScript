@@ -1,13 +1,13 @@
 package by.sysadmins.callscript.web;
 
 import by.sysadmins.callscript.dto.FormDTO;
+import by.sysadmins.callscript.dto.ValidateTimeRangeDTO;
 import by.sysadmins.callscript.dto.ValidationResultDTO;
 import by.sysadmins.callscript.entities.FormEntity;
 import by.sysadmins.callscript.mappers.RadioStationsMapper;
 import by.sysadmins.callscript.services.FormManager;
 import by.sysadmins.callscript.services.asterisk.AsteriskService;
 import by.sysadmins.callscript.validators.DateValidator;
-import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +18,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Slf4j
@@ -62,9 +63,12 @@ public class WebController {
         : ResponseEntity.status(HttpStatus.UNAVAILABLE_FOR_LEGAL_REASONS).build();
   }
 
-  @PostMapping("/validateTimeRange")
-  public ResponseEntity validateTimeRange (String timeRange, List<String> anotherTimeRanges, String timeOffset) {
-    ValidationResultDTO validationResultDTO = DateValidator.validateTimeRange(timeRange, anotherTimeRanges, timeOffset);
+  @PostMapping(value = "/validateTimeRange")
+  public ResponseEntity validateTimeRange(@RequestBody ValidateTimeRangeDTO validateTimeRangeDTO) {
+    ValidationResultDTO validationResultDTO = DateValidator.validateTimeRange(
+        validateTimeRangeDTO.getTimeRange(),
+        validateTimeRangeDTO.getAnotherTimeRanges(),
+        validateTimeRangeDTO.getTimeOffset());
     return ResponseEntity.ok(validationResultDTO);
   }
 }

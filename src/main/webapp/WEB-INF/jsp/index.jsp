@@ -804,47 +804,74 @@
     $("#formtimeInterval1").focusout(function () {
       var timeInterval = $("#formtimeInterval1").val();
       var anotherTimeRanges = [];
-      console.log(anotherTimeRanges);
-      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
-        if (data.valid === true) {
-          $("#formtimeInterval1Div").removeClass("has-error").addClass("has-success");
-          $("#formtimeInterval1DivError").attr("hidden", "hidden");
-        } else {
-          $("#formtimeInterval1Div").removeClass("has-success").addClass("has-error");
-          $("#formtimeInterval1DivError").removeAttr("hidden");
+      $.ajax({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        'type': 'POST',
+        'url': 'validateTimeRange',
+        'data': JSON.stringify({ "timeRange": timeInterval, "anotherTimeRanges": anotherTimeRanges, "timeOffset": "05:00" }),
+        'dataType': 'json',
+        'success': function (data) {
+          if (data.valid === true) {
+            $("#formtimeInterval1Div").removeClass("has-error").addClass("has-success");
+            $("#formtimeInterval1DivError").attr("hidden", "hidden");
+          } else {
+            $("#formtimeInterval1Div").removeClass("has-success").addClass("has-error");
+            $("#formtimeInterval1DivError").removeAttr("hidden");
+          }
         }
-      })
+      });
     });
     $("#formtimeInterval2").focusout(function () {
       var timeInterval = $("#formtimeInterval2").val();
       var timeRange1 = $("#formtimeInterval1").val();
       var anotherTimeRanges = [timeRange1];
-      console.log(anotherTimeRanges);
-      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
-        if (data.valid === true) {
-          $("#formtimeInterval2Div").removeClass("has-error").addClass("has-success");
-          $("#formtimeInterval2DivError").attr("hidden", "hidden");
-        } else {
-          $("#formtimeInterval2Div").removeClass("has-success").addClass("has-error");
-          $("#formtimeInterval2DivError").removeAttr("hidden");
+      $.ajax({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        'type': 'POST',
+        'url': 'validateTimeRange',
+        'data': JSON.stringify({ "timeRange": timeInterval, "anotherTimeRanges": anotherTimeRanges, "timeOffset": "05:00" }),
+        'dataType': 'json',
+        'success': function (data) {
+          if (data.valid === true) {
+            $("#formtimeInterval2Div").removeClass("has-error").addClass("has-success");
+            $("#formtimeInterval2DivError").attr("hidden", "hidden");
+          } else {
+            $("#formtimeInterval2Div").removeClass("has-success").addClass("has-error");
+            $("#formtimeInterval2DivError").removeAttr("hidden");
+          }
         }
-      })
+      });
     });
     $("#formtimeInterval3").focusout(function () {
       var timeInterval = $("#formtimeInterval3").val();
       var timeRange1 = $("#formtimeInterval1").val();
       var timeRange2 = $("#formtimeInterval2").val();
       var anotherTimeRanges = [timeRange1, timeRange2];
-      console.log(anotherTimeRanges);
-      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
-        if (data.valid === true) {
-          $("#formtimeInterval3Div").removeClass("has-error").addClass("has-success");
-          $("#formtimeInterval3DivError").attr("hidden", "hidden");
-        } else {
-          $("#formtimeInterval3Div").removeClass("has-success").addClass("has-error");
-          $("#formtimeInterval3DivError").removeAttr("hidden");
+      $.ajax({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        'type': 'POST',
+        'url': 'validateTimeRange',
+        'data': JSON.stringify({ "timeRange": timeInterval, "anotherTimeRanges": anotherTimeRanges, "timeOffset": "05:00" }),
+        'dataType': 'json',
+        'success': function (data) {
+          if (data.valid === true) {
+            $("#formtimeInterval3Div").removeClass("has-error").addClass("has-success");
+            $("#formtimeInterval3DivError").attr("hidden", "hidden");
+          } else {
+            $("#formtimeInterval3Div").removeClass("has-success").addClass("has-error");
+            $("#formtimeInterval3DivError").removeAttr("hidden");
+          }
         }
-      })
+      });
     });
     $("#formtimeInterval4").focusout(function () {
       var timeInterval = $("#formtimeInterval4").val();
@@ -852,16 +879,25 @@
       var timeRange2 = $("#formtimeInterval2").val();
       var timeRange3 = $("#formtimeInterval3").val();
       var anotherTimeRanges = [timeRange1, timeRange2, timeRange3];
-      console.log(anotherTimeRanges);
-      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
-        if (data.valid === true) {
-          $("#formtimeInterval4Div").removeClass("has-error").addClass("has-success");
-          $("#formtimeInterval4DivError").attr("hidden", "hidden");
-        } else {
-          $("#formtimeInterval4Div").removeClass("has-success").addClass("has-error");
-          $("#formtimeInterval4DivError").removeAttr("hidden");
+      $.ajax({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        'type': 'POST',
+        'url': 'validateTimeRange',
+        'data': JSON.stringify({ "timeRange": timeInterval, "anotherTimeRanges": anotherTimeRanges, "timeOffset": "05:00" }),
+        'dataType': 'json',
+        'success': function (data) {
+          if (data.valid === true) {
+            $("#formtimeInterval4Div").removeClass("has-error").addClass("has-success");
+            $("#formtimeInterval4DivError").attr("hidden", "hidden");
+          } else {
+            $("#formtimeInterval4Div").removeClass("has-success").addClass("has-error");
+            $("#formtimeInterval4DivError").removeAttr("hidden");
+          }
         }
-      })
+      });
     });
     $("#formtimeInterval5").focusout(function () {
       var timeInterval = $("#formtimeInterval5").val();
@@ -871,15 +907,25 @@
       var timeRange4 = $("#formtimeInterval4").val();
       console.log(anotherTimeRanges);
       var anotherTimeRanges = [timeRange1, timeRange2, timeRange3, timeRange4];
-      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
-        if (data.valid === true) {
-          $("#formtimeInterval5Div").removeClass("has-error").addClass("has-success");
-          $("#formtimeInterval5DivError").attr("hidden", "hidden");
-        } else {
-          $("#formtimeInterval5Div").removeClass("has-success").addClass("has-error");
-          $("#formtimeInterval5DivError").removeAttr("hidden");
+      $.ajax({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        'type': 'POST',
+        'url': 'validateTimeRange',
+        'data': JSON.stringify({ "timeRange": timeInterval, "anotherTimeRanges": anotherTimeRanges, "timeOffset": "05:00" }),
+        'dataType': 'json',
+        'success': function (data) {
+          if (data.valid === true) {
+            $("#formtimeInterval5Div").removeClass("has-error").addClass("has-success");
+            $("#formtimeInterval5DivError").attr("hidden", "hidden");
+          } else {
+            $("#formtimeInterval5Div").removeClass("has-success").addClass("has-error");
+            $("#formtimeInterval5DivError").removeAttr("hidden");
+          }
         }
-      })
+      });
     });
     $("#formtimeInterval6").focusout(function () {
       var timeInterval = $("#formtimeInterval6").val();
@@ -889,15 +935,25 @@
       var timeRange4 = $("#formtimeInterval4").val();
       var timeRange5 = $("#formtimeInterval5").val();
       var anotherTimeRanges = [timeRange1, timeRange2, timeRange3, timeRange4, timeRange5];
-      $.post("validateTimeRange", { "timeRange": timeInterval, "anotherTimeRanges": JSON.stringify(anotherTimeRanges), "timeOffset": "05:00" }, function (data) {
-        if (data.valid === true) {
-          $("#formtimeInterval6Div").removeClass("has-error").addClass("has-success");
-          $("#formtimeInterval6DivError").attr("hidden", "hidden");
-        } else {
-          $("#formtimeInterval6Div").removeClass("has-success").addClass("has-error");
-          $("#formtimeInterval6DivError").removeAttr("hidden");
+      $.ajax({
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        'type': 'POST',
+        'url': 'validateTimeRange',
+        'data': JSON.stringify({ "timeRange": timeInterval, "anotherTimeRanges": anotherTimeRanges, "timeOffset": "05:00" }),
+        'dataType': 'json',
+        'success': function (data) {
+          if (data.valid === true) {
+            $("#formtimeInterval6Div").removeClass("has-error").addClass("has-success");
+            $("#formtimeInterval6DivError").attr("hidden", "hidden");
+          } else {
+            $("#formtimeInterval6Div").removeClass("has-success").addClass("has-error");
+            $("#formtimeInterval6DivError").removeAttr("hidden");
+          }
         }
-      })
+      });
     });
     $("[name='form[whichDevice1]']").change(function () {
       $("#educationDiv").removeAttr("hidden");
