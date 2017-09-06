@@ -139,7 +139,7 @@
         whatRadioListenLastWeek.appendChild(whatRadioListenLastWeek.children[Math.random() * i | 0]);
       }
 
-      $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek99\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"99\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek99\">99. Радиостанция через интернет</label><br></div>");
+      $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek99\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"99\"><label for=\"formwhatRadioListenLastWeek99\">99. Радиостанция через интернет: </label><input name=\"form[whatRadioListenLastWeek]\" style=\"width: 50%\" type=\"text\" class=\"input-small\" value=\"\"><br></div>");
 
       $("[name='form[whatRadioListenLastWeek]']").change(function () {
         $("#formwhatRadioListenLastWeek0").prop('checked', false);
