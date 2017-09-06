@@ -1195,7 +1195,7 @@
                         <form:radiobutton path="form[whereListen1]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen1]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen1]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen1]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="Другое" label="Другое"/><form:input path="form[whereListen1]" type="text" class="input-small" style="width: 50%"/><br>
                     </div>
 
                     <div id="formtimeInterval1Div" class="form-group" hidden>
@@ -1257,7 +1257,7 @@
                         <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice1]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice1]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Другое" label="Другое"/><form:input path="form[whichDevice1]" type="text" class="input-small" style="width: 50%"/><br>
                     </div><br>
                 </div>
 
@@ -1278,7 +1278,7 @@
                         <form:radiobutton path="form[whereListen2]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen2]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen2]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen2]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="Другое" label="Другое"/><form:input path="form[whereListen2]" type="text" class="input-small" style="width: 50%"/><br>
                     </div>
 
                     <div id="formtimeInterval2Div" class="form-group" hidden>
@@ -1340,7 +1340,7 @@
                         <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice2]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice2]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Другое" label="Другое"/><form:input path="form[whichDevice2]" type="text" class="input-small" style="width: 50%"/><br>
                     </div><br>
                 </div>
 
@@ -1361,7 +1361,7 @@
                         <form:radiobutton path="form[whereListen3]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen3]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen3]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen3]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="Другое" label="Другое"/><form:input path="form[whereListen3]" type="text" class="input-small" style="width: 50%"/><br>
                     </div>
 
                     <div id="formtimeInterval3Div" class="form-group" hidden>
@@ -1423,7 +1423,7 @@
                         <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice3]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice3]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Другое" label="Другое"/><form:input path="form[whichDevice3]" type="text" class="input-small" style="width: 50%"/><br>
                     </div><br>
                 </div>
 
@@ -1444,7 +1444,7 @@
                         <form:radiobutton path="form[whereListen4]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen4]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen4]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen4]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="Другое" label="Другое"/><form:input path="form[whereListen4]" type="text" class="input-small" style="width: 50%"/><br>
                     </div>
 
                     <div id="formtimeInterval4Div" class="form-group" hidden>
@@ -1506,7 +1506,7 @@
                         <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice4]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice4]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Другое" label="Другое"/><form:input path="form[whichDevice4]" type="text" class="input-small" style="width: 50%"/><br>
                     </div><br>
                 </div>
 
@@ -1527,7 +1527,7 @@
                         <form:radiobutton path="form[whereListen5]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen5]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen5]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen5]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="Другое" label="Другое"/><form:input path="form[whereListen5]" type="text" class="input-small" style="width: 50%"/><br>
                     </div>
 
                     <div id="formtimeInterval5Div" class="form-group" hidden>
@@ -1589,7 +1589,7 @@
                         <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice5]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice5]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Другое" label="Другое"/><form:input path="form[whichDevice5]" type="text" class="input-small" style="width: 50%"/><br>
                     </div><br>
                 </div>
 
@@ -1610,7 +1610,7 @@
                         <form:radiobutton path="form[whereListen6]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen6]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen6]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen6]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="Другое" label="Другое"/><form:input path="form[whereListen6]" type="text" class="input-small" style="width: 50%"/><br>
                     </div>
 
                     <div id="formtimeInterval6Div" class="form-group" hidden>
@@ -1672,26 +1672,26 @@
                         <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice6]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice6]" value="Другое" label="Другое"/><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Другое" label="Другое"/><form:input path="form[whichDevice6]" type="text" class="input-small" style="width: 50%"/><br>
                     </div><br>
                 </div>
 
                 <div id="educationDiv" hidden>
                     <b>7. Какое у Вас образование?</b><br>
-                    <form:radiobutton path="form[education]" value="Ниже среднего (менее 11 класов)" label="Ниже среднего (менее 11 класов)"/><br>
+                    <form:radiobutton path="form[education]" value="Ниже среднего (менее 11 классов)" label="Ниже среднего (менее 11 классов)"/><br>
                     <form:radiobutton path="form[education]" value="Среднее общее" label="Среднее общее"/><br>
-                    <form:radiobutton path="form[education]" value="Среднее специальное (ПТУ, коледж, техникум)" label="Среднее специальное (ПТУ, коледж, техникум)"/><br>
-                    <form:radiobutton path="form[education]" value="Высшее (незакон не менее 3х курсов)" label="Высшее (незакон не менее 3х курсов)"/><br>
+                    <form:radiobutton path="form[education]" value="Среднее специальное (в т. ч. ПТУ, колледж, техникум)" label="Среднее специальное (в т. ч. ПТУ, колледж, техникум)"/><br>
+                    <form:radiobutton path="form[education]" value="Высшее (в т.ч. незаконченное, не менее 3-х курсов)" label="Высшее (в т.ч. незаконченное, не менее 3-х курсов)"/><br>
                     <br>
                 </div>
 
                 <div id="professionDiv" hidden>
                     <b>8. Ваш основной род занятий?</b><br>
                     <form:radiobutton path="form[profession]" value="Руководитель" label="Руководитель"/><br>
-                    <form:radiobutton path="form[profession]" value="Предприниматель" label="Предприниматель"/><br>
-                    <form:radiobutton path="form[profession]" value="Служащий, специалист производственной сферы (инжинер, технолог, программист)" label="Служащий, специалист производственной сферы (инжинер, технолог, программист)"/><br>
-                    <form:radiobutton path="form[profession]" value="Служащий не производственной сферы (учитель,врач, бухгалтер.маркетолог)" label="Служащий не производственной сферы (учитель,врач, бухгалтер.маркетолог)"/><br>
-                    <form:radiobutton path="form[profession]" value="Служащий без специального образования (секретарь,регистратор, лаборант)" label="Служащий без специального образования (секретарь,регистратор, лаборант)"/><br>
+                    <form:radiobutton path="form[profession]" value="Предприниматель, самозанятый (индивидуальная трудовая деятельность)" label="Предприниматель, самозанятый (индивидуальная трудовая деятельность)"/><br>
+                    <form:radiobutton path="form[profession]" value="Служащий, специалист производственной сферы (инженер, технолог, программист и.т.д.)" label="Служащий, специалист производственной сферы (инженер, технолог, программист и.т.д.)"/><br>
+                    <form:radiobutton path="form[profession]" value="Служащий, специалист непроизводственной сферы (учитель, врач, бухгалтер, маркетолог и т.д.)" label="Служащий, специалист непроизводственной сферы (учитель, врач, бухгалтер, маркетолог и т.д.)"/><br>
+                    <form:radiobutton path="form[profession]" value="Служащий без специального образования (секретарь, регистратор, лаборант и т.д.)" label="Служащий без специального образования (секретарь, регистратор, лаборант и т.д.)"/><br>
                     <form:radiobutton path="form[profession]" value="Военнослужащий, милиционер" label="Военнослужащий, милиционер"/><br>
                     <form:radiobutton path="form[profession]" value="Рабочий (промышленности, строительства, транспорта)" label="Рабочий (промышленности, строительства, транспорта)"/><br>
                     <form:radiobutton path="form[profession]" value="Безработный" label="Безработный"/><br>
@@ -1699,7 +1699,7 @@
                     <form:radiobutton path="form[profession]" value="Студент, учащийся" label="Студент, учащийся"/><br>
                     <form:radiobutton path="form[profession]" value="Работающий пенсионер" label="Работающий пенсионер"/><br>
                     <form:radiobutton path="form[profession]" value="Неработающий пенсионер" label="Неработающий пенсионер"/><br>
-                    <form:radiobutton path="form[profession]" value="Другое" label="Другое"/><br>
+                    <form:radiobutton path="form[profession]" value="Другое" label="Другое"/><form:input path="form[profession]" type="text" class="input-small" style="width: 50%"/><br>
                     <br>
                 </div>
 
