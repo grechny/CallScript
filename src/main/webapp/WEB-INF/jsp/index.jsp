@@ -139,7 +139,7 @@
         whatRadioListenLastWeek.appendChild(whatRadioListenLastWeek.children[Math.random() * i | 0]);
       }
 
-      $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek99\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"99\"><label for=\"formwhatRadioListenLastWeek99\">99. Радиостанция через интернет: </label><input name=\"form[whatRadioListenLastWeek]\" style=\"width: 50%\" type=\"text\" class=\"input-small\" value=\"\"><br></div>");
+      $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek99\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"99\"><label for=\"formwhatRadioListenLastWeek99\">99. Другая радиостанция: </label><input name=\"form[whatRadioListenLastWeek]\" style=\"width: 50%\" type=\"text\" class=\"input-small\" value=\"\"><br></div>");
 
       $("[name='form[whatRadioListenLastWeek]']").change(function () {
         $("#formwhatRadioListenLastWeek0").prop('checked', false);
@@ -1247,7 +1247,7 @@
                         <div id="formwhatRadioListen134Div" hidden><input id="formwhatRadioListen134" name="form[whatRadioListen1]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen134">34. Радио Могилев 96,4</label><br></div>
                         <div id="formwhatRadioListen135Div" hidden><input id="formwhatRadioListen135" name="form[whatRadioListen1]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen135">35. Русское Радио Могилев 98,6</label><br></div>
                         <div id="formwhatRadioListen131Div" hidden><input id="formwhatRadioListen131" name="form[whatRadioListen1]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen131">36. Радио Правда (Гомель) 99,0</label><br></div>
-                        <div id="formwhatRadioListen199Div" hidden><input id="formwhatRadioListen199" name="form[whatRadioListen1]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen199">99. Радиостанция через интернет</label><br></div>
+                        <div id="formwhatRadioListen199Div" hidden><input id="formwhatRadioListen199" name="form[whatRadioListen1]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen199">99. Другая радиостанция</label><br></div>
                     </div><br>
 
                     <div id="formwhichDevice1Div" hidden>
@@ -1330,7 +1330,7 @@
                         <div id="formwhatRadioListen234Div" hidden><input id="formwhatRadioListen234" name="form[whatRadioListen2]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen234">34. Радио Могилев 96,4</label><br></div>
                         <div id="formwhatRadioListen235Div" hidden><input id="formwhatRadioListen235" name="form[whatRadioListen2]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen235">35. Русское Радио Могилев 98,6</label><br></div>
                         <div id="formwhatRadioListen231Div" hidden><input id="formwhatRadioListen231" name="form[whatRadioListen2]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen231">36. Радио Правда (Гомель) 99,0</label><br></div>
-                        <div id="formwhatRadioListen299Div" hidden><input id="formwhatRadioListen299" name="form[whatRadioListen2]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen299">99. Радиостанция через интернет</label><br></div>
+                        <div id="formwhatRadioListen299Div" hidden><input id="formwhatRadioListen299" name="form[whatRadioListen2]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen299">99. Другая радиостанция</label><br></div>
                     </div><br>
 
                     <div id="formwhichDevice2Div" hidden>
@@ -1413,7 +1413,7 @@
                         <div id="formwhatRadioListen334Div" hidden><input id="formwhatRadioListen334" name="form[whatRadioListen3]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen334">34. Радио Могилев 96,4</label><br></div>
                         <div id="formwhatRadioListen335Div" hidden><input id="formwhatRadioListen335" name="form[whatRadioListen3]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen335">35. Русское Радио Могилев 98,6</label><br></div>
                         <div id="formwhatRadioListen331Div" hidden><input id="formwhatRadioListen331" name="form[whatRadioListen3]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen331">36. Радио Правда (Гомель) 99,0</label><br></div>
-                        <div id="formwhatRadioListen399Div" hidden><input id="formwhatRadioListen399" name="form[whatRadioListen3]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen399">99. Радиостанция через интернет</label><br></div>
+                        <div id="formwhatRadioListen399Div" hidden><input id="formwhatRadioListen399" name="form[whatRadioListen3]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen399">99. Другая радиостанция</label><br></div>
                     </div><br>
 
                     <div id="formwhichDevice3Div" hidden>
@@ -1496,7 +1496,7 @@
                         <div id="formwhatRadioListen434Div" hidden><input id="formwhatRadioListen434" name="form[whatRadioListen4]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen434">34. Радио Могилев 96,4</label><br></div>
                         <div id="formwhatRadioListen435Div" hidden><input id="formwhatRadioListen435" name="form[whatRadioListen4]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen435">35. Русское Радио Могилев 98,6</label><br></div>
                         <div id="formwhatRadioListen431Div" hidden><input id="formwhatRadioListen431" name="form[whatRadioListen4]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen431">36. Радио Правда (Гомель) 99,0</label><br></div>
-                        <div id="formwhatRadioListen499Div" hidden><input id="formwhatRadioListen499" name="form[whatRadioListen4]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen499">99. Радиостанция через интернет</label><br></div>
+                        <div id="formwhatRadioListen499Div" hidden><input id="formwhatRadioListen499" name="form[whatRadioListen4]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen499">99. Другая радиостанция</label><br></div>
                     </div><br>
 
                     <div id="formwhichDevice4Div" hidden>
@@ -1579,7 +1579,7 @@
                         <div id="formwhatRadioListen534Div" hidden><input id="formwhatRadioListen534" name="form[whatRadioListen5]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen534">34. Радио Могилев 96,4</label><br></div>
                         <div id="formwhatRadioListen535Div" hidden><input id="formwhatRadioListen535" name="form[whatRadioListen5]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen535">35. Русское Радио Могилев 98,6</label><br></div>
                         <div id="formwhatRadioListen531Div" hidden><input id="formwhatRadioListen531" name="form[whatRadioListen5]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen531">36. Радио Правда (Гомель) 99,0</label><br></div>
-                        <div id="formwhatRadioListen599Div" hidden><input id="formwhatRadioListen599" name="form[whatRadioListen5]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen599">99. Радиостанция через интернет</label><br></div>
+                        <div id="formwhatRadioListen599Div" hidden><input id="formwhatRadioListen599" name="form[whatRadioListen5]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen599">99. Другая радиостанция</label><br></div>
                     </div><br>
 
                     <div id="formwhichDevice5Div" hidden>
@@ -1662,7 +1662,7 @@
                         <div id="formwhatRadioListen634Div" hidden><input id="formwhatRadioListen634" name="form[whatRadioListen6]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen634">34. Радио Могилев 96,4</label><br></div>
                         <div id="formwhatRadioListen635Div" hidden><input id="formwhatRadioListen635" name="form[whatRadioListen6]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen635">35. Русское Радио Могилев 98,6</label><br></div>
                         <div id="formwhatRadioListen631Div" hidden><input id="formwhatRadioListen631" name="form[whatRadioListen6]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen631">36. Радио Правда (Гомель) 99,0</label><br></div>
-                        <div id="formwhatRadioListen699Div" hidden><input id="formwhatRadioListen699" name="form[whatRadioListen6]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen699">99. Радиостанция через интернет</label><br></div>
+                        <div id="formwhatRadioListen699Div" hidden><input id="formwhatRadioListen699" name="form[whatRadioListen6]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen699">99. Другая радиостанция</label><br></div>
                     </div><br>
 
                     <div id="formwhichDevice6Div" hidden>
