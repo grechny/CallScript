@@ -1192,7 +1192,6 @@
                         <b>6.1 Где слушали радио?</b><br>
                         <form:radiobutton path="form[whereListen1]" value="На работе/учебе" label="На работе/учебе"/><br>
                         <form:radiobutton path="form[whereListen1]" value="Дома" label="Дома"/><br>
-                        <form:radiobutton path="form[whereListen1]" value="Дома" label="Дома"/><br>
                         <form:radiobutton path="form[whereListen1]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen1]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen1]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
