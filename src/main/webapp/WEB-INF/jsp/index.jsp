@@ -762,10 +762,10 @@
       $("#ageDiv").removeAttr("hidden");
     });
     $("#ageDiv")
-        .keypress(function () {
+    .keypress(function () {
       $("#lastMonthListenDiv").removeAttr("hidden");
     })
-        .focusout(function () {
+    .focusout(function () {
       var age = Number($("#formage").val());
       if (age > 11 && age < 66) {
         $("#ageDiv").removeClass("has-error").addClass("has-success");
@@ -795,7 +795,11 @@
       $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen1Div").removeAttr("hidden");
     });
-    $("#formtimeInterval1").focusout(function () {
+    $("#formtimeInterval1")
+    .keypress(function () {
+      $("#whatRadioListen1").removeAttr("hidden");
+    })
+    .focusout(function () {
       var timeInterval = $("#formtimeInterval1").val();
       var anotherTimeRanges = [];
       $.ajax({
@@ -818,7 +822,11 @@
         }
       });
     });
-    $("#formtimeInterval2").focusout(function () {
+    $("#formtimeInterval2")
+    .keypress(function () {
+      $("#whatRadioListen2").removeAttr("hidden");
+    })
+    .focusout(function () {
       var timeInterval = $("#formtimeInterval2").val();
       var timeRange1 = $("#formtimeInterval1").val();
       var anotherTimeRanges = [timeRange1];
@@ -842,7 +850,11 @@
         }
       });
     });
-    $("#formtimeInterval3").focusout(function () {
+    $("#formtimeInterval3")
+    .keypress(function () {
+      $("#whatRadioListen3").removeAttr("hidden");
+    })
+    .focusout(function () {
       var timeInterval = $("#formtimeInterval3").val();
       var timeRange1 = $("#formtimeInterval1").val();
       var timeRange2 = $("#formtimeInterval2").val();
@@ -867,7 +879,11 @@
         }
       });
     });
-    $("#formtimeInterval4").focusout(function () {
+    $("#formtimeInterval4")
+    .keypress(function () {
+      $("#whatRadioListen4").removeAttr("hidden");
+    })
+    .focusout(function () {
       var timeInterval = $("#formtimeInterval4").val();
       var timeRange1 = $("#formtimeInterval1").val();
       var timeRange2 = $("#formtimeInterval2").val();
@@ -893,7 +909,11 @@
         }
       });
     });
-    $("#formtimeInterval5").focusout(function () {
+    $("#formtimeInterval5")
+    .keypress(function () {
+      $("#whatRadioListen5").removeAttr("hidden");
+    })
+    .focusout(function () {
       var timeInterval = $("#formtimeInterval5").val();
       var timeRange1 = $("#formtimeInterval1").val();
       var timeRange2 = $("#formtimeInterval2").val();
@@ -921,7 +941,11 @@
         }
       });
     });
-    $("#formtimeInterval6").focusout(function () {
+    $("#formtimeInterval6")
+    .keypress(function () {
+      $("#whatRadioListen6").removeAttr("hidden");
+    })
+    .focusout(function () {
       var timeInterval = $("#formtimeInterval6").val();
       var timeRange1 = $("#formtimeInterval1").val();
       var timeRange2 = $("#formtimeInterval2").val();
@@ -949,21 +973,99 @@
         }
       });
     });
+    $("[name='form[whereListen1]']").change(function () {
+      $("#formtimeInterval1Div").removeAttr("hidden");
+    });
+    $("[name='form[whatRadioListen1]']").change(function () {
+      $("#formwhichDevice1Div").removeAttr("hidden");
+    });
     $("[name='form[whichDevice1]']").change(function () {
-      $("#educationDiv").removeAttr("hidden");
+      $("#needOneMoreInterval1Div").removeAttr("hidden");
+    });
+    $("#needOneMoreInterval11").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen2Div").removeAttr("hidden");
     });
+    $("#needOneMoreInterval12").change(function () {
+      $("#yesterdayListen2Div").attr("hidden", "hidden");
+      $("#educationDiv").removeAttr("hidden");
+    });
+    $("[name='form[whereListen2]']").change(function () {
+      $("#formtimeInterval2Div").removeAttr("hidden");
+    });
+    $("[name='form[whatRadioListen2]']").change(function () {
+      $("#formwhichDevice2Div").removeAttr("hidden");
+    });
     $("[name='form[whichDevice2]']").change(function () {
+      $("#needOneMoreInterval2Div").removeAttr("hidden");
+    });
+    $("#needOneMoreInterval21").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen3Div").removeAttr("hidden");
     });
+    $("#needOneMoreInterval22").change(function () {
+      $("#yesterdayListen3Div").attr("hidden", "hidden");
+      $("#educationDiv").removeAttr("hidden");
+    });
+    $("[name='form[whereListen3]']").change(function () {
+      $("#formtimeInterval3Div").removeAttr("hidden");
+    });
+    $("[name='form[whatRadioListen3]']").change(function () {
+      $("#formwhichDevice3Div").removeAttr("hidden");
+    });
     $("[name='form[whichDevice3]']").change(function () {
+      $("#needOneMoreInterval3Div").removeAttr("hidden");
+    });
+    $("#needOneMoreInterval31").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen4Div").removeAttr("hidden");
     });
+    $("#needOneMoreInterval32").change(function () {
+      $("#yesterdayListen4Div").attr("hidden", "hidden");
+      $("#educationDiv").removeAttr("hidden");
+    });
+    $("[name='form[whereListen4]']").change(function () {
+      $("#formtimeInterval4Div").removeAttr("hidden");
+    });
+    $("[name='form[whatRadioListen4]']").change(function () {
+      $("#formwhichDevice4Div").removeAttr("hidden");
+    });
     $("[name='form[whichDevice4]']").change(function () {
+      $("#needOneMoreInterval4Div").removeAttr("hidden");
+    });
+    $("#needOneMoreInterval41").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen5Div").removeAttr("hidden");
     });
+    $("#needOneMoreInterval42").change(function () {
+      $("#yesterdayListen5Div").attr("hidden", "hidden");
+      $("#educationDiv").removeAttr("hidden");
+    });
+    $("[name='form[whereListen5]']").change(function () {
+      $("#formtimeInterval5Div").removeAttr("hidden");
+    });
+    $("[name='form[whatRadioListen5]']").change(function () {
+      $("#formwhichDevice5Div").removeAttr("hidden");
+    });
     $("[name='form[whichDevice5]']").change(function () {
+      $("#needOneMoreInterval5Div").removeAttr("hidden");
+    });
+    $("#needOneMoreInterval51").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen6Div").removeAttr("hidden");
+    });
+    $("#needOneMoreInterval52").change(function () {
+      $("#yesterdayListen6Div").attr("hidden", "hidden");
+      $("#educationDiv").removeAttr("hidden");
+    });
+    $("[name='form[whereListen6]']").change(function () {
+      $("#formtimeInterval6Div").removeAttr("hidden");
+    });
+    $("[name='form[whatRadioListen6]']").change(function () {
+      $("#formwhichDevice6Div").removeAttr("hidden");
+    });
+    $("[name='form[whichDevice6]']").change(function () {
+      $("#educationDiv").removeAttr("hidden");
     });
     $("#educationDiv").change(function () {
       $("#professionDiv").removeAttr("hidden");
@@ -1086,16 +1188,18 @@
                 <div id="yesterdayListen1Div" hidden>
                     <b>6. Нам важно узнать, какие радиостанции Вы слушали вчера, и, чтобы это было точнее, давайте вспомним Ваш вчерашний день. Слушали ли Вы радио…</b><br><br>
 
-                    <b>6.1 Где слушали радио?</b><br>
-                    <form:radiobutton path="form[whereListen1]" value="На работе/учебе" label="На работе/учебе"/><br>
-                    <form:radiobutton path="form[whereListen1]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen1]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen1]" value="В машине" label="В машине"/><br>
-                    <form:radiobutton path="form[whereListen1]" value="В общ. транспорте" label="В общ. транспорте"/><br>
-                    <form:radiobutton path="form[whereListen1]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                    <form:radiobutton path="form[whereListen1]" value="Другое" label="Другое"/><br>
+                    <div id="formwhereListen1Div">
+                        <b>6.1 Где слушали радио?</b><br>
+                        <form:radiobutton path="form[whereListen1]" value="На работе/учебе" label="На работе/учебе"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="В машине" label="В машине"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="Другое" label="Другое"/><br>
+                    </div>
 
-                    <div id="formtimeInterval1Div" class="form-group">
+                    <div id="formtimeInterval1Div" class="form-group" hidden>
                         <b>6.1 Промежуток Времени</b><br>
                         <form:input path="form[timeInterval1]" type="text" class="form-control" style="width: 50%"/>
                         <div id="formtimeInterval1DivError" hidden>
@@ -1107,8 +1211,8 @@
                         </div><br>
                     </div>
 
-                    <b>6.1 Какие радиостанции слушали</b><br>
-                    <div id="whatRadioListen1">
+                    <div id="whatRadioListen1" hidden>
+                        <b>6.1 Какие радиостанции слушали</b><br>
                         <div id="formwhatRadioListen11Div" hidden><input id="formwhatRadioListen11" name="form[whatRadioListen1]" type="checkbox" value="1"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen11">1. Радио Минск 92,4</label><br></div>
                         <div id="formwhatRadioListen12Div" hidden><input id="formwhatRadioListen12" name="form[whatRadioListen1]" type="checkbox" value="2"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen12">2. Юмор FM 93,7</label><br></div>
                         <div id="formwhatRadioListen13Div" hidden><input id="formwhatRadioListen13" name="form[whatRadioListen1]" type="checkbox" value="3"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen13">3. Мелодии Века 96,2</label><br></div>
@@ -1147,27 +1251,38 @@
                         <div id="formwhatRadioListen199Div" hidden><input id="formwhatRadioListen199" name="form[whatRadioListen1]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen199">99. Радиостанция через интернет</label><br></div>
                     </div><br>
 
-                    <b>6.1 С помощью чего слушали радио</b><br>
-                    <form:radiobutton path="form[whichDevice1]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
-                    <form:radiobutton path="form[whichDevice1]" value="Автомагнитола" label="Автомагнитола"/><br>
-                    <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
-                    <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice1]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice1]" value="Другое" label="Другое"/><br>
+                    <div id="formwhichDevice1Div" hidden>
+                        <b>6.1 С помощью чего слушали радио</b><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Автомагнитола" label="Автомагнитола"/><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Другое" label="Другое"/><br>
+                    </div><br>
+                </div>
+
+                <div id="needOneMoreInterval1Div" hidden>
+                    <b>Добавтиь еще один интервал?</b><br>
+                    <input id="needOneMoreInterval11" name="needOneMoreInterval1" type="radio" value="Да"><label for="needOneMoreInterval11">Да</label><br>
+                    <input id="needOneMoreInterval12" name="needOneMoreInterval1" type="radio" value="Нет"><label for="needOneMoreInterval12">Нет</label><br>
                     <br>
                 </div>
 
                 <div id="yesterdayListen2Div" hidden>
-                    <b>6.2 Где слушали радио?</b><br>
-                    <form:radiobutton path="form[whereListen2]" value="На работе/учебе" label="На работе/учебе"/><br>
-                    <form:radiobutton path="form[whereListen2]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen2]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen2]" value="В машине" label="В машине"/><br>
-                    <form:radiobutton path="form[whereListen2]" value="В общ. транспорте" label="В общ. транспорте"/><br>
-                    <form:radiobutton path="form[whereListen2]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                    <form:radiobutton path="form[whereListen2]" value="Другое" label="Другое"/><br>
 
-                    <div id="formtimeInterval2Div" class="form-group">
+                    <div id="formwhereListen2Div">
+                        <b>6.2 Где слушали радио?</b><br>
+                        <form:radiobutton path="form[whereListen2]" value="На работе/учебе" label="На работе/учебе"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="В машине" label="В машине"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="Другое" label="Другое"/><br>
+                    </div>
+
+                    <div id="formtimeInterval2Div" class="form-group" hidden>
                         <b>6.2 Промежуток Времени</b><br>
                         <form:input path="form[timeInterval2]" type="text" class="form-control" style="width: 50%"/>
                         <div id="formtimeInterval2DivError" hidden>
@@ -1179,8 +1294,8 @@
                         </div><br>
                     </div>
 
-                    <b>6.2 Какие радиостанции слушали</b><br>
-                    <div id="whatRadioListen2">
+                    <div id="whatRadioListen2" hidden>
+                        <b>6.2 Какие радиостанции слушали</b><br>
                         <div id="formwhatRadioListen21Div" hidden><input id="formwhatRadioListen21" name="form[whatRadioListen2]" type="checkbox" value="1"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen21">1. Радио Минск 92,4</label><br></div>
                         <div id="formwhatRadioListen22Div" hidden><input id="formwhatRadioListen22" name="form[whatRadioListen2]" type="checkbox" value="2"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen22">2. Юмор FM 93,7</label><br></div>
                         <div id="formwhatRadioListen23Div" hidden><input id="formwhatRadioListen23" name="form[whatRadioListen2]" type="checkbox" value="3"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen23">3. Мелодии Века 96,2</label><br></div>
@@ -1219,27 +1334,38 @@
                         <div id="formwhatRadioListen299Div" hidden><input id="formwhatRadioListen299" name="form[whatRadioListen2]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen299">99. Радиостанция через интернет</label><br></div>
                     </div><br>
 
-                    <b>6.2 С помощью чего слушали радио</b><br>
-                    <form:radiobutton path="form[whichDevice2]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
-                    <form:radiobutton path="form[whichDevice2]" value="Автомагнитола" label="Автомагнитола"/><br>
-                    <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
-                    <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice2]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice2]" value="Другое" label="Другое"/><br>
+                    <div id="formwhichDevice2Div" hidden>
+                        <b>6.2 С помощью чего слушали радио</b><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Автомагнитола" label="Автомагнитола"/><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Другое" label="Другое"/><br>
+                    </div><br>
+                </div>
+
+                <div id="needOneMoreInterval2Div" hidden>
+                    <b>Добавтиь еще один интервал?</b><br>
+                    <input id="needOneMoreInterval21" name="needOneMoreInterval2" type="radio" value="Да"><label for="needOneMoreInterval21">Да</label><br>
+                    <input id="needOneMoreInterval22" name="needOneMoreInterval2" type="radio" value="Нет"><label for="needOneMoreInterval22">Нет</label><br>
                     <br>
                 </div>
 
                 <div id="yesterdayListen3Div" hidden>
-                    <b>6.3 Где слушали радио?</b><br>
-                    <form:radiobutton path="form[whereListen3]" value="На работе/учебе" label="На работе/учебе"/><br>
-                    <form:radiobutton path="form[whereListen3]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen3]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen3]" value="В машине" label="В машине"/><br>
-                    <form:radiobutton path="form[whereListen3]" value="В общ. транспорте" label="В общ. транспорте"/><br>
-                    <form:radiobutton path="form[whereListen3]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                    <form:radiobutton path="form[whereListen3]" value="Другое" label="Другое"/><br>
 
-                    <div id="formtimeInterval3Div" class="form-group">
+                    <div id="formwhereListen3Div">
+                        <b>6.3 Где слушали радио?</b><br>
+                        <form:radiobutton path="form[whereListen3]" value="На работе/учебе" label="На работе/учебе"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="В машине" label="В машине"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="Другое" label="Другое"/><br>
+                    </div>
+
+                    <div id="formtimeInterval3Div" class="form-group" hidden>
                         <b>6.3 Промежуток Времени</b><br>
                         <form:input path="form[timeInterval3]" type="text" class="form-control" style="width: 50%"/><br>
                         <div id="formtimeInterval3DivError" hidden>
@@ -1251,8 +1377,8 @@
                         </div><br>
                     </div>
 
-                    <b>6.3 Какие радиостанции слушали</b><br>
-                    <div id="whatRadioListen3">
+                    <div id="whatRadioListen3" hidden>
+                        <b>6.3 Какие радиостанции слушали</b><br>
                         <div id="formwhatRadioListen31Div" hidden><input id="formwhatRadioListen31" name="form[whatRadioListen3]" type="checkbox" value="1"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen31">1. Радио Минск 92,4</label><br></div>
                         <div id="formwhatRadioListen32Div" hidden><input id="formwhatRadioListen32" name="form[whatRadioListen3]" type="checkbox" value="2"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen32">2. Юмор FM 93,7</label><br></div>
                         <div id="formwhatRadioListen33Div" hidden><input id="formwhatRadioListen33" name="form[whatRadioListen3]" type="checkbox" value="3"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen33">3. Мелодии Века 96,2</label><br></div>
@@ -1291,27 +1417,38 @@
                         <div id="formwhatRadioListen399Div" hidden><input id="formwhatRadioListen399" name="form[whatRadioListen3]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen399">99. Радиостанция через интернет</label><br></div>
                     </div><br>
 
-                    <b>6.3 С помощью чего слушали радио</b><br>
-                    <form:radiobutton path="form[whichDevice3]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
-                    <form:radiobutton path="form[whichDevice3]" value="Автомагнитола" label="Автомагнитола"/><br>
-                    <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
-                    <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice3]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice3]" value="Другое" label="Другое"/><br>
+                    <div id="formwhichDevice3Div" hidden>
+                        <b>6.3 С помощью чего слушали радио</b><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Автомагнитола" label="Автомагнитола"/><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Другое" label="Другое"/><br>
+                    </div><br>
+                </div>
+
+                <div id="needOneMoreInterval3Div" hidden>
+                    <b>Добавтиь еще один интервал?</b><br>
+                    <input id="needOneMoreInterval31" name="needOneMoreInterval3" type="radio" value="Да"><label for="needOneMoreInterval31">Да</label><br>
+                    <input id="needOneMoreInterval32" name="needOneMoreInterval3" type="radio" value="Нет"><label for="needOneMoreInterval32">Нет</label><br>
                     <br>
                 </div>
 
                 <div id="yesterdayListen4Div" hidden>
-                    <b>6.4 Где слушали радио?</b><br>
-                    <form:radiobutton path="form[whereListen4]" value="На работе/учебе" label="На работе/учебе"/><br>
-                    <form:radiobutton path="form[whereListen4]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen4]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen4]" value="В машине" label="В машине"/><br>
-                    <form:radiobutton path="form[whereListen4]" value="В общ. транспорте" label="В общ. транспорте"/><br>
-                    <form:radiobutton path="form[whereListen4]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                    <form:radiobutton path="form[whereListen4]" value="Другое" label="Другое"/><br>
 
-                    <div id="formtimeInterval4Div" class="form-group">
+                    <div id="formwhereListen4Div">
+                        <b>6.4 Где слушали радио?</b><br>
+                        <form:radiobutton path="form[whereListen4]" value="На работе/учебе" label="На работе/учебе"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="В машине" label="В машине"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="Другое" label="Другое"/><br>
+                    </div>
+
+                    <div id="formtimeInterval4Div" class="form-group" hidden>
                         <b>6.4 Промежуток Времени</b><br>
                         <form:input path="form[timeInterval4]" type="text" class="form-control" style="width: 50%"/><br>
                         <div id="formtimeInterval4DivError" hidden>
@@ -1323,8 +1460,8 @@
                         </div><br>
                     </div>
 
-                    <b>6.4 Какие радиостанции слушали</b><br>
-                    <div id="whatRadioListen4">
+                    <div id="whatRadioListen4" hidden>
+                        <b>6.4 Какие радиостанции слушали</b><br>
                         <div id="formwhatRadioListen41Div" hidden><input id="formwhatRadioListen41" name="form[whatRadioListen4]" type="checkbox" value="1"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen41">1. Радио Минск 92,4</label><br></div>
                         <div id="formwhatRadioListen42Div" hidden><input id="formwhatRadioListen42" name="form[whatRadioListen4]" type="checkbox" value="2"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen42">2. Юмор FM 93,7</label><br></div>
                         <div id="formwhatRadioListen43Div" hidden><input id="formwhatRadioListen43" name="form[whatRadioListen4]" type="checkbox" value="3"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen43">3. Мелодии Века 96,2</label><br></div>
@@ -1363,27 +1500,38 @@
                         <div id="formwhatRadioListen499Div" hidden><input id="formwhatRadioListen499" name="form[whatRadioListen4]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen499">99. Радиостанция через интернет</label><br></div>
                     </div><br>
 
-                    <b>6.4 С помощью чего слушали радио</b><br>
-                    <form:radiobutton path="form[whichDevice4]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
-                    <form:radiobutton path="form[whichDevice4]" value="Автомагнитола" label="Автомагнитола"/><br>
-                    <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
-                    <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice4]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice4]" value="Другое" label="Другое"/><br>
+                    <div id="formwhichDevice4Div" hidden>
+                        <b>6.4 С помощью чего слушали радио</b><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Автомагнитола" label="Автомагнитола"/><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Другое" label="Другое"/><br>
+                    </div><br>
+                </div>
+
+                <div id="needOneMoreInterval4Div" hidden>
+                    <b>Добавтиь еще один интервал?</b><br>
+                    <input id="needOneMoreInterval41" name="needOneMoreInterval4" type="radio" value="Да"><label for="needOneMoreInterval41">Да</label><br>
+                    <input id="needOneMoreInterval42" name="needOneMoreInterval4" type="radio" value="Нет"><label for="needOneMoreInterval42">Нет</label><br>
                     <br>
                 </div>
 
                 <div id="yesterdayListen5Div" hidden>
-                    <b>6.5 Где слушали радио?</b><br>
-                    <form:radiobutton path="form[whereListen5]" value="На работе/учебе" label="На работе/учебе"/><br>
-                    <form:radiobutton path="form[whereListen5]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen5]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen5]" value="В машине" label="В машине"/><br>
-                    <form:radiobutton path="form[whereListen5]" value="В общ. транспорте" label="В общ. транспорте"/><br>
-                    <form:radiobutton path="form[whereListen5]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                    <form:radiobutton path="form[whereListen5]" value="Другое" label="Другое"/><br>
 
-                    <div id="formtimeInterval5Div" class="form-group">
+                    <div id="formwhereListen5Div">
+                        <b>6.5 Где слушали радио?</b><br>
+                        <form:radiobutton path="form[whereListen5]" value="На работе/учебе" label="На работе/учебе"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="В машине" label="В машине"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="Другое" label="Другое"/><br>
+                    </div>
+
+                    <div id="formtimeInterval5Div" class="form-group" hidden>
                         <b>6.5 Промежуток Времени</b><br>
                         <form:input path="form[timeInterval5]" type="text" class="form-control" style="width: 50%"/><br>
                         <div id="formtimeInterval5DivError" hidden>
@@ -1395,8 +1543,8 @@
                         </div><br>
                     </div>
 
-                    <b>6.5 Какие радиостанции слушали</b><br>
-                    <div id="whatRadioListen5">
+                    <div id="whatRadioListen5" hidden>
+                        <b>6.5 Какие радиостанции слушали</b><br>
                         <div id="formwhatRadioListen51Div" hidden><input id="formwhatRadioListen51" name="form[whatRadioListen5]" type="checkbox" value="1"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen51">1. Радио Минск 92,4</label><br></div>
                         <div id="formwhatRadioListen52Div" hidden><input id="formwhatRadioListen52" name="form[whatRadioListen5]" type="checkbox" value="2"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen52">2. Юмор FM 93,7</label><br></div>
                         <div id="formwhatRadioListen53Div" hidden><input id="formwhatRadioListen53" name="form[whatRadioListen5]" type="checkbox" value="3"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen53">3. Мелодии Века 96,2</label><br></div>
@@ -1435,27 +1583,38 @@
                         <div id="formwhatRadioListen599Div" hidden><input id="formwhatRadioListen599" name="form[whatRadioListen5]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen599">99. Радиостанция через интернет</label><br></div>
                     </div><br>
 
-                    <b>6.5 С помощью чего слушали радио</b><br>
-                    <form:radiobutton path="form[whichDevice5]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
-                    <form:radiobutton path="form[whichDevice5]" value="Автомагнитола" label="Автомагнитола"/><br>
-                    <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
-                    <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice5]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice5]" value="Другое" label="Другое"/><br>
+                    <div id="formwhichDevice5Div" hidden>
+                        <b>6.5 С помощью чего слушали радио</b><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Автомагнитола" label="Автомагнитола"/><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Другое" label="Другое"/><br>
+                    </div><br>
+                </div>
+
+                <div id="needOneMoreInterval5Div" hidden>
+                    <b>Добавтиь еще один интервал?</b><br>
+                    <input id="needOneMoreInterval51" name="needOneMoreInterval5" type="radio" value="Да"><label for="needOneMoreInterval51">Да</label><br>
+                    <input id="needOneMoreInterval52" name="needOneMoreInterval5" type="radio" value="Нет"><label for="needOneMoreInterval52">Нет</label><br>
                     <br>
                 </div>
 
                 <div id="yesterdayListen6Div" hidden>
-                    <b>6.6 Где слушали радио?</b><br>
-                    <form:radiobutton path="form[whereListen6]" value="На работе/учебе" label="На работе/учебе"/><br>
-                    <form:radiobutton path="form[whereListen6]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen6]" value="Дома" label="Дома"/><br>
-                    <form:radiobutton path="form[whereListen6]" value="В машине" label="В машине"/><br>
-                    <form:radiobutton path="form[whereListen6]" value="В общ. транспорте" label="В общ. транспорте"/><br>
-                    <form:radiobutton path="form[whereListen6]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                    <form:radiobutton path="form[whereListen6]" value="Другое" label="Другое"/><br>
 
-                    <div id="formtimeInterval6Div" class="form-group">
+                    <div id="formwhereListen6Div">
+                        <b>6.6 Где слушали радио?</b><br>
+                        <form:radiobutton path="form[whereListen6]" value="На работе/учебе" label="На работе/учебе"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="Дома" label="Дома"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="В машине" label="В машине"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="В общ. транспорте" label="В общ. транспорте"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="Другое" label="Другое"/><br>
+                    </div>
+
+                    <div id="formtimeInterval6Div" class="form-group" hidden>
                         <b>6.6 Промежуток Времени</b><br>
                         <form:input path="form[timeInterval6]" type="text" class="form-control" style="width: 50%"/><br>
                         <div id="formtimeInterval6DivError" hidden>
@@ -1467,8 +1626,8 @@
                         </div><br>
                     </div>
 
-                    <b>6.6 Какие радиостанции слушали</b><br>
-                    <div id="whatRadioListen6">
+                    <div id="whatRadioListen6" hidden>
+                        <b>6.6 Какие радиостанции слушали</b><br>
                         <div id="formwhatRadioListen61Div" hidden><input id="formwhatRadioListen61" name="form[whatRadioListen6]" type="checkbox" value="1"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen61">1. Радио Минск 92,4</label><br></div>
                         <div id="formwhatRadioListen62Div" hidden><input id="formwhatRadioListen62" name="form[whatRadioListen6]" type="checkbox" value="2"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen62">2. Юмор FM 93,7</label><br></div>
                         <div id="formwhatRadioListen63Div" hidden><input id="formwhatRadioListen63" name="form[whatRadioListen6]" type="checkbox" value="3"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen63">3. Мелодии Века 96,2</label><br></div>
@@ -1507,14 +1666,15 @@
                         <div id="formwhatRadioListen699Div" hidden><input id="formwhatRadioListen699" name="form[whatRadioListen6]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen699">99. Радиостанция через интернет</label><br></div>
                     </div><br>
 
-                    <b>6.6 С помощью чего слушали радио</b><br>
-                    <form:radiobutton path="form[whichDevice6]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
-                    <form:radiobutton path="form[whichDevice6]" value="Автомагнитола" label="Автомагнитола"/><br>
-                    <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
-                    <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice6]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                    <form:radiobutton path="form[whichDevice6]" value="Другое" label="Другое"/><br>
-                    <br>
+                    <div id="formwhichDevice6Div" hidden>
+                        <b>6.6 С помощью чего слушали радио</b><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Радиоприемник (FM. AM)" label="Радиоприемник (FM. AM)"/><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Автомагнитола" label="Автомагнитола"/><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Другое" label="Другое"/><br>
+                    </div><br>
                 </div>
 
                 <div id="educationDiv" hidden>
