@@ -1262,7 +1262,7 @@
                 </div>
 
                 <div id="needOneMoreInterval1Div" hidden>
-                    <b>Добавтиь еще один интервал?</b><br>
+                    <b>Добавить еще один интервал?</b><br>
                     <input id="needOneMoreInterval11" name="needOneMoreInterval1" type="radio" value="Да"><label for="needOneMoreInterval11">Да</label><br>
                     <input id="needOneMoreInterval12" name="needOneMoreInterval1" type="radio" value="Нет"><label for="needOneMoreInterval12">Нет</label><br>
                     <br>
@@ -1345,7 +1345,7 @@
                 </div>
 
                 <div id="needOneMoreInterval2Div" hidden>
-                    <b>Добавтиь еще один интервал?</b><br>
+                    <b>Добавить еще один интервал?</b><br>
                     <input id="needOneMoreInterval21" name="needOneMoreInterval2" type="radio" value="Да"><label for="needOneMoreInterval21">Да</label><br>
                     <input id="needOneMoreInterval22" name="needOneMoreInterval2" type="radio" value="Нет"><label for="needOneMoreInterval22">Нет</label><br>
                     <br>
@@ -1428,7 +1428,7 @@
                 </div>
 
                 <div id="needOneMoreInterval3Div" hidden>
-                    <b>Добавтиь еще один интервал?</b><br>
+                    <b>Добавить еще один интервал?</b><br>
                     <input id="needOneMoreInterval31" name="needOneMoreInterval3" type="radio" value="Да"><label for="needOneMoreInterval31">Да</label><br>
                     <input id="needOneMoreInterval32" name="needOneMoreInterval3" type="radio" value="Нет"><label for="needOneMoreInterval32">Нет</label><br>
                     <br>
@@ -1511,7 +1511,7 @@
                 </div>
 
                 <div id="needOneMoreInterval4Div" hidden>
-                    <b>Добавтиь еще один интервал?</b><br>
+                    <b>Добавить еще один интервал?</b><br>
                     <input id="needOneMoreInterval41" name="needOneMoreInterval4" type="radio" value="Да"><label for="needOneMoreInterval41">Да</label><br>
                     <input id="needOneMoreInterval42" name="needOneMoreInterval4" type="radio" value="Нет"><label for="needOneMoreInterval42">Нет</label><br>
                     <br>
@@ -1594,7 +1594,7 @@
                 </div>
 
                 <div id="needOneMoreInterval5Div" hidden>
-                    <b>Добавтиь еще один интервал?</b><br>
+                    <b>Добавить еще один интервал?</b><br>
                     <input id="needOneMoreInterval51" name="needOneMoreInterval5" type="radio" value="Да"><label for="needOneMoreInterval51">Да</label><br>
                     <input id="needOneMoreInterval52" name="needOneMoreInterval5" type="radio" value="Нет"><label for="needOneMoreInterval52">Нет</label><br>
                     <br>
