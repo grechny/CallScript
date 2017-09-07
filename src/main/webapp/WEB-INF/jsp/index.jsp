@@ -795,6 +795,10 @@
       $("#educationDiv").attr("hidden", "hidden");
       $("#yesterdayListen1Div").removeAttr("hidden");
     });
+    $("#formyesterdayListen2").change(function () {
+      $("#yesterdayListen1Div").attr("hidden", "hidden");
+      $("#educationDiv").removeAttr("hidden");
+    });
     $("#formtimeInterval1")
     .keypress(function () {
       $("#whatRadioListen1").removeAttr("hidden");
