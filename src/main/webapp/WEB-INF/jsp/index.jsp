@@ -784,12 +784,10 @@
       $("#educationDiv").removeAttr("hidden");
     });
     $("#formlastWeekListen1").change(function () {
-      $("#educationDiv").attr("hidden", "hidden");
       $("#whatRadioListenLastWeekDiv").removeAttr("hidden");
     });
     $("#formlastWeekListen2").change(function () {
       $("#whatRadioListenLastWeekDiv").attr("hidden", "hidden");
-      $("#educationDiv").removeAttr("hidden");
     });
     $("#formyesterdayListen1").change(function () {
       $("#educationDiv").attr("hidden", "hidden");
