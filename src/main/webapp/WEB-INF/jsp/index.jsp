@@ -923,7 +923,6 @@
       var timeRange2 = $("#formtimeInterval2").val();
       var timeRange3 = $("#formtimeInterval3").val();
       var timeRange4 = $("#formtimeInterval4").val();
-      console.log(anotherTimeRanges);
       var anotherTimeRanges = [timeRange1, timeRange2, timeRange3, timeRange4];
       $.ajax({
         headers: {

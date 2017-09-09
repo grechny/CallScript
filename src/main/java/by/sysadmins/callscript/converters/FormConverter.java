@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.MapUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -45,7 +44,6 @@ public class FormConverter {
     formEntity.setUploaded(formDTO.isUploaded());
 
     if (MapUtils.isNotEmpty(formDTO.getForm())) {
-      formDTO.getForm().values().removeIf(StringUtils::isBlank);
       String serializedResult = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(formDTO.getForm());
       formEntity.setForm(serializedResult);
     }
