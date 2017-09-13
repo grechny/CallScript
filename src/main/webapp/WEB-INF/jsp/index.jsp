@@ -139,7 +139,7 @@
         whatRadioListenLastWeek.appendChild(whatRadioListenLastWeek.children[Math.random() * i | 0]);
       }
 
-      $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek99\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"99\"><label for=\"formwhatRadioListenLastWeek99\">99. Другая радиостанция: </label><input name=\"form[whatRadioListenLastWeek]\" style=\"width: 50%\" type=\"text\" class=\"input-small\" value=\"\"><br></div>");
+      $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek99\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"99\"><label for=\"formwhatRadioListenLastWeek99\">99. Другая радиостанция: </label><input id=\"formwhatRadioListenLastWeek\" name=\"form[whatRadioListenLastWeek]\" style=\"width: 50%\" type=\"text\" class=\"input-small\" value=\"\" disabled=\"true\"><br></div>");
 
       $("[name='form[whatRadioListenLastWeek]']").change(function () {
         $("#formwhatRadioListenLastWeek0").prop('checked', false);
@@ -741,13 +741,14 @@
         }
       });
       $("#formwhatRadioListenLastWeek99").change(function () {
-        if ($("#formwhatRadioListenLastWeek99").is(':checked')) {
+        if ($(this).is(':checked')) {
           $("#formwhatRadioListen199Div").removeAttr("hidden");
           $("#formwhatRadioListen299Div").removeAttr("hidden");
           $("#formwhatRadioListen399Div").removeAttr("hidden");
           $("#formwhatRadioListen499Div").removeAttr("hidden");
           $("#formwhatRadioListen599Div").removeAttr("hidden");
           $("#formwhatRadioListen699Div").removeAttr("hidden");
+          $("#formwhatRadioListenLastWeek").removeAttr("disabled");
         } else {
           $("#formwhatRadioListen199Div").attr("hidden", "hidden");
           $("#formwhatRadioListen299Div").attr("hidden", "hidden");
@@ -755,6 +756,7 @@
           $("#formwhatRadioListen499Div").attr("hidden", "hidden");
           $("#formwhatRadioListen599Div").attr("hidden", "hidden");
           $("#formwhatRadioListen699Div").attr("hidden", "hidden");
+          $("#formwhatRadioListenLastWeek").attr("disabled", "disabled");
         }
       });
     });
@@ -977,12 +979,22 @@
       });
     });
     $("[name='form[whereListen1]']").change(function () {
+      if ($("#formwhereListen16").is(":checked")) {
+        $("#formwhereListen1").removeAttr("disabled");
+      } else {
+        $("#formwhereListen1").attr("disabled", "disabled");
+      }
       $("#formtimeInterval1Div").removeAttr("hidden");
     });
     $("[name='form[whatRadioListen1]']").change(function () {
       $("#formwhichDevice1Div").removeAttr("hidden");
     });
     $("[name='form[whichDevice1]']").change(function () {
+      if ($("#formwhichDevice16").is(":checked")) {
+        $("#formwhichDevice1").removeAttr("disabled");
+      } else {
+        $("#formwhichDevice1").attr("disabled", "disabled");
+      }
       $("#needOneMoreInterval1Div").removeAttr("hidden");
     });
     $("#needOneMoreInterval11").change(function () {
@@ -994,12 +1006,22 @@
       $("#educationDiv").removeAttr("hidden");
     });
     $("[name='form[whereListen2]']").change(function () {
+      if ($("#formwhereListen26").is(":checked")) {
+        $("#formwhereListen2").removeAttr("disabled");
+      } else {
+        $("#formwhereListen2").attr("disabled", "disabled");
+      }
       $("#formtimeInterval2Div").removeAttr("hidden");
     });
     $("[name='form[whatRadioListen2]']").change(function () {
       $("#formwhichDevice2Div").removeAttr("hidden");
     });
     $("[name='form[whichDevice2]']").change(function () {
+      if ($("#formwhichDevice26").is(":checked")) {
+        $("#formwhichDevice2").removeAttr("disabled");
+      } else {
+        $("#formwhichDevice2").attr("disabled", "disabled");
+      }
       $("#needOneMoreInterval2Div").removeAttr("hidden");
     });
     $("#needOneMoreInterval21").change(function () {
@@ -1011,12 +1033,22 @@
       $("#educationDiv").removeAttr("hidden");
     });
     $("[name='form[whereListen3]']").change(function () {
+      if ($("#formwhereListen36").is(":checked")) {
+        $("#formwhereListen3").removeAttr("disabled");
+      } else {
+        $("#formwhereListen3").attr("disabled", "disabled");
+      }
       $("#formtimeInterval3Div").removeAttr("hidden");
     });
     $("[name='form[whatRadioListen3]']").change(function () {
       $("#formwhichDevice3Div").removeAttr("hidden");
     });
     $("[name='form[whichDevice3]']").change(function () {
+      if ($("#formwhichDevice36").is(":checked")) {
+        $("#formwhichDevice3").removeAttr("disabled");
+      } else {
+        $("#formwhichDevice3").attr("disabled", "disabled");
+      }
       $("#needOneMoreInterval3Div").removeAttr("hidden");
     });
     $("#needOneMoreInterval31").change(function () {
@@ -1028,12 +1060,22 @@
       $("#educationDiv").removeAttr("hidden");
     });
     $("[name='form[whereListen4]']").change(function () {
+      if ($("#formwhereListen46").is(":checked")) {
+        $("#formwhereListen4").removeAttr("disabled");
+      } else {
+        $("#formwhereListen4").attr("disabled", "disabled");
+      }
       $("#formtimeInterval4Div").removeAttr("hidden");
     });
     $("[name='form[whatRadioListen4]']").change(function () {
       $("#formwhichDevice4Div").removeAttr("hidden");
     });
     $("[name='form[whichDevice4]']").change(function () {
+      if ($("#formwhichDevice46").is(":checked")) {
+        $("#formwhichDevice4").removeAttr("disabled");
+      } else {
+        $("#formwhichDevice4").attr("disabled", "disabled");
+      }
       $("#needOneMoreInterval4Div").removeAttr("hidden");
     });
     $("#needOneMoreInterval41").change(function () {
@@ -1045,12 +1087,22 @@
       $("#educationDiv").removeAttr("hidden");
     });
     $("[name='form[whereListen5]']").change(function () {
+      if ($("#formwhereListen56").is(":checked")) {
+        $("#formwhereListen5").removeAttr("disabled");
+      } else {
+        $("#formwhereListen5").attr("disabled", "disabled");
+      }
       $("#formtimeInterval5Div").removeAttr("hidden");
     });
     $("[name='form[whatRadioListen5]']").change(function () {
       $("#formwhichDevice5Div").removeAttr("hidden");
     });
     $("[name='form[whichDevice5]']").change(function () {
+      if ($("#formwhichDevice56").is(":checked")) {
+        $("#formwhichDevice5").removeAttr("disabled");
+      } else {
+        $("#formwhichDevice5").attr("disabled", "disabled");
+      }
       $("#needOneMoreInterval5Div").removeAttr("hidden");
     });
     $("#needOneMoreInterval51").change(function () {
@@ -1062,21 +1114,41 @@
       $("#educationDiv").removeAttr("hidden");
     });
     $("[name='form[whereListen6]']").change(function () {
+      if ($("#formwhereListen66").is(":checked")) {
+        $("#formwhereListen6").removeAttr("disabled");
+      } else {
+        $("#formwhereListen6").attr("disabled", "disabled");
+      }
       $("#formtimeInterval6Div").removeAttr("hidden");
     });
     $("[name='form[whatRadioListen6]']").change(function () {
       $("#formwhichDevice6Div").removeAttr("hidden");
     });
     $("[name='form[whichDevice6]']").change(function () {
+      if ($("#formwhichDevice66").is(":checked")) {
+        $("#formwhichDevice6").removeAttr("disabled");
+      } else {
+        $("#formwhichDevice6").attr("disabled", "disabled");
+      }
       $("#educationDiv").removeAttr("hidden");
     });
     $("#educationDiv").change(function () {
       $("#professionDiv").removeAttr("hidden");
     });
     $("#professionDiv").change(function () {
+      if ($("#formprofession13").is(":checked")) {
+        $("#formprofession").removeAttr("disabled");
+      } else {
+        $("#formprofession").attr("disabled", "disabled");
+      }
       $("#submitButton").removeAttr("disabled");
     });
     $("#causeRefusedDiv").change(function () {
+      if ($("#formcauseRefused6").is(":checked")) {
+        $("#formcauseRefused").removeAttr("disabled");
+      } else {
+        $("#formcauseRefused").attr("disabled", "disabled");
+      }
       $("#submitButton").removeAttr("disabled");
     });
     $("#submitButton").click(function(event) {
@@ -1128,7 +1200,7 @@
                     <form:radiobutton path="form[causeRefused]" value="Нет человека с ближайшим ДР" label="Нет человека с ближайшим ДР"/><br>
                     <form:radiobutton path="form[causeRefused]" value="Не тот город" label="Не тот город"/><br>
                     <form:radiobutton path="form[causeRefused]" value="Не помнит радиостанции за месяц, время прослушивания и т д" label="Не помнит радиостанции за месяц, время прослушивания и т д"/><br>
-                    <form:radiobutton path="form[causeRefused]" value="Другое" label="Другое:" /> <form:input path="form[causeRefused]" type="text" class="input-small" style="width: 50%"/><br>
+                    <form:radiobutton path="form[causeRefused]" value="Другое" label="Другое:"/> <form:input path="form[causeRefused]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     <br>
                 </div>
 
@@ -1198,7 +1270,7 @@
                         <form:radiobutton path="form[whereListen1]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen1]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen1]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen1]" value="Другое" label="Другое"/><form:input path="form[whereListen1]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whereListen1]" value="Другое" label="Другое"/><form:input path="form[whereListen1]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div>
 
                     <div id="formtimeInterval1Div" class="form-group" hidden>
@@ -1260,7 +1332,7 @@
                         <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice1]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice1]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice1]" value="Другое" label="Другое"/><form:input path="form[whichDevice1]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whichDevice1]" value="Другое" label="Другое"/><form:input path="form[whichDevice1]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div><br>
                 </div>
 
@@ -1277,11 +1349,10 @@
                         <b>6.2 Где слушали радио?</b><br>
                         <form:radiobutton path="form[whereListen2]" value="На работе/учебе" label="На работе/учебе"/><br>
                         <form:radiobutton path="form[whereListen2]" value="Дома" label="Дома"/><br>
-                        <form:radiobutton path="form[whereListen2]" value="Дома" label="Дома"/><br>
                         <form:radiobutton path="form[whereListen2]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen2]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen2]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen2]" value="Другое" label="Другое"/><form:input path="form[whereListen2]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whereListen2]" value="Другое" label="Другое"/><form:input path="form[whereListen2]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div>
 
                     <div id="formtimeInterval2Div" class="form-group" hidden>
@@ -1343,7 +1414,7 @@
                         <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice2]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice2]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice2]" value="Другое" label="Другое"/><form:input path="form[whichDevice2]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whichDevice2]" value="Другое" label="Другое"/><form:input path="form[whichDevice2]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div><br>
                 </div>
 
@@ -1360,11 +1431,10 @@
                         <b>6.3 Где слушали радио?</b><br>
                         <form:radiobutton path="form[whereListen3]" value="На работе/учебе" label="На работе/учебе"/><br>
                         <form:radiobutton path="form[whereListen3]" value="Дома" label="Дома"/><br>
-                        <form:radiobutton path="form[whereListen3]" value="Дома" label="Дома"/><br>
                         <form:radiobutton path="form[whereListen3]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen3]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen3]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen3]" value="Другое" label="Другое"/><form:input path="form[whereListen3]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whereListen3]" value="Другое" label="Другое"/><form:input path="form[whereListen3]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div>
 
                     <div id="formtimeInterval3Div" class="form-group" hidden>
@@ -1426,7 +1496,7 @@
                         <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice3]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice3]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice3]" value="Другое" label="Другое"/><form:input path="form[whichDevice3]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whichDevice3]" value="Другое" label="Другое"/><form:input path="form[whichDevice3]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div><br>
                 </div>
 
@@ -1443,11 +1513,10 @@
                         <b>6.4 Где слушали радио?</b><br>
                         <form:radiobutton path="form[whereListen4]" value="На работе/учебе" label="На работе/учебе"/><br>
                         <form:radiobutton path="form[whereListen4]" value="Дома" label="Дома"/><br>
-                        <form:radiobutton path="form[whereListen4]" value="Дома" label="Дома"/><br>
                         <form:radiobutton path="form[whereListen4]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen4]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen4]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen4]" value="Другое" label="Другое"/><form:input path="form[whereListen4]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whereListen4]" value="Другое" label="Другое"/><form:input path="form[whereListen4]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div>
 
                     <div id="formtimeInterval4Div" class="form-group" hidden>
@@ -1509,7 +1578,7 @@
                         <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice4]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice4]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice4]" value="Другое" label="Другое"/><form:input path="form[whichDevice4]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whichDevice4]" value="Другое" label="Другое"/><form:input path="form[whichDevice4]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div><br>
                 </div>
 
@@ -1526,11 +1595,10 @@
                         <b>6.5 Где слушали радио?</b><br>
                         <form:radiobutton path="form[whereListen5]" value="На работе/учебе" label="На работе/учебе"/><br>
                         <form:radiobutton path="form[whereListen5]" value="Дома" label="Дома"/><br>
-                        <form:radiobutton path="form[whereListen5]" value="Дома" label="Дома"/><br>
                         <form:radiobutton path="form[whereListen5]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen5]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen5]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen5]" value="Другое" label="Другое"/><form:input path="form[whereListen5]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whereListen5]" value="Другое" label="Другое"/><form:input path="form[whereListen5]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div>
 
                     <div id="formtimeInterval5Div" class="form-group" hidden>
@@ -1592,7 +1660,7 @@
                         <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice5]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice5]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice5]" value="Другое" label="Другое"/><form:input path="form[whichDevice5]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whichDevice5]" value="Другое" label="Другое"/><form:input path="form[whichDevice5]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div><br>
                 </div>
 
@@ -1609,11 +1677,10 @@
                         <b>6.6 Где слушали радио?</b><br>
                         <form:radiobutton path="form[whereListen6]" value="На работе/учебе" label="На работе/учебе"/><br>
                         <form:radiobutton path="form[whereListen6]" value="Дома" label="Дома"/><br>
-                        <form:radiobutton path="form[whereListen6]" value="Дома" label="Дома"/><br>
                         <form:radiobutton path="form[whereListen6]" value="В машине" label="В машине"/><br>
                         <form:radiobutton path="form[whereListen6]" value="В общ. транспорте" label="В общ. транспорте"/><br>
                         <form:radiobutton path="form[whereListen6]" value="Вне помещения (по дороге,на велосипеде)" label="Вне помещения (по дороге,на велосипеде)"/><br>
-                        <form:radiobutton path="form[whereListen6]" value="Другое" label="Другое"/><form:input path="form[whereListen6]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whereListen6]" value="Другое" label="Другое"/><form:input path="form[whereListen6]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div>
 
                     <div id="formtimeInterval6Div" class="form-group" hidden>
@@ -1675,7 +1742,7 @@
                         <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через встроенный FM-тюнер" label="Мобильный телефон, смартфон-через встроенный FM-тюнер"/><br>
                         <form:radiobutton path="form[whichDevice6]" value="Мобильный телефон, смартфон-через Интернет" label="Мобильный телефон, смартфон-через Интернет"/><br>
                         <form:radiobutton path="form[whichDevice6]" value="Компьютер, ноутбук, планшет-через Интернет" label="Компьютер, ноутбук, планшет-через Интернет"/><br>
-                        <form:radiobutton path="form[whichDevice6]" value="Другое" label="Другое"/><form:input path="form[whichDevice6]" type="text" class="input-small" style="width: 50%"/><br>
+                        <form:radiobutton path="form[whichDevice6]" value="Другое" label="Другое"/><form:input path="form[whichDevice6]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     </div><br>
                 </div>
 
@@ -1702,7 +1769,7 @@
                     <form:radiobutton path="form[profession]" value="Студент, учащийся" label="Студент, учащийся"/><br>
                     <form:radiobutton path="form[profession]" value="Работающий пенсионер" label="Работающий пенсионер"/><br>
                     <form:radiobutton path="form[profession]" value="Неработающий пенсионер" label="Неработающий пенсионер"/><br>
-                    <form:radiobutton path="form[profession]" value="Другое" label="Другое"/><form:input path="form[profession]" type="text" class="input-small" style="width: 50%"/><br>
+                    <form:radiobutton path="form[profession]" value="Другое" label="Другое"/><form:input path="form[profession]" type="text" class="input-small" style="width: 50%" disabled="true"/><br>
                     <br>
                 </div>
 
