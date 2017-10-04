@@ -17,12 +17,12 @@ public class AsteriskService {
   private static String PASSWORD_PROPERTY;
 
   @Value("${asterisk.hostname}")
-  public void setHostnameProperty (String hostnameProperty) {
+  public void setHostnameProperty(String hostnameProperty) {
     HOSTNAME_PROPERTY = hostnameProperty;
   }
 
   @Value("${asterisk.username}")
-  public void setUsernameProperty (String usernameProperty) {
+  public void setUsernameProperty(String usernameProperty) {
     USERNAME_PROPERTY = usernameProperty;
   }
 

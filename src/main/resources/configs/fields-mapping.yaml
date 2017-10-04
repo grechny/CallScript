@@ -1,6 +1,6 @@
 ### service constants
 # count of columns
-array_size: 37
+array_size: 89
 
 # index of id constant
 id_index:
@@ -11,37 +11,96 @@ date_index: 1
 ### indexes of user column names
 phoneNumber: 2
 city: 3
-causeRefused: 37
 gender: 4
 age: 5
-lastMonthListen: 6
-lastWeekListen: 7
-whatRadioListenLastWeek: 8
-yesterdayListen: 9
-whereListen1: 10
-timeInterval1: 11
-whatRadioListen1: 12
-whichDevice1: 13
-whereListen2: 14
-timeInterval2: 15
-whatRadioListen2: 16
-whichDevice2: 17
-whereListen3: 18
-timeInterval3: 19
-whatRadioListen3: 20
-whichDevice3: 21
-whereListen4: 22
-timeInterval4: 23
-whatRadioListen4: 24
-whichDevice4: 25
-whereListen5: 26
-timeInterval5: 27
-whatRadioListen5: 28
-whichDevice5: 29
-whereListen6: 30
-timeInterval6: 31
-whatRadioListen6: 32
-whichDevice6: 33
-education: 34
-profession: 35
-operator: 36
+watchingTV: 6
+watchingTVTime: 7
+whatChannelsWatch: 8
+
+howManyPeopleAtHome: 9
+childrenUnder4years: 10
+subscribe: 11
+
+whatTVType1: 12
+quantityOfChannels1: 13
+tvProvider1: 14
+containsBelarus51: 15
+containsTNT1: 16
+containsVTV1: 17
+containsTV31: 18
+containsMuzTV1: 19
+containsDomashniy1: 20
+containsEuropaPlus1: 21
+containsPeretc1: 22
+hasSmartTV1: 23
+usesSmartTV1: 24
+
+whatTVType2: 25
+quantityOfChannels2: 26
+tvProvider2: 27
+containsBelarus52: 28
+containsTNT2: 29
+containsVTV2: 30
+containsTV32: 31
+containsMuzTV2: 32
+containsDomashniy2: 33
+containsEuropaPlus2: 34
+containsPeretc2: 35
+hasSmartTV2: 36
+usesSmartTV2: 37
+
+whatTVType3: 38
+quantityOfChannels3: 39
+tvProvider3: 40
+containsBelarus53: 41
+containsTNT3: 42
+containsVTV3: 43
+containsTV33: 44
+containsMuzTV3: 45
+containsDomashniy3: 46
+containsEuropaPlus3: 47
+containsPeretc3: 48
+hasSmartTV3: 49
+usesSmartTV3: 50
+
+whatTVType4: 51
+quantityOfChannels4: 52
+tvProvider4: 53
+containsBelarus54: 54
+containsTNT4: 55
+containsVTV4: 56
+containsTV34: 57
+containsMuzTV4: 58
+containsDomashniy4: 59
+containsEuropaPlus4: 60
+containsPeretc4: 61
+hasSmartTV4: 62
+usesSmartTV4: 63
+
+whatTVType5: 64
+quantityOfChannels5: 65
+tvProvider5: 66
+containsBelarus55: 67
+containsTNT5: 68
+containsVTV5: 69
+containsTV35: 70
+containsMuzTV5: 71
+containsDomashniy5: 72
+containsEuropaPlus5: 73
+containsPeretc5: 74
+hasSmartTV5: 75
+usesSmartTV5: 76
+
+whatTVType6: 77
+quantityOfChannels6: 78
+tvProvider6: 79
+containsBelarus56: 80
+containsTNT6: 81
+containsVTV6: 82
+containsTV36: 83
+containsMuzTV6: 84
+containsDomashniy6: 85
+containsEuropaPlus6: 86
+containsPeretc6: 87
+hasSmartTV6: 88
+usesSmartTV6: 89
