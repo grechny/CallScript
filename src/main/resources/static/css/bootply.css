@@ -8,6 +8,7 @@ h1 {
 
 label {
     font-weight: normal !important;
+    display: inline !important;
 }
 
 /* Custom container */
