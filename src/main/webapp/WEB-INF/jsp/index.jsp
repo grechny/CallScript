@@ -75,7 +75,7 @@
 
                 <div id="watchingTVTimeDiv" hidden>
                     <b>4. Сколько в среднем часов в день Вы смотрите телевизор?</b><br>
-                    <form:input path="form[watchingTVTime]" type="text" maxlength="2" class="form-control" style="width: 50%" title="Введите количество часов" placeholder="Введите количество часов"/>
+                    <form:input path="form[watchingTVTime]" type="text" class="form-control" style="width: 50%" title="Введите количество часов" placeholder="Введите количество часов"/>
                     <br>
                 </div>
 

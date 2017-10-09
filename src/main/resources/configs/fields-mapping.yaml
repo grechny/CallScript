@@ -1,6 +1,6 @@
 ### service constants
 # count of columns
-array_size: 89
+array_size: 90
 
 # index of id constant
 id_index:
@@ -9,6 +9,7 @@ id_index:
 date_index: 1
 
 ### indexes of user column names
+operator: 90
 phoneNumber: 2
 city: 3
 gender: 4
