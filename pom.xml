@@ -136,7 +136,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <executable>true</executable>
-          <finalName>call-script</finalName>
+          <finalName>call-script-tv</finalName>
           <addResources>true</addResources>
         </configuration>
       </plugin>

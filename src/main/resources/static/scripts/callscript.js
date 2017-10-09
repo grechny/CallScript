@@ -154,12 +154,22 @@ $(document).ready(function () {
       $("#howManyPeopleAtHomeDiv").removeAttr("hidden");
     }
   });
+  $("#formwhatTVType212").change(function () {
+    if ($("#formwhatTVType212").is(':checked')) {
+      $("[name='form[whatTVType2]']").prop('checked', false);
+      $("#formwhatTVType212").prop('checked', true);
+      $("#containsBelarus52Div").attr("hidden", "hidden");
+      $("#quantityOfChannels2Div").attr("hidden", "hidden");
+      $("#hasSmartTV2Div").removeAttr("hidden");
+    }
+  });
   $("[name='form[whatTVType2]']").change(function () {
     if ($("#formwhatTVType21").is(':checked')
         || $("#formwhatTVType26").is(':checked')) {
       $("#containsBelarus52Div").removeAttr("hidden");
       $("#quantityOfChannels2Div").attr("hidden", "hidden");
       $("#hasSmartTV2Div").attr("hidden", "hidden");
+      $("#formwhatTVType212").prop('checked', false);
     } else if ($("#formwhatTVType22").is(':checked')
         || $("#formwhatTVType23").is(':checked')
         || $("#formwhatTVType24").is(':checked')
@@ -169,10 +179,14 @@ $(document).ready(function () {
       $("#containsBelarus52Div").attr("hidden", "hidden");
       $("#quantityOfChannels2Div").removeAttr("hidden");
       $("#hasSmartTV2Div").attr("hidden", "hidden");
-    } else {
+      $("#formwhatTVType212").prop('checked', false);
+    } else if ($("#formwhatTVType27").is(':checked')
+        || $("#formwhatTVType29").is(':checked')
+        || $("#formwhatTVType211").is(':checked')) {
       $("#containsBelarus52Div").attr("hidden", "hidden");
       $("#quantityOfChannels2Div").attr("hidden", "hidden");
       $("#hasSmartTV2Div").removeAttr("hidden");
+      $("#formwhatTVType212").prop('checked', false);
     }
   });
   $("[name='form[containsBelarus52]']").change(function () {
@@ -253,12 +267,34 @@ $(document).ready(function () {
       $("#howManyPeopleAtHomeDiv").removeAttr("hidden");
     }
   });
-  $("[name='form[whatTVType3]']").change(function () {
+  $("#formwhatTVType312").change(function () {
+    if ($("#formwhatTVType312").is(':checked')) {
+      $("[name='form[whatTVType3]']").prop('checked', false);
+      $("#formwhatTVType312").prop('checked', true);
+      $("#containsBelarus53Div").attr("hidden", "hidden");
+      $("#quantityOfChannels3Div").attr("hidden", "hidden");
+      $("#hasSmartTV3Div").removeAttr("hidden");
+      $("#formwhatTVType313").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType313").change(function () {
+    if ($("#formwhatTVType313").is(':checked')) {
+      $("[name='form[whatTVType3]']").prop('checked', false);
+      $("#formwhatTVType313").prop('checked', true);
+      $("#containsBelarus53Div").attr("hidden", "hidden");
+      $("#quantityOfChannels3Div").attr("hidden", "hidden");
+      $("#hasSmartTV3Div").removeAttr("hidden");
+      $("#formwhatTVType312").prop('checked', false);
+    }
+  });
+    $("[name='form[whatTVType3]']").change(function () {
     if ($("#formwhatTVType31").is(':checked')
         || $("#formwhatTVType36").is(':checked')) {
       $("#containsBelarus53Div").removeAttr("hidden");
       $("#quantityOfChannels3Div").attr("hidden", "hidden");
       $("#hasSmartTV3Div").attr("hidden", "hidden");
+      $("#formwhatTVType312").prop('checked', false);
+      $("#formwhatTVType313").prop('checked', false);
     } else if ($("#formwhatTVType32").is(':checked')
         || $("#formwhatTVType33").is(':checked')
         || $("#formwhatTVType34").is(':checked')
@@ -268,10 +304,16 @@ $(document).ready(function () {
       $("#containsBelarus53Div").attr("hidden", "hidden");
       $("#quantityOfChannels3Div").removeAttr("hidden");
       $("#hasSmartTV3Div").attr("hidden", "hidden");
-    } else {
+      $("#formwhatTVType312").prop('checked', false);
+      $("#formwhatTVType313").prop('checked', false);
+    } else if ($("#formwhatTVType37").is(':checked')
+        || $("#formwhatTVType39").is(':checked')
+        || $("#formwhatTVType311").is(':checked')) {
       $("#containsBelarus53Div").attr("hidden", "hidden");
       $("#quantityOfChannels3Div").attr("hidden", "hidden");
       $("#hasSmartTV3Div").removeAttr("hidden");
+      $("#formwhatTVType312").prop('checked', false);
+      $("#formwhatTVType313").prop('checked', false);
     }
   });
   $("[name='form[containsBelarus53]']").change(function () {
@@ -352,12 +394,48 @@ $(document).ready(function () {
       $("#howManyPeopleAtHomeDiv").removeAttr("hidden");
     }
   });
+  $("#formwhatTVType412").change(function () {
+    if ($("#formwhatTVType412").is(':checked')) {
+      $("[name='form[whatTVType4]']").prop('checked', false);
+      $("#formwhatTVType412").prop('checked', true);
+      $("#containsBelarus54Div").attr("hidden", "hidden");
+      $("#quantityOfChannels4Div").attr("hidden", "hidden");
+      $("#hasSmartTV4Div").removeAttr("hidden");
+      $("#formwhatTVType413").prop('checked', false);
+      $("#formwhatTVType414").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType413").change(function () {
+    if ($("#formwhatTVType413").is(':checked')) {
+      $("[name='form[whatTVType4]']").prop('checked', false);
+      $("#formwhatTVType413").prop('checked', true);
+      $("#containsBelarus54Div").attr("hidden", "hidden");
+      $("#quantityOfChannels4Div").attr("hidden", "hidden");
+      $("#hasSmartTV4Div").removeAttr("hidden");
+      $("#formwhatTVType412").prop('checked', false);
+      $("#formwhatTVType414").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType414").change(function () {
+    if ($("#formwhatTVType414").is(':checked')) {
+      $("[name='form[whatTVType4]']").prop('checked', false);
+      $("#formwhatTVType414").prop('checked', true);
+      $("#containsBelarus54Div").attr("hidden", "hidden");
+      $("#quantityOfChannels4Div").attr("hidden", "hidden");
+      $("#hasSmartTV4Div").removeAttr("hidden");
+      $("#formwhatTVType412").prop('checked', false);
+      $("#formwhatTVType413").prop('checked', false);
+    }
+  });
   $("[name='form[whatTVType4]']").change(function () {
     if ($("#formwhatTVType41").is(':checked')
         || $("#formwhatTVType46").is(':checked')) {
       $("#containsBelarus54Div").removeAttr("hidden");
       $("#quantityOfChannels4Div").attr("hidden", "hidden");
       $("#hasSmartTV4Div").attr("hidden", "hidden");
+      $("#formwhatTVType412").prop('checked', false);
+      $("#formwhatTVType413").prop('checked', false);
+      $("#formwhatTVType414").prop('checked', false);
     } else if ($("#formwhatTVType42").is(':checked')
         || $("#formwhatTVType43").is(':checked')
         || $("#formwhatTVType44").is(':checked')
@@ -367,10 +445,18 @@ $(document).ready(function () {
       $("#containsBelarus54Div").attr("hidden", "hidden");
       $("#quantityOfChannels4Div").removeAttr("hidden");
       $("#hasSmartTV4Div").attr("hidden", "hidden");
-    } else {
+      $("#formwhatTVType412").prop('checked', false);
+      $("#formwhatTVType413").prop('checked', false);
+      $("#formwhatTVType414").prop('checked', false);
+    } else if ($("#formwhatTVType47").is(':checked')
+        || $("#formwhatTVType49").is(':checked')
+        || $("#formwhatTVType411").is(':checked')) {
       $("#containsBelarus54Div").attr("hidden", "hidden");
       $("#quantityOfChannels4Div").attr("hidden", "hidden");
       $("#hasSmartTV4Div").removeAttr("hidden");
+      $("#formwhatTVType412").prop('checked', false);
+      $("#formwhatTVType413").prop('checked', false);
+      $("#formwhatTVType414").prop('checked', false);
     }
   });
   $("[name='form[containsBelarus54]']").change(function () {
@@ -451,12 +537,64 @@ $(document).ready(function () {
       $("#howManyPeopleAtHomeDiv").removeAttr("hidden");
     }
   });
+  $("#formwhatTVType512").change(function () {
+    if ($("#formwhatTVType512").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType512").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType513").prop('checked', false);
+      $("#formwhatTVType514").prop('checked', false);
+      $("#formwhatTVType515").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType513").change(function () {
+    if ($("#formwhatTVType513").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType513").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType512").prop('checked', false);
+      $("#formwhatTVType514").prop('checked', false);
+      $("#formwhatTVType515").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType514").change(function () {
+    if ($("#formwhatTVType514").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType514").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType512").prop('checked', false);
+      $("#formwhatTVType513").prop('checked', false);
+      $("#formwhatTVType515").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType515").change(function () {
+    if ($("#formwhatTVType515").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType515").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType512").prop('checked', false);
+      $("#formwhatTVType513").prop('checked', false);
+      $("#formwhatTVType514").prop('checked', false);
+    }
+  });
   $("[name='form[whatTVType5]']").change(function () {
     if ($("#formwhatTVType51").is(':checked')
         || $("#formwhatTVType56").is(':checked')) {
       $("#containsBelarus55Div").removeAttr("hidden");
       $("#quantityOfChannels5Div").attr("hidden", "hidden");
       $("#hasSmartTV5Div").attr("hidden", "hidden");
+      $("#formwhatTVType512").prop('checked', false);
+      $("#formwhatTVType513").prop('checked', false);
+      $("#formwhatTVType514").prop('checked', false);
+      $("#formwhatTVType515").prop('checked', false);
     } else if ($("#formwhatTVType52").is(':checked')
         || $("#formwhatTVType53").is(':checked')
         || $("#formwhatTVType54").is(':checked')
@@ -466,10 +604,20 @@ $(document).ready(function () {
       $("#containsBelarus55Div").attr("hidden", "hidden");
       $("#quantityOfChannels5Div").removeAttr("hidden");
       $("#hasSmartTV5Div").attr("hidden", "hidden");
-    } else {
+      $("#formwhatTVType512").prop('checked', false);
+      $("#formwhatTVType513").prop('checked', false);
+      $("#formwhatTVType514").prop('checked', false);
+      $("#formwhatTVType515").prop('checked', false);
+    } else if ($("#formwhatTVType57").is(':checked')
+        || $("#formwhatTVType59").is(':checked')
+        || $("#formwhatTVType511").is(':checked')) {
       $("#containsBelarus55Div").attr("hidden", "hidden");
       $("#quantityOfChannels5Div").attr("hidden", "hidden");
       $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType512").prop('checked', false);
+      $("#formwhatTVType513").prop('checked', false);
+      $("#formwhatTVType514").prop('checked', false);
+      $("#formwhatTVType515").prop('checked', false);
     }
   });
   $("[name='form[containsBelarus55]']").change(function () {
@@ -550,12 +698,82 @@ $(document).ready(function () {
       $("#howManyPeopleAtHomeDiv").removeAttr("hidden");
     }
   });
+  $("#formwhatTVType612").change(function () {
+    if ($("#formwhatTVType612").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType612").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType613").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType613").change(function () {
+    if ($("#formwhatTVType613").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType613").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType612").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType614").change(function () {
+    if ($("#formwhatTVType614").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType612").prop('checked', false);
+      $("#formwhatTVType613").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType615").change(function () {
+    if ($("#formwhatTVType615").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType612").prop('checked', false);
+      $("#formwhatTVType613").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', false);
+    }
+  });
+  $("#formwhatTVType616").change(function () {
+    if ($("#formwhatTVType616").is(':checked')) {
+      $("[name='form[whatTVType5]']").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', true);
+      $("#containsBelarus55Div").attr("hidden", "hidden");
+      $("#quantityOfChannels5Div").attr("hidden", "hidden");
+      $("#hasSmartTV5Div").removeAttr("hidden");
+      $("#formwhatTVType612").prop('checked', false);
+      $("#formwhatTVType613").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', false);
+    }
+  });
   $("[name='form[whatTVType6]']").change(function () {
     if ($("#formwhatTVType61").is(':checked')
         || $("#formwhatTVType66").is(':checked')) {
       $("#containsBelarus56Div").removeAttr("hidden");
       $("#quantityOfChannels6Div").attr("hidden", "hidden");
       $("#hasSmartTV6Div").attr("hidden", "hidden");
+      $("#formwhatTVType612").prop('checked', false);
+      $("#formwhatTVType613").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', false);
     } else if ($("#formwhatTVType62").is(':checked')
         || $("#formwhatTVType63").is(':checked')
         || $("#formwhatTVType64").is(':checked')
@@ -565,10 +783,22 @@ $(document).ready(function () {
       $("#containsBelarus56Div").attr("hidden", "hidden");
       $("#quantityOfChannels6Div").removeAttr("hidden");
       $("#hasSmartTV6Div").attr("hidden", "hidden");
-    } else {
+      $("#formwhatTVType612").prop('checked', false);
+      $("#formwhatTVType613").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', false);
+    } else if ($("#formwhatTVType67").is(':checked')
+        || $("#formwhatTVType69").is(':checked')
+        || $("#formwhatTVType611").is(':checked')) {
       $("#containsBelarus56Div").attr("hidden", "hidden");
       $("#quantityOfChannels6Div").attr("hidden", "hidden");
       $("#hasSmartTV6Div").removeAttr("hidden");
+      $("#formwhatTVType612").prop('checked', false);
+      $("#formwhatTVType613").prop('checked', false);
+      $("#formwhatTVType614").prop('checked', false);
+      $("#formwhatTVType615").prop('checked', false);
+      $("#formwhatTVType616").prop('checked', false);
     }
   });
   $("[name='form[containsBelarus56]']").change(function () {
@@ -652,13 +882,18 @@ $(document).ready(function () {
       $("#howManyPeopleAtHomeDiv").removeClass("has-success").addClass("has-error");
     }
   });
-  $("#childrenUnder4yearsDiv")
-  .keypress(function () {
-    $("#subscribeDiv").removeAttr("hidden");
-  })
-  .focusout(function () {
+  $("[name='childrenUnder4years']").change(function () {
+    if ($("#childrenUnder4years1").is(':checked')) {
+      $("#formchildrenUnder4years").removeAttr("disabled");
+      $("#subscribeDiv").removeAttr("hidden");
+    } else {
+      $("#formchildrenUnder4years").attr("disabled", "disabled");
+      $("#subscribeDiv").removeAttr("hidden");
+    }
+  });
+  $("#formchildrenUnder4years").focusout(function () {
     var num = Number($("#formchildrenUnder4years").val());
-    if (num >= 0) {
+    if (num > 0) {
       $("#childrenUnder4yearsDiv").removeClass("has-error").addClass("has-success");
     } else {
       $("#childrenUnder4yearsDiv").removeClass("has-success").addClass("has-error");

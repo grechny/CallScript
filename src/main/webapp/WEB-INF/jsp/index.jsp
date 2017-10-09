@@ -205,6 +205,7 @@
                     <form:checkbox path="form[whatTVType2]" value="9" label="9. IP телевидение БЕЗ использования приставки, которая непосредственно подключается к телевизору, от компании Белтелеком (Смарт Zala)."/><br>
                     <form:checkbox path="form[whatTVType2]" value="10" label="10. IP телевидение БЕЗ использованием приставки, которая непосредственно подключается к телевизору, НЕ от компании Белтелеком. Уточняем оператора и количество каналов."/><br>
                     <form:checkbox path="form[whatTVType2]" value="11" label="11. ТВ не подключено."/><br>
+                    <form:checkbox path="form[whatTVType2]" value="12" label="12. То же самое, что и на 1-ом."/><br>
                     <br>
                 </div>
 
@@ -312,6 +313,8 @@
                     <form:checkbox path="form[whatTVType3]" value="9" label="9. IP телевидение БЕЗ использования приставки, которая непосредственно подключается к телевизору, от компании Белтелеком (Смарт Zala)."/><br>
                     <form:checkbox path="form[whatTVType3]" value="10" label="10. IP телевидение БЕЗ использованием приставки, которая непосредственно подключается к телевизору, НЕ от компании Белтелеком. Уточняем оператора и количество каналов."/><br>
                     <form:checkbox path="form[whatTVType3]" value="11" label="11. ТВ не подключено."/><br>
+                    <form:checkbox path="form[whatTVType3]" value="12" label="12. То же самое, что и на 1-ом."/><br>
+                    <form:checkbox path="form[whatTVType3]" value="13" label="13. То же самое, что и на 2-ом."/><br>
                     <br>
                 </div>
 
@@ -419,6 +422,9 @@
                     <form:checkbox path="form[whatTVType4]" value="9" label="9. IP телевидение БЕЗ использования приставки, которая непосредственно подключается к телевизору, от компании Белтелеком (Смарт Zala)."/><br>
                     <form:checkbox path="form[whatTVType4]" value="10" label="10. IP телевидение БЕЗ использованием приставки, которая непосредственно подключается к телевизору, НЕ от компании Белтелеком. Уточняем оператора и количество каналов."/><br>
                     <form:checkbox path="form[whatTVType4]" value="11" label="11. ТВ не подключено."/><br>
+                    <form:checkbox path="form[whatTVType4]" value="12" label="12. То же самое, что и на 1-ом."/><br>
+                    <form:checkbox path="form[whatTVType4]" value="13" label="13. То же самое, что и на 2-ом."/><br>
+                    <form:checkbox path="form[whatTVType4]" value="14" label="14. То же самое, что и на 3-ем."/><br>
                     <br>
                 </div>
 
@@ -526,6 +532,10 @@
                     <form:checkbox path="form[whatTVType5]" value="9" label="9. IP телевидение БЕЗ использования приставки, которая непосредственно подключается к телевизору, от компании Белтелеком (Смарт Zala)."/><br>
                     <form:checkbox path="form[whatTVType5]" value="10" label="10. IP телевидение БЕЗ использованием приставки, которая непосредственно подключается к телевизору, НЕ от компании Белтелеком. Уточняем оператора и количество каналов."/><br>
                     <form:checkbox path="form[whatTVType5]" value="11" label="11. ТВ не подключено."/><br>
+                    <form:checkbox path="form[whatTVType5]" value="12" label="12. То же самое, что и на 1-ом."/><br>
+                    <form:checkbox path="form[whatTVType5]" value="13" label="13. То же самое, что и на 2-ом."/><br>
+                    <form:checkbox path="form[whatTVType5]" value="14" label="14. То же самое, что и на 3-ем."/><br>
+                    <form:checkbox path="form[whatTVType5]" value="15" label="15. То же самое, что и на 4-ом."/><br>
                     <br>
                 </div>
 
@@ -633,6 +643,11 @@
                     <form:checkbox path="form[whatTVType6]" value="9" label="9. IP телевидение БЕЗ использования приставки, которая непосредственно подключается к телевизору, от компании Белтелеком (Смарт Zala)."/><br>
                     <form:checkbox path="form[whatTVType6]" value="10" label="10. IP телевидение БЕЗ использованием приставки, которая непосредственно подключается к телевизору, НЕ от компании Белтелеком. Уточняем оператора и количество каналов."/><br>
                     <form:checkbox path="form[whatTVType6]" value="11" label="11. ТВ не подключено."/><br>
+                    <form:checkbox path="form[whatTVType6]" value="12" label="12. То же самое, что и на 1-ом."/><br>
+                    <form:checkbox path="form[whatTVType6]" value="13" label="13. То же самое, что и на 2-ом."/><br>
+                    <form:checkbox path="form[whatTVType6]" value="14" label="14. То же самое, что и на 3-ом."/><br>
+                    <form:checkbox path="form[whatTVType6]" value="15" label="15. То же самое, что и на 4-ом."/><br>
+                    <form:checkbox path="form[whatTVType6]" value="16" label="16. То же самое, что и на 5-ом."/><br>
                     <br>
                 </div>
 
@@ -728,7 +743,8 @@
 
                 <div id="childrenUnder4yearsDiv" hidden>
                     <b>10. Есть ли среди них дети до 4 лет?</b><br>
-                    <form:input path="form[childrenUnder4years]" type="text" class="form-control" style="width: 50%" title="Введите количество детей" placeholder="Введите количество детей"/>
+                    <input id="childrenUnder4years1" type="radio" name="childrenUnder4years" value="">Да <form:input path="form[childrenUnder4years]" type="text" class="form-control" style="width: 50%" title="Введите количество детей" placeholder="Введите количество детей" required="true" disabled="true"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+                    <input id="childrenUnder4years2" type="radio" name="childrenUnder4years" value="Нет">Нет<br>
                     <br>
                 </div>
 
