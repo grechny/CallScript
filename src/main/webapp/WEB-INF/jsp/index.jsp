@@ -49,6 +49,7 @@
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek19\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"19\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek19\">19. Легенды FM 94,1</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"20\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">20. Радио Мир 107,1</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"21\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">21. Альфа радио 107,9</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek22\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"22\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek22\">22. Релакс FM 87,5</label><br></div>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Брест") {
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">1. Радио Минск 100,4</label><br></div>");
@@ -63,8 +64,8 @@
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"18\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">18. 1-й Национальный канал белорусского радио 100,1</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"20\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">20. Радио Мир 106,6</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"21\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">21. Альфа радио 100,8</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek22\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"23\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek22\">23. Город FM (Брест) 97,7</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek23\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"24\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek23\">24. Радио Брест 104,8</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek25\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"25\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek25\">25. Город FM (Брест) 97,7</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek26\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"26\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek26\">26. Радио Брест 104,8</label><br></div>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Витебск") {
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">1. Радио Минск 106,4</label><br></div>");
@@ -78,10 +79,10 @@
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"18\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">18. 1-й Национальный канал белорусского радио 100,5</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"20\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">20. Радио Мир 101,8</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"21\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">21. Альфа радио 107,6</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek24\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"25\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek24\">25. Русское Радио Витебск 89,5</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek25\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"26\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek25\">26. Радио Витебск 91,2</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek26\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"27\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek26\">27. Европа Плюс (Витебск) 97,8</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek27\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"28\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek27\">28. Ретро Люкс FM (Витебск) 104,6</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek28\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"28\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek28\">28. Русское Радио Витебск 89,5</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek29\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"29\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek29\">29. Радио Витебск 91,2</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek30\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"30\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek30\">30. Европа Плюс (Витебск) 97,8</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek31\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"31\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek31\">31. Ретро Люкс FM (Витебск) 104,6</label><br></div>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Гомель") {
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">1. Радио Минск 105,6</label><br></div>");
@@ -96,10 +97,10 @@
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek17\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"17\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek17\">17. Душевное радио 106,0</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"18\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">18. 1-й Национальный канал белорусского радио 105,1</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"20\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">20. Радио Мир 101,7</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek28\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"29\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek28\">29. Гомель FM 101,3</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek29\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"30\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek29\">30. Гомель Плюс 103,7</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek30\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"31\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek30\">31. Гомельское городское радио 107,4</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek31\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"36\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek31\">36. Радио Правда (Гомель) 99,0</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek33\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"33\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek33\">33. Гомель FM 101,3</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek34\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"34\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek34\">34. Гомель Плюс 103,7</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek35\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"35\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek35\">35. Радио 107,4</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek36\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"36\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek36\">36. Радио Правда (Гомель) 99,0</label><br></div>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Гродно") {
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek2\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"2\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek2\">2. Юмор FM 89,9</label><br></div>");
@@ -114,8 +115,8 @@
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"18\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">18. 1-й Национальный канал белорусского радио 103,0</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"20\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">20. Радио Мир 104,2</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek21\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"21\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek21\">21. Альфа радио 98,4</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek32\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"32\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek32\">32. Радио Гродно 101,2</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek33\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"33\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek33\">33. Радио MFM (Гродно) 105,0</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek38\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"38\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek38\">38. Радио Гродно 101,2</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek39\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"39\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek39\">39. Радио MFM (Гродно) 105,0</label><br></div>");
         $("#genderDiv").removeAttr("hidden");
       } else if (city === "Могилев") {
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek1\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"1\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek1\">1. Радио Минск 98,1</label><br></div>");
@@ -129,8 +130,8 @@
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek15\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"15\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek15\">15. Радио Би-Эй 104,5</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek18\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"18\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek18\">18. 1-й Национальный канал белорусского радио 105,9</label><br></div>");
         $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek20\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"20\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek20\">20. Радио Мир 107,8</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek34\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"34\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek34\">34. Радио Могилев 96,4</label><br></div>");
-        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek35\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"35\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek35\">35. Русское Радио Могилев 98,6</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek41\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"41\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek41\">41. Радио Могилев 96,4</label><br></div>");
+        $whatRadioListenLastWeek.append("<div><input id=\"formwhatRadioListenLastWeek42\" name=\"form[whatRadioListenLastWeek]\" type=\"checkbox\" value=\"42\"><input type=\"hidden\" name=\"_form[whatRadioListenLastWeek]\" value=\"on\"><label for=\"formwhatRadioListenLastWeek42\">42. Русское Радио Могилев 98,6</label><br></div>");
         $("#genderDiv").removeAttr("hidden");
       }
 
@@ -519,40 +520,6 @@
           $("#formwhatRadioListen622Div").attr("hidden", "hidden");
         }
       });
-      $("#formwhatRadioListenLastWeek23").change(function () {
-        if ($("#formwhatRadioListenLastWeek23").is(':checked')) {
-          $("#formwhatRadioListen123Div").removeAttr("hidden");
-          $("#formwhatRadioListen223Div").removeAttr("hidden");
-          $("#formwhatRadioListen323Div").removeAttr("hidden");
-          $("#formwhatRadioListen423Div").removeAttr("hidden");
-          $("#formwhatRadioListen523Div").removeAttr("hidden");
-          $("#formwhatRadioListen623Div").removeAttr("hidden");
-        } else {
-          $("#formwhatRadioListen123Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen223Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen323Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen423Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen523Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen623Div").attr("hidden", "hidden");
-        }
-      });
-      $("#formwhatRadioListenLastWeek24").change(function () {
-        if ($("#formwhatRadioListenLastWeek24").is(':checked')) {
-          $("#formwhatRadioListen124Div").removeAttr("hidden");
-          $("#formwhatRadioListen224Div").removeAttr("hidden");
-          $("#formwhatRadioListen324Div").removeAttr("hidden");
-          $("#formwhatRadioListen424Div").removeAttr("hidden");
-          $("#formwhatRadioListen524Div").removeAttr("hidden");
-          $("#formwhatRadioListen624Div").removeAttr("hidden");
-        } else {
-          $("#formwhatRadioListen124Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen224Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen324Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen424Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen524Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen624Div").attr("hidden", "hidden");
-        }
-      });
       $("#formwhatRadioListenLastWeek25").change(function () {
         if ($("#formwhatRadioListenLastWeek25").is(':checked')) {
           $("#formwhatRadioListen125Div").removeAttr("hidden");
@@ -585,23 +552,6 @@
           $("#formwhatRadioListen426Div").attr("hidden", "hidden");
           $("#formwhatRadioListen526Div").attr("hidden", "hidden");
           $("#formwhatRadioListen626Div").attr("hidden", "hidden");
-        }
-      });
-      $("#formwhatRadioListenLastWeek27").change(function () {
-        if ($("#formwhatRadioListenLastWeek27").is(':checked')) {
-          $("#formwhatRadioListen127Div").removeAttr("hidden");
-          $("#formwhatRadioListen227Div").removeAttr("hidden");
-          $("#formwhatRadioListen327Div").removeAttr("hidden");
-          $("#formwhatRadioListen427Div").removeAttr("hidden");
-          $("#formwhatRadioListen527Div").removeAttr("hidden");
-          $("#formwhatRadioListen627Div").removeAttr("hidden");
-        } else {
-          $("#formwhatRadioListen127Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen227Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen327Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen427Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen527Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen627Div").attr("hidden", "hidden");
         }
       });
       $("#formwhatRadioListenLastWeek28").change(function () {
@@ -672,23 +622,6 @@
           $("#formwhatRadioListen631Div").attr("hidden", "hidden");
         }
       });
-      $("#formwhatRadioListenLastWeek32").change(function () {
-        if ($("#formwhatRadioListenLastWeek32").is(':checked')) {
-          $("#formwhatRadioListen132Div").removeAttr("hidden");
-          $("#formwhatRadioListen232Div").removeAttr("hidden");
-          $("#formwhatRadioListen332Div").removeAttr("hidden");
-          $("#formwhatRadioListen432Div").removeAttr("hidden");
-          $("#formwhatRadioListen532Div").removeAttr("hidden");
-          $("#formwhatRadioListen632Div").removeAttr("hidden");
-        } else {
-          $("#formwhatRadioListen132Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen232Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen332Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen432Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen532Div").attr("hidden", "hidden");
-          $("#formwhatRadioListen632Div").attr("hidden", "hidden");
-        }
-      });
       $("#formwhatRadioListenLastWeek33").change(function () {
         if ($("#formwhatRadioListenLastWeek33").is(':checked')) {
           $("#formwhatRadioListen133Div").removeAttr("hidden");
@@ -738,6 +671,92 @@
           $("#formwhatRadioListen435Div").attr("hidden", "hidden");
           $("#formwhatRadioListen535Div").attr("hidden", "hidden");
           $("#formwhatRadioListen635Div").attr("hidden", "hidden");
+        }
+      });
+      $("#formwhatRadioListenLastWeek36").change(function () {
+        if ($("#formwhatRadioListenLastWeek36").is(':checked')) {
+          $("#formwhatRadioListen136Div").removeAttr("hidden");
+          $("#formwhatRadioListen236Div").removeAttr("hidden");
+          $("#formwhatRadioListen336Div").removeAttr("hidden");
+          $("#formwhatRadioListen436Div").removeAttr("hidden");
+          $("#formwhatRadioListen536Div").removeAttr("hidden");
+          $("#formwhatRadioListen636Div").removeAttr("hidden");
+        } else {
+          $("#formwhatRadioListen136Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen236Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen336Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen436Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen536Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen636Div").attr("hidden", "hidden");
+        }
+      });
+      $("#formwhatRadioListenLastWeek38").change(function () {
+        if ($("#formwhatRadioListenLastWeek38").is(':checked')) {
+          $("#formwhatRadioListen138Div").removeAttr("hidden");
+          $("#formwhatRadioListen238Div").removeAttr("hidden");
+          $("#formwhatRadioListen338Div").removeAttr("hidden");
+          $("#formwhatRadioListen438Div").removeAttr("hidden");
+          $("#formwhatRadioListen538Div").removeAttr("hidden");
+          $("#formwhatRadioListen638Div").removeAttr("hidden");
+        } else {
+          $("#formwhatRadioListen138Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen238Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen338Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen438Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen538Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen638Div").attr("hidden", "hidden");
+        }
+      });
+      $("#formwhatRadioListenLastWeek39").change(function () {
+        if ($("#formwhatRadioListenLastWeek39").is(':checked')) {
+          $("#formwhatRadioListen139Div").removeAttr("hidden");
+          $("#formwhatRadioListen239Div").removeAttr("hidden");
+          $("#formwhatRadioListen339Div").removeAttr("hidden");
+          $("#formwhatRadioListen439Div").removeAttr("hidden");
+          $("#formwhatRadioListen539Div").removeAttr("hidden");
+          $("#formwhatRadioListen639Div").removeAttr("hidden");
+        } else {
+          $("#formwhatRadioListen139Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen239Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen339Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen439Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen539Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen639Div").attr("hidden", "hidden");
+        }
+      });
+      $("#formwhatRadioListenLastWeek41").change(function () {
+        if ($("#formwhatRadioListenLastWeek41").is(':checked')) {
+          $("#formwhatRadioListen141Div").removeAttr("hidden");
+          $("#formwhatRadioListen241Div").removeAttr("hidden");
+          $("#formwhatRadioListen341Div").removeAttr("hidden");
+          $("#formwhatRadioListen441Div").removeAttr("hidden");
+          $("#formwhatRadioListen541Div").removeAttr("hidden");
+          $("#formwhatRadioListen641Div").removeAttr("hidden");
+        } else {
+          $("#formwhatRadioListen141Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen241Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen341Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen441Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen541Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen641Div").attr("hidden", "hidden");
+        }
+      });
+
+      $("#formwhatRadioListenLastWeek42").change(function () {
+        if ($("#formwhatRadioListenLastWeek42").is(':checked')) {
+          $("#formwhatRadioListen142Div").removeAttr("hidden");
+          $("#formwhatRadioListen242Div").removeAttr("hidden");
+          $("#formwhatRadioListen342Div").removeAttr("hidden");
+          $("#formwhatRadioListen442Div").removeAttr("hidden");
+          $("#formwhatRadioListen542Div").removeAttr("hidden");
+          $("#formwhatRadioListen642Div").removeAttr("hidden");
+        } else {
+          $("#formwhatRadioListen142Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen242Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen342Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen442Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen542Div").attr("hidden", "hidden");
+          $("#formwhatRadioListen642Div").attr("hidden", "hidden");
         }
       });
       $("#formwhatRadioListenLastWeek99").change(function () {
@@ -1308,20 +1327,21 @@
                         <div id="formwhatRadioListen119Div" hidden><input id="formwhatRadioListen119" name="form[whatRadioListen1]" type="checkbox" value="19"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen119">19. Легенды FM</label><br></div>
                         <div id="formwhatRadioListen120Div" hidden><input id="formwhatRadioListen120" name="form[whatRadioListen1]" type="checkbox" value="20"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen120">20. Радио Мир</label><br></div>
                         <div id="formwhatRadioListen121Div" hidden><input id="formwhatRadioListen121" name="form[whatRadioListen1]" type="checkbox" value="21"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen121">21. Альфа радио</label><br></div>
-                        <div id="formwhatRadioListen122Div" hidden><input id="formwhatRadioListen122" name="form[whatRadioListen1]" type="checkbox" value="23"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen122">23. Город FM (Брест)</label><br></div>
-                        <div id="formwhatRadioListen123Div" hidden><input id="formwhatRadioListen123" name="form[whatRadioListen1]" type="checkbox" value="24"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen123">24. Радио Брест</label><br></div>
-                        <div id="formwhatRadioListen124Div" hidden><input id="formwhatRadioListen124" name="form[whatRadioListen1]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen124">25. Русское Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen125Div" hidden><input id="formwhatRadioListen125" name="form[whatRadioListen1]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen125">26. Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen126Div" hidden><input id="formwhatRadioListen126" name="form[whatRadioListen1]" type="checkbox" value="27"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen126">27. Европа Плюс (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen127Div" hidden><input id="formwhatRadioListen127" name="form[whatRadioListen1]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen127">28. Ретро Люкс FM (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen128Div" hidden><input id="formwhatRadioListen128" name="form[whatRadioListen1]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen128">29. Гомель FM</label><br></div>
-                        <div id="formwhatRadioListen129Div" hidden><input id="formwhatRadioListen129" name="form[whatRadioListen1]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen129">30. Гомель Плюс</label><br></div>
-                        <div id="formwhatRadioListen130Div" hidden><input id="formwhatRadioListen130" name="form[whatRadioListen1]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen130">31. Гомельское городское радио</label><br></div>
-                        <div id="formwhatRadioListen132Div" hidden><input id="formwhatRadioListen132" name="form[whatRadioListen1]" type="checkbox" value="32"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen132">32. Радио Гродно</label><br></div>
-                        <div id="formwhatRadioListen133Div" hidden><input id="formwhatRadioListen133" name="form[whatRadioListen1]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen133">33. Радио MFM (Гродно)</label><br></div>
-                        <div id="formwhatRadioListen134Div" hidden><input id="formwhatRadioListen134" name="form[whatRadioListen1]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen134">34. Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen135Div" hidden><input id="formwhatRadioListen135" name="form[whatRadioListen1]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen135">35. Русское Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen131Div" hidden><input id="formwhatRadioListen131" name="form[whatRadioListen1]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen131">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen122Div" hidden><input id="formwhatRadioListen122" name="form[whatRadioListen1]" type="checkbox" value="22"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen122">22. Релакс FM</label><br></div>
+                        <div id="formwhatRadioListen125Div" hidden><input id="formwhatRadioListen125" name="form[whatRadioListen1]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen125">25. Город FM (Брест)</label><br></div>
+                        <div id="formwhatRadioListen126Div" hidden><input id="formwhatRadioListen126" name="form[whatRadioListen1]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen126">26. Радио Брест</label><br></div>
+                        <div id="formwhatRadioListen128Div" hidden><input id="formwhatRadioListen128" name="form[whatRadioListen1]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen128">28. Русское Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen129Div" hidden><input id="formwhatRadioListen129" name="form[whatRadioListen1]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen129">29. Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen130Div" hidden><input id="formwhatRadioListen130" name="form[whatRadioListen1]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen130">30. Европа Плюс (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen131Div" hidden><input id="formwhatRadioListen131" name="form[whatRadioListen1]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen131">31. Ретро Люкс FM (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen133Div" hidden><input id="formwhatRadioListen133" name="form[whatRadioListen1]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen133">33. Гомель FM</label><br></div>
+                        <div id="formwhatRadioListen134Div" hidden><input id="formwhatRadioListen134" name="form[whatRadioListen1]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen134">34. Гомель Плюс</label><br></div>
+                        <div id="formwhatRadioListen135Div" hidden><input id="formwhatRadioListen135" name="form[whatRadioListen1]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen135">35. Радио</label><br></div>
+                        <div id="formwhatRadioListen136Div" hidden><input id="formwhatRadioListen136" name="form[whatRadioListen1]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen136">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen138Div" hidden><input id="formwhatRadioListen138" name="form[whatRadioListen1]" type="checkbox" value="38"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen138">38. Радио Гродно</label><br></div>
+                        <div id="formwhatRadioListen139Div" hidden><input id="formwhatRadioListen139" name="form[whatRadioListen1]" type="checkbox" value="39"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen139">39. Радио MFM (Гродно)</label><br></div>
+                        <div id="formwhatRadioListen141Div" hidden><input id="formwhatRadioListen141" name="form[whatRadioListen1]" type="checkbox" value="41"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen141">41. Радио Могилев</label><br></div>
+                        <div id="formwhatRadioListen142Div" hidden><input id="formwhatRadioListen142" name="form[whatRadioListen1]" type="checkbox" value="42"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen142">42. Русское Радио Могилев</label><br></div>
                         <div id="formwhatRadioListen199Div" hidden><input id="formwhatRadioListen199" name="form[whatRadioListen1]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen1]" value="on"><label for="formwhatRadioListen199">99. Другая радиостанция</label><br></div>
                     </div><br>
 
@@ -1390,20 +1410,21 @@
                         <div id="formwhatRadioListen219Div" hidden><input id="formwhatRadioListen219" name="form[whatRadioListen2]" type="checkbox" value="19"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen219">19. Легенды FM</label><br></div>
                         <div id="formwhatRadioListen220Div" hidden><input id="formwhatRadioListen220" name="form[whatRadioListen2]" type="checkbox" value="20"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen220">20. Радио Мир</label><br></div>
                         <div id="formwhatRadioListen221Div" hidden><input id="formwhatRadioListen221" name="form[whatRadioListen2]" type="checkbox" value="21"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen221">21. Альфа радио</label><br></div>
-                        <div id="formwhatRadioListen222Div" hidden><input id="formwhatRadioListen222" name="form[whatRadioListen2]" type="checkbox" value="23"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen222">23. Город FM (Брест)</label><br></div>
-                        <div id="formwhatRadioListen223Div" hidden><input id="formwhatRadioListen223" name="form[whatRadioListen2]" type="checkbox" value="24"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen223">24. Радио Брест</label><br></div>
-                        <div id="formwhatRadioListen224Div" hidden><input id="formwhatRadioListen224" name="form[whatRadioListen2]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen224">25. Русское Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen225Div" hidden><input id="formwhatRadioListen225" name="form[whatRadioListen2]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen225">26. Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen226Div" hidden><input id="formwhatRadioListen226" name="form[whatRadioListen2]" type="checkbox" value="27"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen226">27. Европа Плюс (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen227Div" hidden><input id="formwhatRadioListen227" name="form[whatRadioListen2]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen227">28. Ретро Люкс FM (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen228Div" hidden><input id="formwhatRadioListen228" name="form[whatRadioListen2]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen228">29. Гомель FM</label><br></div>
-                        <div id="formwhatRadioListen229Div" hidden><input id="formwhatRadioListen229" name="form[whatRadioListen2]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen229">30. Гомель Плюс</label><br></div>
-                        <div id="formwhatRadioListen230Div" hidden><input id="formwhatRadioListen230" name="form[whatRadioListen2]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen230">31. Гомельское городское радио</label><br></div>
-                        <div id="formwhatRadioListen232Div" hidden><input id="formwhatRadioListen232" name="form[whatRadioListen2]" type="checkbox" value="32"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen232">32. Радио Гродно</label><br></div>
-                        <div id="formwhatRadioListen233Div" hidden><input id="formwhatRadioListen233" name="form[whatRadioListen2]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen233">33. Радио MFM (Гродно)</label><br></div>
-                        <div id="formwhatRadioListen234Div" hidden><input id="formwhatRadioListen234" name="form[whatRadioListen2]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen234">34. Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen235Div" hidden><input id="formwhatRadioListen235" name="form[whatRadioListen2]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen235">35. Русское Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen231Div" hidden><input id="formwhatRadioListen231" name="form[whatRadioListen2]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen231">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen222Div" hidden><input id="formwhatRadioListen222" name="form[whatRadioListen2]" type="checkbox" value="22"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen222">22. Релакс FM</label><br></div>
+                        <div id="formwhatRadioListen225Div" hidden><input id="formwhatRadioListen225" name="form[whatRadioListen2]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen225">25. Город FM (Брест)</label><br></div>
+                        <div id="formwhatRadioListen226Div" hidden><input id="formwhatRadioListen226" name="form[whatRadioListen2]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen226">26. Радио Брест</label><br></div>
+                        <div id="formwhatRadioListen228Div" hidden><input id="formwhatRadioListen228" name="form[whatRadioListen2]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen228">28. Русское Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen229Div" hidden><input id="formwhatRadioListen229" name="form[whatRadioListen2]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen229">29. Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen230Div" hidden><input id="formwhatRadioListen230" name="form[whatRadioListen2]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen230">30. Европа Плюс (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen231Div" hidden><input id="formwhatRadioListen231" name="form[whatRadioListen2]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen231">31. Ретро Люкс FM (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen233Div" hidden><input id="formwhatRadioListen233" name="form[whatRadioListen2]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen233">33. Гомель FM</label><br></div>
+                        <div id="formwhatRadioListen234Div" hidden><input id="formwhatRadioListen234" name="form[whatRadioListen2]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen234">34. Гомель Плюс</label><br></div>
+                        <div id="formwhatRadioListen235Div" hidden><input id="formwhatRadioListen235" name="form[whatRadioListen2]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen235">35. Радио</label><br></div>
+                        <div id="formwhatRadioListen236Div" hidden><input id="formwhatRadioListen236" name="form[whatRadioListen2]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen236">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen238Div" hidden><input id="formwhatRadioListen238" name="form[whatRadioListen2]" type="checkbox" value="38"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen238">38. Радио Гродно</label><br></div>
+                        <div id="formwhatRadioListen239Div" hidden><input id="formwhatRadioListen239" name="form[whatRadioListen2]" type="checkbox" value="39"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen239">39. Радио MFM (Гродно)</label><br></div>
+                        <div id="formwhatRadioListen241Div" hidden><input id="formwhatRadioListen241" name="form[whatRadioListen2]" type="checkbox" value="41"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen241">41. Радио Могилев</label><br></div>
+                        <div id="formwhatRadioListen242Div" hidden><input id="formwhatRadioListen242" name="form[whatRadioListen2]" type="checkbox" value="42"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen242">42. Русское Радио Могилев</label><br></div>
                         <div id="formwhatRadioListen299Div" hidden><input id="formwhatRadioListen299" name="form[whatRadioListen2]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen2]" value="on"><label for="formwhatRadioListen299">99. Другая радиостанция</label><br></div>
                     </div><br>
 
@@ -1472,20 +1493,21 @@
                         <div id="formwhatRadioListen319Div" hidden><input id="formwhatRadioListen319" name="form[whatRadioListen3]" type="checkbox" value="19"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen319">19. Легенды FM</label><br></div>
                         <div id="formwhatRadioListen320Div" hidden><input id="formwhatRadioListen320" name="form[whatRadioListen3]" type="checkbox" value="20"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen320">20. Радио Мир</label><br></div>
                         <div id="formwhatRadioListen321Div" hidden><input id="formwhatRadioListen321" name="form[whatRadioListen3]" type="checkbox" value="21"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen321">21. Альфа радио</label><br></div>
-                        <div id="formwhatRadioListen322Div" hidden><input id="formwhatRadioListen322" name="form[whatRadioListen3]" type="checkbox" value="23"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen322">23. Город FM (Брест)</label><br></div>
-                        <div id="formwhatRadioListen323Div" hidden><input id="formwhatRadioListen323" name="form[whatRadioListen3]" type="checkbox" value="24"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen323">24. Радио Брест</label><br></div>
-                        <div id="formwhatRadioListen324Div" hidden><input id="formwhatRadioListen324" name="form[whatRadioListen3]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen324">25. Русское Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen325Div" hidden><input id="formwhatRadioListen325" name="form[whatRadioListen3]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen325">26. Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen326Div" hidden><input id="formwhatRadioListen326" name="form[whatRadioListen3]" type="checkbox" value="27"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen326">27. Европа Плюс (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen327Div" hidden><input id="formwhatRadioListen327" name="form[whatRadioListen3]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen327">28. Ретро Люкс FM (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen328Div" hidden><input id="formwhatRadioListen328" name="form[whatRadioListen3]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen328">29. Гомель FM</label><br></div>
-                        <div id="formwhatRadioListen329Div" hidden><input id="formwhatRadioListen329" name="form[whatRadioListen3]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen329">30. Гомель Плюс</label><br></div>
-                        <div id="formwhatRadioListen330Div" hidden><input id="formwhatRadioListen330" name="form[whatRadioListen3]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen330">31. Гомельское городское радио</label><br></div>
-                        <div id="formwhatRadioListen332Div" hidden><input id="formwhatRadioListen332" name="form[whatRadioListen3]" type="checkbox" value="32"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen332">32. Радио Гродно</label><br></div>
-                        <div id="formwhatRadioListen333Div" hidden><input id="formwhatRadioListen333" name="form[whatRadioListen3]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen333">33. Радио MFM (Гродно)</label><br></div>
-                        <div id="formwhatRadioListen334Div" hidden><input id="formwhatRadioListen334" name="form[whatRadioListen3]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen334">34. Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen335Div" hidden><input id="formwhatRadioListen335" name="form[whatRadioListen3]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen335">35. Русское Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen331Div" hidden><input id="formwhatRadioListen331" name="form[whatRadioListen3]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen331">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen322Div" hidden><input id="formwhatRadioListen322" name="form[whatRadioListen3]" type="checkbox" value="22"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen322">22. Релакс FM</label><br></div>
+                        <div id="formwhatRadioListen325Div" hidden><input id="formwhatRadioListen325" name="form[whatRadioListen3]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen325">25. Город FM (Брест)</label><br></div>
+                        <div id="formwhatRadioListen326Div" hidden><input id="formwhatRadioListen326" name="form[whatRadioListen3]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen326">26. Радио Брест</label><br></div>
+                        <div id="formwhatRadioListen328Div" hidden><input id="formwhatRadioListen328" name="form[whatRadioListen3]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen328">28. Русское Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen329Div" hidden><input id="formwhatRadioListen329" name="form[whatRadioListen3]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen329">29. Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen330Div" hidden><input id="formwhatRadioListen330" name="form[whatRadioListen3]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen330">30. Европа Плюс (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen331Div" hidden><input id="formwhatRadioListen331" name="form[whatRadioListen3]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen331">31. Ретро Люкс FM (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen333Div" hidden><input id="formwhatRadioListen333" name="form[whatRadioListen3]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen333">33. Гомель FM</label><br></div>
+                        <div id="formwhatRadioListen334Div" hidden><input id="formwhatRadioListen334" name="form[whatRadioListen3]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen334">34. Гомель Плюс</label><br></div>
+                        <div id="formwhatRadioListen335Div" hidden><input id="formwhatRadioListen335" name="form[whatRadioListen3]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen335">35. Радио</label><br></div>
+                        <div id="formwhatRadioListen336Div" hidden><input id="formwhatRadioListen336" name="form[whatRadioListen3]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen336">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen338Div" hidden><input id="formwhatRadioListen338" name="form[whatRadioListen3]" type="checkbox" value="38"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen338">38. Радио Гродно</label><br></div>
+                        <div id="formwhatRadioListen339Div" hidden><input id="formwhatRadioListen339" name="form[whatRadioListen3]" type="checkbox" value="39"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen339">39. Радио MFM (Гродно)</label><br></div>
+                        <div id="formwhatRadioListen341Div" hidden><input id="formwhatRadioListen341" name="form[whatRadioListen3]" type="checkbox" value="41"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen341">41. Радио Могилев</label><br></div>
+                        <div id="formwhatRadioListen342Div" hidden><input id="formwhatRadioListen342" name="form[whatRadioListen3]" type="checkbox" value="42"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen342">42. Русское Радио Могилев</label><br></div>
                         <div id="formwhatRadioListen399Div" hidden><input id="formwhatRadioListen399" name="form[whatRadioListen3]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen3]" value="on"><label for="formwhatRadioListen399">99. Другая радиостанция</label><br></div>
                     </div><br>
 
@@ -1554,20 +1576,21 @@
                         <div id="formwhatRadioListen419Div" hidden><input id="formwhatRadioListen419" name="form[whatRadioListen4]" type="checkbox" value="19"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen419">19. Легенды FM</label><br></div>
                         <div id="formwhatRadioListen420Div" hidden><input id="formwhatRadioListen420" name="form[whatRadioListen4]" type="checkbox" value="20"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen420">20. Радио Мир</label><br></div>
                         <div id="formwhatRadioListen421Div" hidden><input id="formwhatRadioListen421" name="form[whatRadioListen4]" type="checkbox" value="21"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen421">21. Альфа радио</label><br></div>
-                        <div id="formwhatRadioListen422Div" hidden><input id="formwhatRadioListen422" name="form[whatRadioListen4]" type="checkbox" value="23"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen422">23. Город FM (Брест)</label><br></div>
-                        <div id="formwhatRadioListen423Div" hidden><input id="formwhatRadioListen423" name="form[whatRadioListen4]" type="checkbox" value="24"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen423">24. Радио Брест</label><br></div>
-                        <div id="formwhatRadioListen424Div" hidden><input id="formwhatRadioListen424" name="form[whatRadioListen4]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen424">25. Русское Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen425Div" hidden><input id="formwhatRadioListen425" name="form[whatRadioListen4]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen425">26. Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen426Div" hidden><input id="formwhatRadioListen426" name="form[whatRadioListen4]" type="checkbox" value="27"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen426">27. Европа Плюс (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen427Div" hidden><input id="formwhatRadioListen427" name="form[whatRadioListen4]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen427">28. Ретро Люкс FM (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen428Div" hidden><input id="formwhatRadioListen428" name="form[whatRadioListen4]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen428">29. Гомель FM</label><br></div>
-                        <div id="formwhatRadioListen429Div" hidden><input id="formwhatRadioListen429" name="form[whatRadioListen4]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen429">30. Гомель Плюс</label><br></div>
-                        <div id="formwhatRadioListen430Div" hidden><input id="formwhatRadioListen430" name="form[whatRadioListen4]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen430">31. Гомельское городское радио</label><br></div>
-                        <div id="formwhatRadioListen432Div" hidden><input id="formwhatRadioListen432" name="form[whatRadioListen4]" type="checkbox" value="32"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen432">32. Радио Гродно</label><br></div>
-                        <div id="formwhatRadioListen433Div" hidden><input id="formwhatRadioListen433" name="form[whatRadioListen4]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen433">33. Радио MFM (Гродно)</label><br></div>
-                        <div id="formwhatRadioListen434Div" hidden><input id="formwhatRadioListen434" name="form[whatRadioListen4]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen434">34. Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen435Div" hidden><input id="formwhatRadioListen435" name="form[whatRadioListen4]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen435">35. Русское Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen431Div" hidden><input id="formwhatRadioListen431" name="form[whatRadioListen4]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen431">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen422Div" hidden><input id="formwhatRadioListen422" name="form[whatRadioListen4]" type="checkbox" value="22"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen422">22. Релакс FM</label><br></div>
+                        <div id="formwhatRadioListen425Div" hidden><input id="formwhatRadioListen425" name="form[whatRadioListen4]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen425">25. Город FM (Брест)</label><br></div>
+                        <div id="formwhatRadioListen426Div" hidden><input id="formwhatRadioListen426" name="form[whatRadioListen4]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen426">26. Радио Брест</label><br></div>
+                        <div id="formwhatRadioListen428Div" hidden><input id="formwhatRadioListen428" name="form[whatRadioListen4]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen428">28. Русское Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen429Div" hidden><input id="formwhatRadioListen429" name="form[whatRadioListen4]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen429">29. Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen430Div" hidden><input id="formwhatRadioListen430" name="form[whatRadioListen4]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen430">30. Европа Плюс (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen431Div" hidden><input id="formwhatRadioListen431" name="form[whatRadioListen4]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen431">31. Ретро Люкс FM (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen433Div" hidden><input id="formwhatRadioListen433" name="form[whatRadioListen4]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen433">33. Гомель FM</label><br></div>
+                        <div id="formwhatRadioListen434Div" hidden><input id="formwhatRadioListen434" name="form[whatRadioListen4]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen434">34. Гомель Плюс</label><br></div>
+                        <div id="formwhatRadioListen435Div" hidden><input id="formwhatRadioListen435" name="form[whatRadioListen4]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen435">35. Радио</label><br></div>
+                        <div id="formwhatRadioListen436Div" hidden><input id="formwhatRadioListen436" name="form[whatRadioListen4]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen436">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen438Div" hidden><input id="formwhatRadioListen438" name="form[whatRadioListen4]" type="checkbox" value="38"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen438">38. Радио Гродно</label><br></div>
+                        <div id="formwhatRadioListen439Div" hidden><input id="formwhatRadioListen439" name="form[whatRadioListen4]" type="checkbox" value="39"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen439">39. Радио MFM (Гродно)</label><br></div>
+                        <div id="formwhatRadioListen441Div" hidden><input id="formwhatRadioListen441" name="form[whatRadioListen4]" type="checkbox" value="41"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen441">41. Радио Могилев</label><br></div>
+                        <div id="formwhatRadioListen442Div" hidden><input id="formwhatRadioListen442" name="form[whatRadioListen4]" type="checkbox" value="42"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen442">42. Русское Радио Могилев</label><br></div>
                         <div id="formwhatRadioListen499Div" hidden><input id="formwhatRadioListen499" name="form[whatRadioListen4]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen4]" value="on"><label for="formwhatRadioListen499">99. Другая радиостанция</label><br></div>
                     </div><br>
 
@@ -1636,20 +1659,21 @@
                         <div id="formwhatRadioListen519Div" hidden><input id="formwhatRadioListen519" name="form[whatRadioListen5]" type="checkbox" value="19"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen519">19. Легенды FM</label><br></div>
                         <div id="formwhatRadioListen520Div" hidden><input id="formwhatRadioListen520" name="form[whatRadioListen5]" type="checkbox" value="20"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen520">20. Радио Мир</label><br></div>
                         <div id="formwhatRadioListen521Div" hidden><input id="formwhatRadioListen521" name="form[whatRadioListen5]" type="checkbox" value="21"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen521">21. Альфа радио</label><br></div>
-                        <div id="formwhatRadioListen522Div" hidden><input id="formwhatRadioListen522" name="form[whatRadioListen5]" type="checkbox" value="23"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen522">23. Город FM (Брест)</label><br></div>
-                        <div id="formwhatRadioListen523Div" hidden><input id="formwhatRadioListen523" name="form[whatRadioListen5]" type="checkbox" value="24"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen523">24. Радио Брест</label><br></div>
-                        <div id="formwhatRadioListen524Div" hidden><input id="formwhatRadioListen524" name="form[whatRadioListen5]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen524">25. Русское Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen525Div" hidden><input id="formwhatRadioListen525" name="form[whatRadioListen5]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen525">26. Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen526Div" hidden><input id="formwhatRadioListen526" name="form[whatRadioListen5]" type="checkbox" value="27"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen526">27. Европа Плюс (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen527Div" hidden><input id="formwhatRadioListen527" name="form[whatRadioListen5]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen527">28. Ретро Люкс FM (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen528Div" hidden><input id="formwhatRadioListen528" name="form[whatRadioListen5]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen528">29. Гомель FM</label><br></div>
-                        <div id="formwhatRadioListen529Div" hidden><input id="formwhatRadioListen529" name="form[whatRadioListen5]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen529">30. Гомель Плюс</label><br></div>
-                        <div id="formwhatRadioListen530Div" hidden><input id="formwhatRadioListen530" name="form[whatRadioListen5]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen530">31. Гомельское городское радио</label><br></div>
-                        <div id="formwhatRadioListen532Div" hidden><input id="formwhatRadioListen532" name="form[whatRadioListen5]" type="checkbox" value="32"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen532">32. Радио Гродно</label><br></div>
-                        <div id="formwhatRadioListen533Div" hidden><input id="formwhatRadioListen533" name="form[whatRadioListen5]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen533">33. Радио MFM (Гродно)</label><br></div>
-                        <div id="formwhatRadioListen534Div" hidden><input id="formwhatRadioListen534" name="form[whatRadioListen5]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen534">34. Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen535Div" hidden><input id="formwhatRadioListen535" name="form[whatRadioListen5]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen535">35. Русское Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen531Div" hidden><input id="formwhatRadioListen531" name="form[whatRadioListen5]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen531">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen522Div" hidden><input id="formwhatRadioListen522" name="form[whatRadioListen5]" type="checkbox" value="22"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen522">22. Релакс FM</label><br></div>
+                        <div id="formwhatRadioListen525Div" hidden><input id="formwhatRadioListen525" name="form[whatRadioListen5]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen525">25. Город FM (Брест)</label><br></div>
+                        <div id="formwhatRadioListen526Div" hidden><input id="formwhatRadioListen526" name="form[whatRadioListen5]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen526">26. Радио Брест</label><br></div>
+                        <div id="formwhatRadioListen528Div" hidden><input id="formwhatRadioListen528" name="form[whatRadioListen5]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen528">28. Русское Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen529Div" hidden><input id="formwhatRadioListen529" name="form[whatRadioListen5]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen529">29. Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen530Div" hidden><input id="formwhatRadioListen530" name="form[whatRadioListen5]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen530">30. Европа Плюс (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen531Div" hidden><input id="formwhatRadioListen531" name="form[whatRadioListen5]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen531">31. Ретро Люкс FM (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen533Div" hidden><input id="formwhatRadioListen533" name="form[whatRadioListen5]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen533">33. Гомель FM</label><br></div>
+                        <div id="formwhatRadioListen534Div" hidden><input id="formwhatRadioListen534" name="form[whatRadioListen5]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen534">34. Гомель Плюс</label><br></div>
+                        <div id="formwhatRadioListen535Div" hidden><input id="formwhatRadioListen535" name="form[whatRadioListen5]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen535">35. Радио</label><br></div>
+                        <div id="formwhatRadioListen536Div" hidden><input id="formwhatRadioListen536" name="form[whatRadioListen5]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen536">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen538Div" hidden><input id="formwhatRadioListen538" name="form[whatRadioListen5]" type="checkbox" value="38"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen538">38. Радио Гродно</label><br></div>
+                        <div id="formwhatRadioListen539Div" hidden><input id="formwhatRadioListen539" name="form[whatRadioListen5]" type="checkbox" value="39"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen539">39. Радио MFM (Гродно)</label><br></div>
+                        <div id="formwhatRadioListen541Div" hidden><input id="formwhatRadioListen541" name="form[whatRadioListen5]" type="checkbox" value="41"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen541">41. Радио Могилев</label><br></div>
+                        <div id="formwhatRadioListen542Div" hidden><input id="formwhatRadioListen542" name="form[whatRadioListen5]" type="checkbox" value="42"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen542">42. Русское Радио Могилев</label><br></div>
                         <div id="formwhatRadioListen599Div" hidden><input id="formwhatRadioListen599" name="form[whatRadioListen5]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen5]" value="on"><label for="formwhatRadioListen599">99. Другая радиостанция</label><br></div>
                     </div><br>
 
@@ -1718,20 +1742,21 @@
                         <div id="formwhatRadioListen619Div" hidden><input id="formwhatRadioListen619" name="form[whatRadioListen6]" type="checkbox" value="19"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen619">19. Легенды FM</label><br></div>
                         <div id="formwhatRadioListen620Div" hidden><input id="formwhatRadioListen620" name="form[whatRadioListen6]" type="checkbox" value="20"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen620">20. Радио Мир</label><br></div>
                         <div id="formwhatRadioListen621Div" hidden><input id="formwhatRadioListen621" name="form[whatRadioListen6]" type="checkbox" value="21"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen621">21. Альфа радио</label><br></div>
-                        <div id="formwhatRadioListen622Div" hidden><input id="formwhatRadioListen622" name="form[whatRadioListen6]" type="checkbox" value="23"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen622">23. Город FM (Брест)</label><br></div>
-                        <div id="formwhatRadioListen623Div" hidden><input id="formwhatRadioListen623" name="form[whatRadioListen6]" type="checkbox" value="24"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen623">24. Радио Брест</label><br></div>
-                        <div id="formwhatRadioListen624Div" hidden><input id="formwhatRadioListen624" name="form[whatRadioListen6]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen624">25. Русское Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen625Div" hidden><input id="formwhatRadioListen625" name="form[whatRadioListen6]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen625">26. Радио Витебск</label><br></div>
-                        <div id="formwhatRadioListen626Div" hidden><input id="formwhatRadioListen626" name="form[whatRadioListen6]" type="checkbox" value="27"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen626">27. Европа Плюс (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen627Div" hidden><input id="formwhatRadioListen627" name="form[whatRadioListen6]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen627">28. Ретро Люкс FM (Витебск)</label><br></div>
-                        <div id="formwhatRadioListen628Div" hidden><input id="formwhatRadioListen628" name="form[whatRadioListen6]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen628">29. Гомель FM</label><br></div>
-                        <div id="formwhatRadioListen629Div" hidden><input id="formwhatRadioListen629" name="form[whatRadioListen6]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen629">30. Гомель Плюс</label><br></div>
-                        <div id="formwhatRadioListen630Div" hidden><input id="formwhatRadioListen630" name="form[whatRadioListen6]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen630">31. Гомельское городское радио</label><br></div>
-                        <div id="formwhatRadioListen632Div" hidden><input id="formwhatRadioListen632" name="form[whatRadioListen6]" type="checkbox" value="32"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen632">32. Радио Гродно</label><br></div>
-                        <div id="formwhatRadioListen633Div" hidden><input id="formwhatRadioListen633" name="form[whatRadioListen6]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen633">33. Радио MFM (Гродно)</label><br></div>
-                        <div id="formwhatRadioListen634Div" hidden><input id="formwhatRadioListen634" name="form[whatRadioListen6]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen634">34. Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen635Div" hidden><input id="formwhatRadioListen635" name="form[whatRadioListen6]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen635">35. Русское Радио Могилев</label><br></div>
-                        <div id="formwhatRadioListen631Div" hidden><input id="formwhatRadioListen631" name="form[whatRadioListen6]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen631">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen622Div" hidden><input id="formwhatRadioListen622" name="form[whatRadioListen6]" type="checkbox" value="22"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen622">22. Релакс FM</label><br></div>
+                        <div id="formwhatRadioListen625Div" hidden><input id="formwhatRadioListen625" name="form[whatRadioListen6]" type="checkbox" value="25"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen625">25. Город FM (Брест)</label><br></div>
+                        <div id="formwhatRadioListen626Div" hidden><input id="formwhatRadioListen626" name="form[whatRadioListen6]" type="checkbox" value="26"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen626">26. Радио Брест</label><br></div>
+                        <div id="formwhatRadioListen628Div" hidden><input id="formwhatRadioListen628" name="form[whatRadioListen6]" type="checkbox" value="28"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen628">28. Русское Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen629Div" hidden><input id="formwhatRadioListen629" name="form[whatRadioListen6]" type="checkbox" value="29"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen629">29. Радио Витебск</label><br></div>
+                        <div id="formwhatRadioListen630Div" hidden><input id="formwhatRadioListen630" name="form[whatRadioListen6]" type="checkbox" value="30"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen630">30. Европа Плюс (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen631Div" hidden><input id="formwhatRadioListen631" name="form[whatRadioListen6]" type="checkbox" value="31"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen631">31. Ретро Люкс FM (Витебск)</label><br></div>
+                        <div id="formwhatRadioListen633Div" hidden><input id="formwhatRadioListen633" name="form[whatRadioListen6]" type="checkbox" value="33"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen633">33. Гомель FM</label><br></div>
+                        <div id="formwhatRadioListen634Div" hidden><input id="formwhatRadioListen634" name="form[whatRadioListen6]" type="checkbox" value="34"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen634">34. Гомель Плюс</label><br></div>
+                        <div id="formwhatRadioListen635Div" hidden><input id="formwhatRadioListen635" name="form[whatRadioListen6]" type="checkbox" value="35"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen635">35. Радио</label><br></div>
+                        <div id="formwhatRadioListen636Div" hidden><input id="formwhatRadioListen636" name="form[whatRadioListen6]" type="checkbox" value="36"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen636">36. Радио Правда (Гомель)</label><br></div>
+                        <div id="formwhatRadioListen638Div" hidden><input id="formwhatRadioListen638" name="form[whatRadioListen6]" type="checkbox" value="38"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen638">38. Радио Гродно</label><br></div>
+                        <div id="formwhatRadioListen639Div" hidden><input id="formwhatRadioListen639" name="form[whatRadioListen6]" type="checkbox" value="39"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen639">39. Радио MFM (Гродно)</label><br></div>
+                        <div id="formwhatRadioListen641Div" hidden><input id="formwhatRadioListen641" name="form[whatRadioListen6]" type="checkbox" value="41"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen641">41. Радио Могилев</label><br></div>
+                        <div id="formwhatRadioListen642Div" hidden><input id="formwhatRadioListen642" name="form[whatRadioListen6]" type="checkbox" value="42"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen642">42. Русское Радио Могилев</label><br></div>
                         <div id="formwhatRadioListen699Div" hidden><input id="formwhatRadioListen699" name="form[whatRadioListen6]" type="checkbox" value="99"><input type="hidden" name="_form[whatRadioListen6]" value="on"><label for="formwhatRadioListen699">99. Другая радиостанция</label><br></div>
                     </div><br>
 
