@@ -229,7 +229,7 @@
                 </div>
 
                 <div id="containsTNT2Div" hidden>
-                    <b>Сейчас я назову 7 каналов, а вы скажете, идут ли у вас такие?</b><br>
+                    <b>Сейчас я назову 6 каналов, а вы скажете, идут ли у вас такие?</b><br>
                     <br>
                     <b>ТНТ</b><br>
                     <form:radiobutton path="form[containsTNT2]" value="Да" label="Да"/><br>
