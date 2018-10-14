@@ -122,15 +122,15 @@ $(document).ready(function () {
     $("#containsMuzTV1Div").removeAttr("hidden");
   });
   $("[name='form[containsMuzTV1]']").change(function () {
-    $("#containsDomashniy1Div").removeAttr("hidden");
+    $("#containsEuropaPlus1Div").removeAttr("hidden");
   });
   $("[name='form[containsDomashniy1]']").change(function () {
     $("#containsEuropaPlus1Div").removeAttr("hidden");
   });
   $("[name='form[containsEuropaPlus1]']").change(function () {
-    $("#containsPeretc1Div").removeAttr("hidden");
+    $("#containsBebBusinessChannel1Div").removeAttr("hidden");
   });
-  $("[name='form[containsPeretc1]']").change(function () {
+  $("[name='form[containsBebBusinessChannel1]']").change(function () {
     $("#hasSmartTV1Div").removeAttr("hidden");
   });
   $("[name='form[hasSmartTV1]']").change(function () {
@@ -235,15 +235,15 @@ $(document).ready(function () {
     $("#containsMuzTV2Div").removeAttr("hidden");
   });
   $("[name='form[containsMuzTV2]']").change(function () {
-    $("#containsDomashniy2Div").removeAttr("hidden");
+    $("#containsEuropaPlus2Div").removeAttr("hidden");
   });
   $("[name='form[containsDomashniy2]']").change(function () {
     $("#containsEuropaPlus2Div").removeAttr("hidden");
   });
   $("[name='form[containsEuropaPlus2]']").change(function () {
-    $("#containsPeretc2Div").removeAttr("hidden");
+    $("#containsBebBusinessChannel2Div").removeAttr("hidden");
   });
-  $("[name='form[containsPeretc2]']").change(function () {
+  $("[name='form[containsBebBusinessChannel2]']").change(function () {
     $("#hasSmartTV2Div").removeAttr("hidden");
   });
   $("[name='form[hasSmartTV2]']").change(function () {
@@ -362,15 +362,15 @@ $(document).ready(function () {
     $("#containsMuzTV3Div").removeAttr("hidden");
   });
   $("[name='form[containsMuzTV3]']").change(function () {
-    $("#containsDomashniy3Div").removeAttr("hidden");
+    $("#containsEuropaPlus3Div").removeAttr("hidden");
   });
   $("[name='form[containsDomashniy3]']").change(function () {
     $("#containsEuropaPlus3Div").removeAttr("hidden");
   });
   $("[name='form[containsEuropaPlus3]']").change(function () {
-    $("#containsPeretc3Div").removeAttr("hidden");
+    $("#containsBebBusinessChannel3Div").removeAttr("hidden");
   });
-  $("[name='form[containsPeretc3]']").change(function () {
+  $("[name='form[containsBebBusinessChannel3]']").change(function () {
     $("#hasSmartTV3Div").removeAttr("hidden");
   });
   $("[name='form[hasSmartTV3]']").change(function () {
@@ -505,15 +505,15 @@ $(document).ready(function () {
     $("#containsMuzTV4Div").removeAttr("hidden");
   });
   $("[name='form[containsMuzTV4]']").change(function () {
-    $("#containsDomashniy4Div").removeAttr("hidden");
+    $("#containsEuropaPlus4Div").removeAttr("hidden");
   });
   $("[name='form[containsDomashniy4]']").change(function () {
     $("#containsEuropaPlus4Div").removeAttr("hidden");
   });
   $("[name='form[containsEuropaPlus4]']").change(function () {
-    $("#containsPeretc4Div").removeAttr("hidden");
+    $("#containsBebBusinessChannel4Div").removeAttr("hidden");
   });
-  $("[name='form[containsPeretc4]']").change(function () {
+  $("[name='form[containsBebBusinessChannel4]']").change(function () {
     $("#hasSmartTV4Div").removeAttr("hidden");
   });
   $("[name='form[hasSmartTV4]']").change(function () {
@@ -666,15 +666,15 @@ $(document).ready(function () {
     $("#containsMuzTV5Div").removeAttr("hidden");
   });
   $("[name='form[containsMuzTV5]']").change(function () {
-    $("#containsDomashniy5Div").removeAttr("hidden");
+    $("#containsEuropaPlus5Div").removeAttr("hidden");
   });
   $("[name='form[containsDomashniy5]']").change(function () {
     $("#containsEuropaPlus5Div").removeAttr("hidden");
   });
   $("[name='form[containsEuropaPlus5]']").change(function () {
-    $("#containsPeretc5Div").removeAttr("hidden");
+    $("#containsBebBusinessChannel5Div").removeAttr("hidden");
   });
-  $("[name='form[containsPeretc5]']").change(function () {
+  $("[name='form[containsBebBusinessChannel5]']").change(function () {
     $("#hasSmartTV5Div").removeAttr("hidden");
   });
   $("[name='form[hasSmartTV5]']").change(function () {
@@ -847,15 +847,15 @@ $(document).ready(function () {
     $("#containsMuzTV6Div").removeAttr("hidden");
   });
   $("[name='form[containsMuzTV6]']").change(function () {
-    $("#containsDomashniy6Div").removeAttr("hidden");
+    $("#containsEuropaPlus6Div").removeAttr("hidden");
   });
   $("[name='form[containsDomashniy6]']").change(function () {
     $("#containsEuropaPlus6Div").removeAttr("hidden");
   });
   $("[name='form[containsEuropaPlus6]']").change(function () {
-    $("#containsPeretc6Div").removeAttr("hidden");
+    $("#containsBebBusinessChannel6Div").removeAttr("hidden");
   });
-  $("[name='form[containsPeretc6]']").change(function () {
+  $("[name='form[containsBebBusinessChannel6]']").change(function () {
     $("#hasSmartTV6Div").removeAttr("hidden");
   });
   $("[name='form[hasSmartTV6]']").change(function () {

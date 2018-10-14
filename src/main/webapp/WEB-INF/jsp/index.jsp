@@ -164,10 +164,10 @@
                     <br>
                 </div>
 
-                <div id="containsPeretc1Div" hidden>
-                    <b>Перец</b><br>
-                    <form:radiobutton path="form[containsPeretc1]" value="Да" label="Да"/><br>
-                    <form:radiobutton path="form[containsPeretc1]" value="Нет" label="Нет"/><br>
+                <div id="containsBebBusinessChannel1Div" hidden>
+                    <b>БелБизнесЧеннел</b><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel1]" value="Да" label="Да"/><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel1]" value="Нет" label="Нет"/><br>
                     <br>
                 </div>
 
@@ -272,10 +272,10 @@
                     <br>
                 </div>
 
-                <div id="containsPeretc2Div" hidden>
-                    <b>Перец</b><br>
-                    <form:radiobutton path="form[containsPeretc2]" value="Да" label="Да"/><br>
-                    <form:radiobutton path="form[containsPeretc2]" value="Нет" label="Нет"/><br>
+                <div id="containsBebBusinessChannel2Div" hidden>
+                    <b>БелБизнесЧеннел</b><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel2]" value="Да" label="Да"/><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel2]" value="Нет" label="Нет"/><br>
                     <br>
                 </div>
 
@@ -381,10 +381,10 @@
                     <br>
                 </div>
 
-                <div id="containsPeretc3Div" hidden>
-                    <b>Перец</b><br>
-                    <form:radiobutton path="form[containsPeretc3]" value="Да" label="Да"/><br>
-                    <form:radiobutton path="form[containsPeretc3]" value="Нет" label="Нет"/><br>
+                <div id="containsBebBusinessChannel3Div" hidden>
+                    <b>БелБизнесЧеннел</b><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel3]" value="Да" label="Да"/><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel3]" value="Нет" label="Нет"/><br>
                     <br>
                 </div>
 
@@ -491,10 +491,10 @@
                     <br>
                 </div>
 
-                <div id="containsPeretc4Div" hidden>
-                    <b>Перец</b><br>
-                    <form:radiobutton path="form[containsPeretc4]" value="Да" label="Да"/><br>
-                    <form:radiobutton path="form[containsPeretc4]" value="Нет" label="Нет"/><br>
+                <div id="containsBebBusinessChannel4Div" hidden>
+                    <b>БелБизнесЧеннел</b><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel4]" value="Да" label="Да"/><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel4]" value="Нет" label="Нет"/><br>
                     <br>
                 </div>
 
@@ -602,10 +602,10 @@
                     <br>
                 </div>
 
-                <div id="containsPeretc5Div" hidden>
-                    <b>Перец</b><br>
-                    <form:radiobutton path="form[containsPeretc5]" value="Да" label="Да"/><br>
-                    <form:radiobutton path="form[containsPeretc5]" value="Нет" label="Нет"/><br>
+                <div id="containsBebBusinessChannel5Div" hidden>
+                    <b>БелБизнесЧеннел</b><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel5]" value="Да" label="Да"/><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel5]" value="Нет" label="Нет"/><br>
                     <br>
                 </div>
 
@@ -714,10 +714,10 @@
                     <br>
                 </div>
 
-                <div id="containsPeretc6Div" hidden>
-                    <b>Перец</b><br>
-                    <form:radiobutton path="form[containsPeretc6]" value="Да" label="Да"/><br>
-                    <form:radiobutton path="form[containsPeretc6]" value="Нет" label="Нет"/><br>
+                <div id="containsBebBusinessChannel6Div" hidden>
+                    <b>БелБизнесЧеннел</b><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel6]" value="Да" label="Да"/><br>
+                    <form:radiobutton path="form[containsBebBusinessChannel6]" value="Нет" label="Нет"/><br>
                     <br>
                 </div>
 

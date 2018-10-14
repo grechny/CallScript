@@ -32,7 +32,7 @@ containsTV31: 18
 containsMuzTV1: 19
 containsDomashniy1: 20
 containsEuropaPlus1: 21
-containsPeretc1: 22
+containsBebBusinessChannel1: 22
 hasSmartTV1: 23
 usesSmartTV1: 24
 
@@ -46,7 +46,7 @@ containsTV32: 31
 containsMuzTV2: 32
 containsDomashniy2: 33
 containsEuropaPlus2: 34
-containsPeretc2: 35
+containsBebBusinessChannel2: 35
 hasSmartTV2: 36
 usesSmartTV2: 37
 
@@ -60,7 +60,7 @@ containsTV33: 44
 containsMuzTV3: 45
 containsDomashniy3: 46
 containsEuropaPlus3: 47
-containsPeretc3: 48
+containsBebBusinessChannel3: 48
 hasSmartTV3: 49
 usesSmartTV3: 50
 
@@ -74,7 +74,7 @@ containsTV34: 57
 containsMuzTV4: 58
 containsDomashniy4: 59
 containsEuropaPlus4: 60
-containsPeretc4: 61
+containsBebBusinessChannel4: 61
 hasSmartTV4: 62
 usesSmartTV4: 63
 
@@ -88,7 +88,7 @@ containsTV35: 70
 containsMuzTV5: 71
 containsDomashniy5: 72
 containsEuropaPlus5: 73
-containsPeretc5: 74
+containsBebBusinessChannel5: 74
 hasSmartTV5: 75
 usesSmartTV5: 76
 
@@ -102,6 +102,6 @@ containsTV36: 83
 containsMuzTV6: 84
 containsDomashniy6: 85
 containsEuropaPlus6: 86
-containsPeretc6: 87
+containsBebBusinessChannel6: 87
 hasSmartTV6: 88
 usesSmartTV6: 89
