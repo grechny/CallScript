@@ -830,11 +830,19 @@
     });
     $("#formlastMonthListen1").change(function () {
       $("#educationDiv").attr("hidden", "hidden");
-      $("#lastWeekListenDiv").removeAttr("hidden");
+      $("#lastMonthListen4Div").removeAttr("hidden");
     });
     $("#formlastMonthListen2").change(function () {
-      $("#lastWeekListenDiv").attr("hidden", "hidden");
+      $("#lastMonthListen4Div").attr("hidden", "hidden");
       $("#educationDiv").removeAttr("hidden");
+    });
+    $("#formlastMonthListen41").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
+      $("#lastWeekListenDiv").removeAttr("hidden");
+    });
+    $("#formlastMonthListen42").change(function () {
+      $("#educationDiv").attr("hidden", "hidden");
+      $("#lastWeekListenDiv").removeAttr("hidden");
     });
     $("#formlastWeekListen1").change(function () {
       $("#educationDiv").attr("hidden", "hidden");
@@ -1287,6 +1295,13 @@
                     <b>3. Слушали ли Вы радио или, может быть, присутствовали при работающем радио за последний месяц?</b><br>
                     <form:radiobutton path="form[lastMonthListen]" value="Да" label="Да"/><br>
                     <form:radiobutton path="form[lastMonthListen]" value="Нет" label="Нет"/><br>
+                    <br>
+                </div>
+
+                <div id="lastMonthListen4Div" hidden>
+                    <b>3.2 Слушали ли Вы радио хотя бы 4 раза за последние 30 дней?</b><br>
+                    <form:radiobutton path="form[lastMonthListen4]" value="Да" label="Да"/><br>
+                    <form:radiobutton path="form[lastMonthListen4]" value="Нет" label="Нет"/><br>
                     <br>
                 </div>
 
